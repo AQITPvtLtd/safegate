@@ -1,0 +1,63 @@
+import React from "react";
+import Image from "next/image";
+
+const About = () => {
+  return (
+    <div className="mt-[200px] mx-10 mb-10">
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        {/* First Section */}
+        <div className="bg-primary text-white shadow-2xl shadow-primary rounded-tl-lg rounded-bl-lg md:rounded-bl-none md:rounded-tl-lg">
+          <h1 className="text-4xl font-bold mb-4 text-center pt-4">
+            Our Mission
+          </h1>
+          <p className="text-lg p-5">
+            At Safegate Multispeciality Medical Center, our mission is to
+            provide comprehensive, high-quality healthcare services with
+            compassion, integrity, and respect. We are committed to improving
+            the health and well-being of our community by offering personalized
+            care through a team of dedicated professionals, advanced technology,
+            and a patient-centered approach.
+          </p>
+        </div>
+        <div className="relative rounded-tr-lg rounded-br-lg md:rounded-br-lg md:rounded-tr-none">
+          <Image
+            src="/about/mission.png"
+            alt="Mission"
+            layout="fill"
+            objectFit="contain"
+            className="w-full p-3 h-full rounded-tr-lg rounded-br-lg md:rounded-br-lg md:rounded-tr-none"
+          />
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        {/* Second Section */}
+        <div className="relative rounded-tl-lg rounded-bl-lg md:rounded-bl-none md:rounded-tl-lg">
+          <Image
+            src="/about/vission.png"
+            alt="Mission"
+            layout="fill"
+            objectFit="contain"
+            className="w-full p-3 h-full rounded-tl-lg rounded-bl-lg md:rounded-bl-none md:rounded-tl-lg"
+          />
+        </div>
+        <div className="bg-lightgreen text-white shadow-2xl shadow-lightgreen rounded-tr-lg rounded-br-lg md:rounded-br-none md:rounded-tr-lg">
+          <h1 className="text-4xl font-bold mb-4 text-center pt-4">
+            Our Vision
+          </h1>
+          <p className="text-lg p-5">
+            Our vision is to be a leading multispeciality medical center
+            recognized for excellence in patient care, innovative treatments,
+            and a holistic approach to health. We strive to create a healthcare
+            environment where every patient feels valued, supported, and
+            empowered to achieve optimal health outcomes. Safegate aims to set
+            new standards in medical excellence, ensuring that our community has
+            access to the best possible care, now and in the future.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;
