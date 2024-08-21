@@ -54,28 +54,34 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-            <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
+          <div className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+            <h2 className="text-gray-900 dark:text-white text-lg mb-1 font-medium title-font">
               Contact Us
             </h2>
-            <p className="leading-relaxed mb-5 text-gray-600">
+            <p className="leading-relaxed mb-5 text-gray-600 dark:text-white">
               We would love to hear from you! Whether you have a question about
               our services, need assistance, or just want to say hello, feel
               free to reach out to us.
             </p>
             <div className="relative mb-4">
-              <label for="name" className="leading-7 text-sm text-gray-600">
+              <label
+                for="name"
+                className="dark:text-white leading-7 text-sm text-gray-600"
+              >
                 Name
               </label>
               <input
                 type="text"
                 id="name"
                 name="name"
-                className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full bg-white dark:text-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
             <div className="relative mb-4">
-              <label for="email" className="leading-7 text-sm text-gray-600">
+              <label
+                for="email"
+                className="leading-7 dark:text-white text-sm text-gray-600"
+              >
                 Email
               </label>
               <input
@@ -86,7 +92,10 @@ const Contact = () => {
               />
             </div>
             <div className="relative mb-4">
-              <label for="message" className="leading-7 text-sm text-gray-600">
+              <label
+                for="message"
+                className="leading-7 dark:text-white text-sm text-gray-600"
+              >
                 Message
               </label>
               <textarea

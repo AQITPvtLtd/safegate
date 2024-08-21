@@ -34,7 +34,7 @@ const Team = () => {
             </h1>
             <h2 className="text-md text-center text-lightblue">Cardiologist</h2>
             <div className="border border-lightblue my-4 w-full"></div>
-            <p className="text-gray-800 text-center text-sm">
+            <p className="text-gray-800 dark:text-white text-center text-sm">
               MBBS, MD - General Medicine, Diploma in Cardiology, Diploma in
               echocardiography
             </p>
@@ -56,7 +56,9 @@ const Team = () => {
               General Physician
             </h2>
             <div className="border border-lightblue my-4 w-full"></div>
-            <p className="text-gray-800 text-center text-sm">MD - Physician</p>
+            <p className="text-gray-800 text-center text-sm dark:text-white">
+              MD - Physician
+            </p>
           </div>
         </div>
       </section>

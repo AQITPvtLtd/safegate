@@ -4,7 +4,7 @@ export default function Accordion(props) {
   return (
     <div className="border rounded-md mb-1">
       <button
-        className="w-full p-4 text-left bg-gray-200 
+        className="w-full p-4 text-left bg-gray-200 dark:text-black
 						hover:bg-gray-300 transition duration-300"
         onClick={props.toggleAccordion}
       >
@@ -18,7 +18,9 @@ export default function Accordion(props) {
           &#9660;
         </span>
       </button>
-      {props.isOpen && <div className="p-4 bg-white">{props.data}</div>}
+      {props.isOpen && (
+        <div className="p-4 bg-white dark:text-black">{props.data}</div>
+      )}
     </div>
   );
 }

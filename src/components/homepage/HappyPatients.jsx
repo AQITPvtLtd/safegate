@@ -67,10 +67,10 @@ const HappyPatients = () => {
                 </div>
               </div>
               <div className="-mt-14">
-                <h1 className="text-xl text-center font-semibold mb-2">
+                <h1 className="text-xl text-center font-semibold mb-2 text-black">
                   {r.name}
                 </h1>
-                <p className="text-sm">{r.comment}</p>
+                <p className="text-sm text-black">{r.comment}</p>
               </div>
             </div>
           </div>

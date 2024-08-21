@@ -108,17 +108,17 @@ const Navbar = () => {
               className="rounded-full px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
             >
               <span
-                className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
+                className={`relative my-1.5 block h-0.5 w-[30px] bg-white transition-all duration-300 ${
                   navbarOpen ? " top-[7px] rotate-45" : ""
                 }`}
               />
               <span
-                className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
+                className={`relative my-1.5 block h-0.5 w-[30px] bg-white transition-all duration-300 ${
                   navbarOpen ? "opacity-0" : ""
                 }`}
               />
               <span
-                className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
+                className={`relative my-1.5 block h-0.5 w-[30px] bg-white transition-all duration-300 ${
                   navbarOpen ? " top-[-8px] -rotate-45" : ""
                 }`}
               />
@@ -181,7 +181,7 @@ const Navbar = () => {
                             <Link
                               href={submenuItem.path}
                               key={index}
-                              className="block text-black rounded py-2.5 text-sm text-dark hover:scale-105 dark:text-white/70 dark:hover:text-white lg:px-3 text-center"
+                              className="block text-black dark:text-black rounded py-2.5 text-sm text-dark hover:scale-105 dark:hover:text-primary lg:px-3 text-center"
                             >
                               {submenuItem.title}
                             </Link>

@@ -63,7 +63,9 @@ export default function Services() {
                       </div>
                     </div>
                     <div className="p-4">
-                      <h2 className="text-xl font-bold">{item.title}</h2>
+                      <h2 className="text-xl font-bold text-black">
+                        {item.title}
+                      </h2>
                     </div>
                     <div className="p-4">
                       <Link
