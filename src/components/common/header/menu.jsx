@@ -7,9 +7,22 @@ const menuData = [
   },
   {
     id: 2,
-    title: "About Us",
-    path: "/about",
+    title: "Who We Are",
     newTab: false,
+    submenu: [
+      {
+        id: 21,
+        title: "About Us",
+        path: "/who-are-we/about",
+        newTab: false,
+      },
+      {
+        id: 22,
+        title: "Our Team",
+        path: "/who-are-we/our-team",
+        newTab: false,
+      },
+    ],
   },
   {
     id: 4,

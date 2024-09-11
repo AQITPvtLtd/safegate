@@ -6,7 +6,7 @@ import Footer from "@/components/common/footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Safegate Medicao Center",
+  title: "Safegate Medical Center",
   description: "Your Health is Our Priority",
 };
 
@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Navbar />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

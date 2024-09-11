@@ -4,8 +4,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="mt-[160px] relative">
-      {" "}
+    <div className="relative">
       {/* Add relative positioning here */}
       <div className="relative">
         <Image
@@ -13,19 +12,19 @@ const Banner = () => {
           width={1000}
           height={1000}
           alt="main-banner"
-          className="w-full h-[500px] object-fill"
+          className="w-full h-[860px] lg:h-[500px] object-fill"
         />
         <div className="absolute inset-0 bg-darkblue bg-opacity-90 z-10"></div>
         {/* Ensure background is under other content */}
-        <div className="absolute inset-0 z-10 grid grid-cols-2">
+        <div className="absolute inset-0 z-10 lg:grid grid-cols-2">
           <div className="py-10 px-3">
-            <h1 className="text-white text-5xl font-extrabold leading-normal ">
+            <h1 className="text-white text-3xl lg:text-5xl font-extrabold leading-normal">
               We Can Help You Get Better & Regain Your Health
             </h1>
-            <h3 className="text-white text-4xl font-extralight leading-normal">
+            <h3 className="text-white text-2xl lg:text-4xl font-extralight leading-normal">
               Your Health is Our Priority
             </h3>
-            <p className="text-white leading-loose mb-5 text-lg">
+            <p className="text-white leading-loose mb-5 lg:text-lg text-md">
               At Safegate, we are committed to providing exceptional medical
               care tailored to your needs. Our state-of-the-art facilities and
               highly skilled professionals ensure that you receive the best
@@ -44,7 +43,7 @@ const Banner = () => {
               width={1000}
               height={1000}
               alt="banner1"
-              className="w-full h-full px-20"
+              className="w-full h-full lg:px-20"
             />
           </div>
         </div>

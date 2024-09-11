@@ -3,10 +3,10 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="mt-[200px] mx-10 mb-10">
-      <div className="grid grid-cols-1 md:grid-cols-2">
+    <div className="mt-10 mx-5 lg:mx-10 mb-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 mb-5">
         {/* First Section */}
-        <div className="bg-primary text-white shadow-2xl shadow-primary rounded-tl-lg rounded-bl-lg md:rounded-bl-none md:rounded-tl-lg">
+        <div className="bg-primary text-white lg:shadow-2xl shadow-primary rounded-tl-lg rounded-bl-lg md:rounded-bl-none md:rounded-tl-lg">
           <h1 className="text-4xl font-bold mb-4 text-center pt-4">
             Our Mission
           </h1>
@@ -41,7 +41,7 @@ const About = () => {
             className="w-full p-3 h-full rounded-tl-lg rounded-bl-lg md:rounded-bl-none md:rounded-tl-lg"
           />
         </div>
-        <div className="bg-lightgreen text-white shadow-2xl shadow-lightgreen rounded-tr-lg rounded-br-lg md:rounded-br-none md:rounded-tr-lg">
+        <div className="bg-lightgreen text-white lg:shadow-2xl shadow-lightgreen rounded-tr-lg rounded-br-lg md:rounded-br-none md:rounded-tr-lg">
           <h1 className="text-4xl font-bold mb-4 text-center pt-4">
             Our Vision
           </h1>

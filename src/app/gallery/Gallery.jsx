@@ -68,7 +68,7 @@ const Gallery = () => {
     },
   ];
   return (
-    <div className="mt-[166px]">
+    <div className="">
       <div className="relative">
         <Image
           src="/gallery/10.png"
@@ -83,7 +83,7 @@ const Gallery = () => {
         </h1>
       </div>
 
-      <div className="grid grid-cols-4 my-5 gap-6 mx-5">
+      <div className="lg:grid lg:space-y-0 space-y-4 grid-cols-4 my-5 gap-6 mx-5">
         {items?.map((i) => (
           <div key={i.id}>
             <Image

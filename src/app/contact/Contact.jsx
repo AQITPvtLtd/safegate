@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const Contact = () => {
   return (
-    <div className="mt-[165px]">
+    <div className=" ">
       <div className="relative">
         <Image
           src="/contact/contact.png"

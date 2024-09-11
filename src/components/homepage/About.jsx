@@ -4,9 +4,11 @@ import Link from "next/link";
 const About = () => {
   return (
     <div>
-      <div className="grid grid-cols-2">
+      <div className="lg:grid grid-cols-2">
         <div className="p-10">
-          <h1 className="text-5xl font-extrabold leading-normal">About Us</h1>
+          <h1 className="text-4xl lg:text-5xl font-extrabold leading-normal">
+            About Us
+          </h1>
           <div className="grid grid-cols-2 w-1/2">
             <div className="border-2 border-primary mr-10"></div>
             <div className="border border-lightgreen -ml-10 mr-20"></div>
@@ -33,7 +35,7 @@ const About = () => {
             </Link>
           </div>
         </div>
-        <div className="p-10">
+        <div className="lg:p-10 px-10">
           <Image
             src="/about/about.png"
             className="w-full h-full"

@@ -41,14 +41,14 @@ const HappyPatients = () => {
           <div className="border border-lightgreen"></div>
         </div>
       </div>
-      <p className="mx-[200px] text-center mt-10 my-14">
+      <p className="lg:mx-[200px] text-center mt-10 my-14">
         Don’t just take our word for it—read the stories and testimonials from
         our satisfied patients who have experienced firsthand the transformative
         impact of our services.
       </p>
-      <div className="grid grid-cols-3 gap-x-20 mx-5 relative">
+      <div className="lg:grid grid-cols-3 gap-x-20 mx-5 relative">
         {reviews.map((r) => (
-          <div key={r.id} className="relative">
+          <div key={r.id} className="relative mt-14">
             {/* Rotated green background */}
             <div
               className={`absolute inset-0 ${

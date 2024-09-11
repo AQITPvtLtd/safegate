@@ -32,13 +32,13 @@ export default function Services() {
   };
 
   return (
-    <div className="mr-10">
-      <div className="grid grid-cols-12 relative">
-        <div className="col-span-4 py-24 px-10">
-          <h1 className="text-3xl font-extrabold leading-normal text-primary">
+    <div className="lg:mr-10">
+      <div className="lg:grid grid-cols-12 relative">
+        <div className="col-span-4 lg:py-24 py-10 lg:px-10">
+          <h1 className="text-3xl font-extrabold text-center lg:text-left leading-normal text-primary">
             Our Services
           </h1>
-          <p>
+          <p className="lg:text-left text-center">
             Explore our wide range of services and specialties designed to cater
             to all your healthcare needs with the highest standard of
             excellence.
@@ -51,14 +51,14 @@ export default function Services() {
               {items.map((item) => (
                 <div key={item.id} className="px-2">
                   <div className="bg-white my-5 h-[350px] rounded-md shadow-lg flex flex-col justify-between">
-                    <div className="flex justify-center mt-4">
-                      <div className="rounded-full bg-lightgreen/20 flex justify-center items-center p-6">
+                    <div className="flex justify-center">
+                      <div className="flex justify-center items-center">
                         <Image
                           src={item.image}
                           alt="service icon"
-                          width={100}
-                          height={100}
-                          className="h-[100px]"
+                          width={1000}
+                          height={1000}
+                          className="h-[175px]"
                         />
                       </div>
                     </div>

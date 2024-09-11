@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const Blogs = () => {
   return (
-    <div className="mt-[160px]">
+    <div className="">
       <div className="relative">
         <Image
           src="/blogs/blogs.png"
