@@ -45,7 +45,7 @@ const Team = () => {
                         src={`/doctors/${d.image}`}
                         width={1000}
                         height={1000}
-                        className="w-[200px] h-[240px] rounded-lg"
+                        className="w-[250px] h-[240px] rounded-lg"
                         alt={d.name}
                       />
                       <div className="text-center font-semibold text-lg">
@@ -55,10 +55,10 @@ const Team = () => {
                         <FaStethoscope className="mt-1 text-xl mr-1 text-primary" />
                         {d.post}
                       </div>
-                      <div className="flex">
+                      {/* <div className="flex">
                         <FaBookBookmark className="mt-1 text-xl mr-1 text-primary" />
                         {d.education}
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>

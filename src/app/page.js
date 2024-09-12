@@ -14,7 +14,7 @@ const page = () => {
       <About />
       <Services />
       <HappyPatients />
-      {/* <Team /> */}
+      <Team />
       {/* <Faq /> */}
       <Facilities />
     </div>
