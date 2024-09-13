@@ -111,11 +111,10 @@ const Contact = () => {
             {/* Address Section */}
             <div className="flex items-center space-x-3 text-gray-700">
               <IoLocationSharp className="mt-1 lg:text-2xl text-4xl text-primary" />
-              <Link href="/">
-                <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out">
-                  83, Model Colony, Araghar Chowk, Dehradun, Uttarakhand-248001
-                </p>
-              </Link>
+
+              <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out ">
+                83, Model Colony, Araghar Chowk, Dehradun, Uttarakhand-248001
+              </p>
             </div>
 
             {/* Email Section */}
@@ -140,7 +139,7 @@ const Contact = () => {
             {/* Phone Section */}
             <div className="flex items-center space-x-3 text-gray-700 mt-4">
               <IoIosCall className="mt-1 lg:text-2xl text-4xl text-primary" />
-              <Link href="tel:+91-7817893001">
+              <Link href="tel:+917817893001">
                 <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out">
                   For Appointment: +91 7817893001
                 </p>

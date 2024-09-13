@@ -22,7 +22,7 @@ const About = () => {
           </p>
           <div className="flex mt-5">
             <Link
-              href="/about"
+              href="/who-are-we/about"
               className="bg-primary hover:bg-darkblue px-4 py-2 text-white text-lg mr-3"
             >
               Know More

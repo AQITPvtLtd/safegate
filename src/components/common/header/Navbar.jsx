@@ -11,6 +11,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { RiCustomerServiceFill } from "react-icons/ri";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
+import { FaPinterestP } from "react-icons/fa";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -79,27 +80,61 @@ const Navbar = () => {
             <div className="flex items-center justify-center space-x-10">
               <div className="flex space-x-4">
                 <div className="text-white text-xl">
-                  <FaFacebookF className="px-1 text-xl bg-lightgreen" />
+                  <Link
+                    href="https://www.facebook.com/profile.php?id=61564959001123"
+                    target="__blank"
+                  >
+                    <FaFacebookF className="px-1 bg-lightgreen" />
+                  </Link>
                 </div>
                 <div className="text-white text-xl">
-                  <FaInstagram className="px-1 bg-lightgreen" />
+                  <Link
+                    href="https://www.instagram.com/safegatemedicalcenter/?hl=en"
+                    target="__blank"
+                  >
+                    <FaInstagram className="px-1 bg-lightgreen" />
+                  </Link>
                 </div>
                 <div className="text-white text-xl">
-                  <FaLinkedinIn className="px-1 bg-lightgreen" />
+                  <Link
+                    href="https://www.linkedin.com/company/safegate-medical-centre/?viewAsMember=true"
+                    target="__blank"
+                  >
+                    <FaLinkedinIn className="px-1 bg-lightgreen" />
+                  </Link>
                 </div>
                 <div className="text-white text-xl">
-                  <FaXTwitter className="px-1 bg-lightgreen" />
+                  <Link href="https://x.com/Safegatemedical" target="__blank">
+                    <FaXTwitter className="px-1 bg-lightgreen" />
+                  </Link>
                 </div>
                 <div className="text-white text-xl">
-                  <FaYoutube className="px-1 bg-lightgreen" />
+                  <Link
+                    href="https://www.youtube.com/channel/UCeMjY3fzbAqFQxrCcX4wTFg"
+                    target="__blank"
+                  >
+                    <FaYoutube className="px-1 bg-lightgreen" />
+                  </Link>
+                </div>
+
+                <div className="text-white text-xl">
+                  <Link
+                    href="https://in.pinterest.com/officialsafegatemedicalcenter/"
+                    target="__blank"
+                  >
+                    <FaPinterestP className="px-1 bg-lightgreen" />
+                  </Link>
                 </div>
               </div>
+
               <div className="text-gray-400">|</div>
               <div className="flex items-center">
                 <RiCustomerServiceFill className="text-lightgreen text-4xl" />
                 <div className="text-gray-500 text-sm">
                   <h4>For Support</h4>
-                  <h2 className="text-lightgreen">+91 9311883059</h2>
+                  <Link href="tel:+917817893001">
+                    <p className="text-lightgreen">+91 7817893001</p>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -136,7 +171,7 @@ const Navbar = () => {
               id="navbarCollapse"
               className={`navbar absolute right-0 z-30 rounded px-6 py-4 duration-300 dark:bg-dark lg:visible lg:static w-full lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
                 navbarOpen
-                  ? "visibility top-[48%] opacity-100"
+                  ? "visibility top-[25%] md:top-[15%] opacity-100"
                   : "invisible top-[120%] opacity-0"
               }`}
             >

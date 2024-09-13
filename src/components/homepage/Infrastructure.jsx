@@ -10,10 +10,9 @@ const Infrastructure = () => {
             Infrastructure
           </h1>
 
-          <div className="grid grid-cols-2 w-1/2 text-center items-center">
-            {/* <div className="border-2 border-primary mr-10"></div> */}
+          {/* <div className="grid grid-cols-2 w-1/2 text-center items-center">
             <div className="border-2 border-lightgreen lg:-mr-80 lg:ml-52 lg:block hidden"></div>
-          </div>
+          </div> */}
           <p className="text-lg px-5 pb-5">
             The land area is around 2500 yards and the covered area is around
             13,000 sq feet, comprising of:
