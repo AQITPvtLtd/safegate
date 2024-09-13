@@ -3,6 +3,7 @@ import Banner from "@/components/homepage/Banner";
 import Facilities from "@/components/homepage/Facilities";
 import Faq from "@/components/homepage/Faq";
 import HappyPatients from "@/components/homepage/HappyPatients";
+import Infrastructure from "@/components/homepage/Infrastructure";
 import Services from "@/components/homepage/Services";
 import Team from "@/components/homepage/Team";
 import React from "react";
@@ -14,6 +15,7 @@ const page = () => {
       <About />
       <Services />
       <HappyPatients />
+      <Infrastructure />
       <Team />
       {/* <Faq /> */}
       <Facilities />

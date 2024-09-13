@@ -4,7 +4,7 @@ import React from "react";
 import { doctorsdata } from "@/data/doctors";
 import Image from "next/image";
 import { FaStethoscope } from "react-icons/fa";
-import { FaBookBookmark } from "react-icons/fa6";
+// import { FaBookBookmark } from "react-icons/fa6";
 import Head from "@/components/common/head/Head";
 const Team = () => {
   const uniqueCategories = [
@@ -45,7 +45,7 @@ const Team = () => {
                         src={`/doctors/${d.image}`}
                         width={1000}
                         height={1000}
-                        className="w-[250px] h-[240px] rounded-lg"
+                        className="w-[250px] h-[240px] rounded-lg object-cover"
                         alt={d.name}
                       />
                       <div className="text-center font-semibold text-lg">

@@ -59,18 +59,20 @@ const Navbar = () => {
     >
       <div className="lg:grid grid-cols-2">
         <div className="flex justify-center">
-          <Link
-            href="/"
-            className={`header-logo block lg:ml-0 ml-2 mt-3 lg:my-3`}
-          >
-            <Image
-              src="/logo/logo.png"
-              alt="logo"
-              width={1000}
-              height={1000}
-              className="lg:w-[500px] lg:h-[120px]"
-            />
-          </Link>
+          <div className="lg:w-[300px] w-[200px]">
+            <Link
+              href="/"
+              className={`header-logo block lg:ml-0 ml-2 mt-3 lg:my-3`}
+            >
+              <Image
+                src="/logo/logo.png"
+                alt="logo"
+                width={400}
+                height={500}
+                className="lg:w-[700px] lg:h-[80px]"
+              />
+            </Link>
+          </div>
         </div>
         <div className="lg:pt-4">
           <div className="max-w-lg lg:mx-auto pt-4 mx-2">
