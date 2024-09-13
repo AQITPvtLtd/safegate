@@ -31,7 +31,7 @@ const Facilities = () => {
                 key={facility.id}
                 className="border border-white shadow-md shadow-white grid-cols-1 mb-5 flex flex-col items-center"
               >
-                <img
+                <Image
                   src={facility.image}
                   alt={facility.heading}
                   width={100}
