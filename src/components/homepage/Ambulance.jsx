@@ -8,7 +8,7 @@ const Ambulance = () => {
         src="/ambulance.png"
         width={10000}
         height={10000}
-        className="w-full px-10 pb-3"
+        className="w-full lg:px-10 pb-3"
       />
     </div>
   );
