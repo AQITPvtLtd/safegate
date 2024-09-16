@@ -28,15 +28,13 @@ const Contact = () => {
             {/* Google Map Section */}
             <div className="bg-gray-300 rounded-lg overflow-hidden p-10 relative col-span-1 lg:block hidden">
               <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11355.289713444972!2d78.0257734911467!3d30.315164470339393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929bc37c6319f%3A0xe9f79bf0327e8125!2sSafegate%20Medical%20Centre!5e1!3m2!1sen!2sin!4v1726227609305!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
-                className="absolute inset-0"
-                frameBorder="0"
-                title="map"
-                marginHeight="0"
-                marginWidth="0"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13776.204373217352!2d78.0231181!3d30.3210645!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092b493f35969b%3A0xa5fd40cde495bb1b!2sSafegate%20Medical%20Center(Polyclinic)!5e0!3m2!1sen!2sin!4v1723784684554!5m2!1sen!2sin"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
 

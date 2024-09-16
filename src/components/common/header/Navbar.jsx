@@ -66,11 +66,11 @@ const Navbar = () => {
               className={`header-logo block lg:ml-0 ml-2 mt-3 lg:my-3`}
             >
               <Image
-                src="/logo/logo.png"
+                src="/logo/logo2.png"
                 alt="logo"
                 width={400}
                 height={500}
-                className="lg:w-[700px] lg:h-[80px]"
+                className="lg:w-[90px] lg:h-[100px]"
               />
             </Link>
           </div>
@@ -143,18 +143,18 @@ const Navbar = () => {
       </div>
       <header className=" bg-primary text-white">
         <div className=" lg:flex grid grid-cols-3 items-center w-full  lg:flex-grow">
-          <div className="bg-white lg:hidden px-2 py-1 col-span-2">
+          <div className="lg:hidden ml-10 px-2 py-1 col-span-2">
             <div className="lg:w-[300px] w-[200px]">
               <Link
                 href="/"
                 className={`header-logo block lg:ml-0 mt-3 lg:my-3`}
               >
                 <Image
-                  src="/logo/logo.png"
+                  src="/logo/logo2.png"
                   alt="logo"
                   width={400}
                   height={500}
-                  className="lg:w-[700px] lg:h-[80px]"
+                  className="w-[80px] bg-white h-[90px]"
                 />
               </Link>
             </div>
@@ -189,7 +189,7 @@ const Navbar = () => {
             className={`navbar absolute right-0 z-30 rounded px-6 py-4 duration-300 dark:bg-dark lg:visible lg:static w-full lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
               navbarOpen
                 ? `visibility ${
-                    sticky ? "top-[92%]" : "top-[7%]"
+                    sticky ? "top-[92%]" : "top-[10%]"
                   } md:top-[15%] opacity-100`
                 : "invisible top-[120%] opacity-0"
             }`}
