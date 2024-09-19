@@ -50,6 +50,9 @@ const Navbar = () => {
   useEffect(() => {
     window.addEventListener("scroll", handleStickyNavbar);
   });
+  const handleCloseNavbar = () => {
+    setNavbarOpen(false);
+  };
   return (
     <div
       className={`overflow-x-clip header left-0 z-40 top-0 w-full items-center bg-gradient-to-r font-semibold ${
@@ -146,6 +149,7 @@ const Navbar = () => {
           <div className="lg:hidden ml-10 px-2 py-1 col-span-2">
             <div className="lg:w-[300px] w-[200px]">
               <Link
+                onClick={() => setNavbarOpen(!navbarOpen)}
                 href="/"
                 className={`header-logo block lg:ml-0 mt-3 lg:my-3`}
               >
@@ -211,6 +215,7 @@ const Navbar = () => {
                 >
                   {menuItem.path ? (
                     <Link
+                      onClick={handleCloseNavbar}
                       href={menuItem.path}
                       className={`flex py-2 px-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-3 `}
                     >
@@ -248,6 +253,7 @@ const Navbar = () => {
                           >
                             {submenuItem.path ? (
                               <Link
+                                onClick={handleCloseNavbar}
                                 href={submenuItem.path}
                                 key={index}
                                 className={`block rounded py-2 text-sm text-dark hover:bg-lightgreen lg:px-3`}
@@ -291,6 +297,7 @@ const Navbar = () => {
                                   {submenuItem.submenu.map(
                                     (subsubmenuItem, index) => (
                                       <Link
+                                        onClick={handleCloseNavbar}
                                         href={subsubmenuItem.path}
                                         key={index}
                                         className="bg-primary block rounded py-2.5 text-sm text-dark hover:bg-lightgreen lg:px-3"

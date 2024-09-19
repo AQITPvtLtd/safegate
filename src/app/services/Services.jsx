@@ -3,7 +3,7 @@ import React from "react";
 import { items } from "@/data/services";
 const Services = () => {
   return (
-    <div className="mt-[75px] overflow-x-hidden">
+    <div className="mt-[10px] overflow-x-hidden">
       {/* Banner image */}
       <div className="w-full">
         <Image

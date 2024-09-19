@@ -162,23 +162,30 @@ const Contact = () => {
             </div>
 
             {/* Email Section */}
-            <div className="flex space-x-2 text-gray-700 items-center">
-              <MdEmail className="mt-1 lg:text-2xl text-4xl text-primary" />
-              <div className="block">
-                <Link href="mailto:officialsafegatemedicalcenter@gmail.com">
-                  <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out">
-                    {/* drbhupendrabharti@gmail.com */}
-                    officialsafegatemedicalcenter@gmail.com
-                  </p>
-                </Link>
+            <table className="text-gray-700">
+              <tbody>
+                <tr className="flex items-center space-x-2">
+                  <td className="align-middle">
+                    <MdEmail className="mt-1 lg:text-2xl text-2xl text-primary" />
+                  </td>
+                  <td>
+                    <div className="block">
+                      <Link href="mailto:officialsafegatemedicalcenter@gmail.com">
+                        <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out">
+                          officialsafegatemedicalcenter@gmail.com
+                        </p>
+                      </Link>
 
-                <Link href="mailto:info@safegatemedicalcenter.com">
-                  <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out">
-                    info@safegatemedicalcenter.com
-                  </p>
-                </Link>
-              </div>
-            </div>
+                      <Link href="mailto:info@safegatemedicalcenter.com">
+                        <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out">
+                          info@safegatemedicalcenter.com
+                        </p>
+                      </Link>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
 
             {/* Phone Section */}
             <div className="flex items-center space-x-3 text-gray-700 mt-4">
