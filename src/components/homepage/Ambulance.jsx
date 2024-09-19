@@ -9,6 +9,7 @@ const Ambulance = () => {
         width={10000}
         height={10000}
         className="w-full lg:px-10 pb-3"
+        alt="24*7 ambulance service"
       />
     </div>
   );
