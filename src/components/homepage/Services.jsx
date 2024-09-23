@@ -32,13 +32,13 @@ export default function Services() {
   };
 
   return (
-    <div className="lg:mr-10">
+    <div className="lg:mr-10 bg-white">
       <div className="lg:grid grid-cols-12 relative">
         <div className="col-span-4 lg:py-24 py-10 lg:px-10">
           <h1 className="text-3xl font-extrabold text-center lg:text-left leading-normal text-primary">
             Our Services
           </h1>
-          <p className="lg:text-left text-center">
+          <p className="lg:text-left text-center text-black">
             Explore our wide range of services and specialties designed to cater
             to all your healthcare needs with the highest standard of
             excellence.

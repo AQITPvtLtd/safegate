@@ -16,7 +16,7 @@ const Blogs = () => {
           Check Out Our Blogs
         </h1>
       </div>
-      <h1 className="p-10 text-center">Coming Soon</h1>
+      <h1 className="p-10 text-center text-black">Coming Soon</h1>
     </div>
   );
 };

@@ -28,20 +28,20 @@ const HappyPatients = () => {
   ];
 
   return (
-    <div className="mt-14 my-10 overflow-x-clip">
+    <div className="mt-14 my-10 overflow-x-clip ">
       <h3 className="text-center text-primary font-semibold text-lg">
         Happy Patients
       </h3>
-      <h1 className="text-center text-3xl font-bold">
+      <h1 className="text-center text-3xl font-bold text-black">
         Real Stories, Real Results
       </h1>
-      <div className="flex justify-center mt-1">
+      <div className="flex justify-center mt-1 ">
         <div className="grid grid-cols-4 w-1/2">
           <div className="border-2 col-start-2 border-primary"></div>
           <div className="border border-lightgreen"></div>
         </div>
       </div>
-      <p className="lg:mx-[200px] text-center mt-10 my-14">
+      <p className="lg:mx-[200px] text-center mt-10 my-14 text-black">
         Don’t just take our word for it—read the stories and testimonials from
         our satisfied patients who have experienced firsthand the transformative
         impact of our services.

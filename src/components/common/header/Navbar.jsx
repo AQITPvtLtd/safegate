@@ -61,7 +61,7 @@ const Navbar = () => {
           : ""
       }`}
     >
-      <div className="lg:grid grid-cols-2">
+      <div className="lg:grid grid-cols-2 bg-white">
         <div className="lg:flex hidden justify-center">
           <div className="lg:w-[300px] w-[200px]">
             <Link

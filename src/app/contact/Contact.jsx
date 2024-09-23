@@ -43,7 +43,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div className="">
       <div className="relative">
         <Image
           src="/contact/contact.png"
@@ -58,7 +58,7 @@ const Contact = () => {
         </h1>
       </div>
 
-      <section className="text-gray-600">
+      <section className="">
         <div className="container px-5 py-12 mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             {/* Google Map Section */}
@@ -77,11 +77,11 @@ const Contact = () => {
             </div>
 
             {/* Form Section */}
-            <div className="bg-white rounded-lg shadow-lg p-6 col-span-1">
-              <h2 className="text-gray-900 dark:text-white text-lg mb-1 font-medium title-font">
+            <div className=" bg-white rounded-lg shadow-lg p-6 col-span-1">
+              <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
                 Contact Us
               </h2>
-              <p className="leading-relaxed mb-5 text-gray-600 dark:text-white">
+              <p className="leading-relaxed mb-5 text-gray-600 ">
                 We would love to hear from you! Whether you have a question
                 about our services, need assistance, or just want to say hello,
                 feel free to reach out to us.
@@ -92,7 +92,7 @@ const Contact = () => {
                 <div className="relative mb-4">
                   <label
                     htmlFor="name"
-                    className="dark:text-white leading-7 text-sm text-gray-600"
+                    className=" leading-7 text-sm text-gray-600"
                   >
                     Name
                   </label>
@@ -100,7 +100,7 @@ const Contact = () => {
                     type="text"
                     id="name"
                     name="name"
-                    className="w-full bg-white dark:text-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-white  rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     value={formData.name}
                     onChange={handleChange}
                   />
@@ -110,7 +110,7 @@ const Contact = () => {
                 <div className="relative mb-4">
                   <label
                     htmlFor="email"
-                    className="leading-7 dark:text-white text-sm text-gray-600"
+                    className="leading-7  text-sm text-gray-600"
                   >
                     Email
                   </label>
@@ -128,7 +128,7 @@ const Contact = () => {
                 <div className="relative mb-4">
                   <label
                     htmlFor="message"
-                    className="leading-7 dark:text-white text-sm text-gray-600"
+                    className="leading-7  text-sm text-gray-600"
                   >
                     Message
                   </label>

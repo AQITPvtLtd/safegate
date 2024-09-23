@@ -10,7 +10,7 @@ import { FaPinterestP } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="relative mt-10">
+    <div className="relative bg-white">
       <div className="absolute inset-0"></div>
 
       <div className="absolute lg:grid lg:grid-cols-12 px-5 pt-10 lg:py-10 lg:px-10 gap-6">
@@ -141,7 +141,7 @@ const Footer = () => {
         target="__blank"
         className="text-center opacity-50"
       >
-        <h1 className="p-1">
+        <h1 className="p-1 text-black">
           <strong>© 2024 Tek Booster. All Rights Reserved.</strong>
         </h1>
       </Link>
