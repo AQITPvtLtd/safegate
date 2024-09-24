@@ -46,17 +46,17 @@ const HappyPatients = () => {
         our satisfied patients who have experienced firsthand the transformative
         impact of our services.
       </p>
-      <div className="lg:grid grid-cols-3 gap-x-20 mx-5 relative">
+      <div className="lg:grid grid-cols-3 gap-x-20 mx-5 relative overflow-visible">
         {reviews.map((r) => (
-          <div key={r.id} className="relative mt-14">
-            {/* Rotated green background */}
+          <div key={r.id} className="relative mt-14 overflow-visible">
+            {/* Rotated background */}
             <div
               className={`absolute inset-0 ${
                 r.bgcolor === "blue" ? "bg-primary" : "bg-lightgreen"
-              }  transform -z-10 -rotate-12 rounded-[20%]`}
+              } transform -z-5 -rotate-12 rounded-[20%] w-full h-full`}
             />
             {/* White card */}
-            <div className=" bg-white p-10 shadow-lg rounded-[20%] z-10 h-[250px]">
+            <div className="bg-white p-10 shadow-lg rounded-[20%] z-5 h-[250px] relative">
               <div className="flex justify-center -translate-y-3/4">
                 <div
                   className={`${
