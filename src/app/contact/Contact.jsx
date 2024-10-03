@@ -62,7 +62,7 @@ const Contact = () => {
         <div className="container px-5 py-12 mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             {/* Google Map Section */}
-            <div className="bg-gray-300 rounded-lg overflow-hidden p-10 relative col-span-1 lg:block hidden">
+            {/* <div className="bg-gray-300 rounded-lg overflow-hidden p-10 relative col-span-1 lg:block hidden">
               <iframe
                 width="100%"
                 height="100%"
@@ -74,10 +74,10 @@ const Contact = () => {
                 marginWidth="0"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13776.204373217352!2d78.0231181!3d30.3210645!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092b493f35969b%3A0xa5fd40cde495bb1b!2sSafegate%20Medical%20Center(Polyclinic)!5e0!3m2!1sen!2sin!4v1723784684554!5m2!1sen!2sin"
               ></iframe>
-            </div>
+            </div> */}
 
             {/* Form Section */}
-            <div className=" bg-white rounded-lg shadow-lg p-6 col-span-1">
+            <div className="bg-white rounded-lg shadow-lg p-6 col-span-1">
               <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
                 Contact Us
               </h2>
@@ -147,54 +147,55 @@ const Contact = () => {
                 </button>
               </form>
             </div>
-          </div>
-        </div>
 
-        <div className="bg-white rounded-lg p-6">
-          <div className="mb-6 space-y-4">
-            {/* Address Section */}
-            <div className="flex items-center space-x-3 text-gray-700">
-              <IoLocationSharp className="mt-1 lg:text-2xl text-4xl text-primary" />
+            <div className="bg-white rounded-lg p-6">
+              <div className="mb-6 space-y-4">
+                {/* Address Section */}
+                <div className="flex items-center space-x-3 text-gray-700">
+                  <IoLocationSharp className="mt-1 lg:text-2xl text-4xl text-primary" />
 
-              <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out ">
-                83, Model Colony, Araghar Chowk, Dehradun, Uttarakhand-248001
-              </p>
-            </div>
+                  <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out ">
+                    83, Model Colony, Araghar Chowk, Dehradun,
+                    Uttarakhand-248001
+                  </p>
+                </div>
 
-            {/* Email Section */}
-            <table className="text-gray-700">
-              <tbody>
-                <tr className="flex items-center space-x-2">
-                  <td className="align-middle">
-                    <MdEmail className="mt-1 lg:text-2xl text-2xl text-primary" />
-                  </td>
-                  <td>
-                    <div className="block">
-                      <Link href="mailto:officialsafegatemedicalcenter@gmail.com">
-                        <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out">
-                          officialsafegatemedicalcenter@gmail.com
-                        </p>
-                      </Link>
+                {/* Email Section */}
+                <table className="text-gray-700">
+                  <tbody>
+                    <tr className="flex items-center space-x-2">
+                      <td className="align-middle">
+                        <MdEmail className="mt-1 lg:text-2xl text-2xl text-primary" />
+                      </td>
+                      <td>
+                        <div className="block">
+                          <Link href="mailto:officialsafegatemedicalcenter@gmail.com">
+                            <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out">
+                              officialsafegatemedicalcenter@gmail.com
+                            </p>
+                          </Link>
 
-                      <Link href="mailto:info@safegatemedicalcenter.com">
-                        <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out">
-                          info@safegatemedicalcenter.com
-                        </p>
-                      </Link>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                          <Link href="mailto:info@safegatemedicalcenter.com">
+                            <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out">
+                              info@safegatemedicalcenter.com
+                            </p>
+                          </Link>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
 
-            {/* Phone Section */}
-            <div className="flex items-center space-x-3 text-gray-700 mt-4">
-              <IoIosCall className="mt-1 lg:text-2xl text-4xl text-primary" />
-              <Link href="tel:+917817893001">
-                <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out">
-                  For Appointment: +91 7817893001
-                </p>
-              </Link>
+                {/* Phone Section */}
+                <div className="flex items-center space-x-3 text-gray-700 mt-4">
+                  <IoIosCall className="mt-1 lg:text-2xl text-4xl text-primary" />
+                  <Link href="tel:+917817893001">
+                    <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out">
+                      For Appointment: +91 7817893001
+                    </p>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>

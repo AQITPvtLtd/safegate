@@ -13,7 +13,7 @@ const Footer = () => {
     <div className="relative bg-white">
       <div className="absolute inset-0"></div>
 
-      <div className="absolute lg:grid lg:grid-cols-12 px-5 pt-10 lg:py-10 lg:px-10 gap-6">
+      <div className="absolute lg:grid lg:grid-cols-12 px-5 pt-5 lg:py-5 lg:px-10 gap-6">
         {/* Left Section (Logo + Description) */}
         <div className="lg:col-span-3 col-span-12 mb-8 lg:mb-0">
           <div className=" p-1 flex justify-center">
@@ -90,7 +90,7 @@ const Footer = () => {
             <Link href="/contact">Contact Us</Link>
           </div>
         </div>
-        <p className="text-white col-span-3">
+        <p className="text-white col-start-7 col-span-3">
           <div className="font-bold">Email</div>
           <div>
             <Link
@@ -116,16 +116,23 @@ const Footer = () => {
           <Link href="tel:+91 7817893001">+91 7817893001</Link>
         </p>
         {/* Right Section (Google Map) */}
-        <div className="lg:col-span-3 col-span-12 lg:col-start-10 mt-8 lg:mt-0">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11355.289713444972!2d78.0257734911467!3d30.315164470339393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929bc37c6319f%3A0xe9f79bf0327e8125!2sSafegate%20Medical%20Centre!5e1!3m2!1sen!2sin!4v1726227609305!5m2!1sen!2sin"
-            width="100%"
-            height="350"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div className="lg:col-span-2 col-span-12 lg:col-start-11 mt-8 lg:mt-0">
+          <div className="lg:flex justify-center lg:col-start-4 lg:col-span-2 col-span-12 leading-8 text-white lg:mb-0">
+            <div>
+              <h1 className="font-bold "> Services </h1>
+              <Link href="#">IPD OPD ICU</Link>
+              <br />
+              <Link href="#">Cardiology</Link>
+              <br />
+              <Link href="#">Orthopaedics</Link>
+              <br />
+              <Link href="#">Internal Medicine</Link>
+              <br />
+              <Link href="#">Gastroenterology</Link>
+              <br />
+              <Link href="#">Obstetrics & Gynaecology</Link>
+            </div>
+          </div>
         </div>
       </div>
 
