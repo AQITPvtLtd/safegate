@@ -73,7 +73,6 @@ const Footer = () => {
         </div>
 
         {/* Middle Section (Quick Links) */}
-
         <div className="lg:flex justify-center lg:col-start-4 lg:col-span-2 col-span-12 leading-8 text-white mb-4 lg:mb-0">
           <div>
             <h1 className="font-bold ">Quick Links</h1>
@@ -140,7 +139,7 @@ const Footer = () => {
         src="/footer/footer.png"
         width={1000}
         height={1000}
-        className="lg:h-[450px] h-[1320px] w-full"
+        className="lg:h-[460px] md:h-[1100px] sm:h-[1050px] h-[1170px] w-full"
         alt="footerimg"
       />
       <Link
