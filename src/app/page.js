@@ -1,4 +1,5 @@
 import About from "@/components/homepage/About";
+import Ambulance from "@/components/homepage/Ambulance";
 import Banner from "@/components/homepage/Banner";
 import Facilities from "@/components/homepage/Facilities";
 import Faq from "@/components/homepage/Faq";
@@ -10,13 +11,14 @@ import React from "react";
 
 const page = () => {
   return (
-    <div>
+    <div className="bg-white">
       <Banner />
       <About />
       <Services />
       <HappyPatients />
       <Infrastructure />
-      <Team />
+      <Ambulance />
+      {/* <Team /> */}
       {/* <Faq /> */}
       <Facilities />
     </div>

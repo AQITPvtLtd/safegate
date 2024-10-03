@@ -3,7 +3,7 @@ import React from "react";
 import { items } from "@/data/services";
 const Services = () => {
   return (
-    <div className="mt-[75px] overflow-x-hidden">
+    <div className="pt-10 overflow-x-hidden">
       {/* Banner image */}
       <div className="w-full">
         <Image
@@ -17,7 +17,7 @@ const Services = () => {
       </div>
 
       {/* Services grid section */}
-      <div className="lg:grid grid-cols-2 m-5 lg:m-20 gap-10">
+      <div className="lg:grid grid-cols-2 m-5 lg:m-20 gap-10 text-black">
         {items.map((s) => (
           <div key={s.id} className="mb-10 lg:mb-0">
             <div className="flex items-start">

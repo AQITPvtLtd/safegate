@@ -83,7 +83,7 @@ const Gallery = () => {
         </h1>
       </div>
 
-      <div className="lg:grid lg:space-y-0 space-y-4 grid-cols-4 md:grid-cols-s my-5 gap-6 mx-5">
+      <div className="lg:grid lg:space-y-0 space-y-4 grid-cols-4 md:grid-cols-s py-5 gap-6 mx-5">
         {items?.map((i) => (
           <div key={i.id}>
             <Image

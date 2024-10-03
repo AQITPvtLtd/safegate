@@ -3,7 +3,7 @@ import Gallery from "./Gallery";
 
 const page = () => {
   return (
-    <div>
+    <div className="bg-white">
       <Gallery />
     </div>
   );

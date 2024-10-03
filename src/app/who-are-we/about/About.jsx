@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="mt-10 mx-5 lg:mx-10 mb-10">
+    <div className=" mx-5 lg:mx-10 py-10">
       <div className="grid grid-cols-1 md:grid-cols-2 mb-5">
         {/* First Section */}
         <div className="bg-primary text-white lg:shadow-2xl shadow-primary rounded-tl-lg rounded-bl-lg md:rounded-bl-none md:rounded-tl-lg">

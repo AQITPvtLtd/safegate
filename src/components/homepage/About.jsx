@@ -3,17 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 const About = () => {
   return (
-    <div>
+    <div className="bg-white">
       <div className="lg:grid grid-cols-2">
         <div className="p-10">
-          <h1 className="text-4xl lg:text-5xl font-extrabold leading-normal">
+          <h1 className="text-black text-4xl lg:text-5xl font-extrabold leading-normal">
             About Us
           </h1>
           <div className="grid grid-cols-2 w-1/2">
             <div className="border-2 border-primary mr-10"></div>
             <div className="border border-lightgreen -ml-10 mr-20"></div>
           </div>
-          <p className="leading-loose mt-8 text-lg">
+          <p className="leading-loose mt-8 text-lg text-black">
             Welcome to Safegate Medical Center, where your health and well-being
             are our top priorities. Established with a vision to provide
             comprehensive, patient-centered care, we combine advanced technology

@@ -3,7 +3,7 @@ import Contact from "./Contact";
 
 const page = () => {
   return (
-    <div>
+    <div className="bg-white">
       <Contact />
     </div>
   );
