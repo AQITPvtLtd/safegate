@@ -10,7 +10,7 @@ import { FaPinterestP } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="relative bg-white">
+    <div className="relative bg-white py-4">
       <div className="absolute inset-0"></div>
 
       <div className="absolute lg:grid lg:grid-cols-12 px-5 pt-5 lg:py-5 lg:px-10 gap-6">
