@@ -62,8 +62,9 @@ const Contact = () => {
         <div className="container px-5 py-12 mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             {/* Google Map Section */}
-            {/* <div className="bg-gray-300 rounded-lg overflow-hidden p-10 relative col-span-1 lg:block hidden">
+            <div className="bg-gray-300 rounded-lg overflow-hidden p-10 relative col-span-1 lg:block hidden">
               <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110222.97707448812!2d77.96662705968441!3d30.30920238396642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929bc37c6319f%3A0xe9f79bf0327e8125!2sSafegate%20Medical%20Centre!5e0!3m2!1sen!2sin!4v1728014754644!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -72,9 +73,8 @@ const Contact = () => {
                 title="map"
                 marginHeight="0"
                 marginWidth="0"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13776.204373217352!2d78.0231181!3d30.3210645!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092b493f35969b%3A0xa5fd40cde495bb1b!2sSafegate%20Medical%20Center(Polyclinic)!5e0!3m2!1sen!2sin!4v1723784684554!5m2!1sen!2sin"
-              ></iframe>
-            </div> */}
+              />
+            </div>
 
             {/* Form Section */}
             <div className="bg-white rounded-lg shadow-lg p-6 col-span-1">
@@ -148,11 +148,11 @@ const Contact = () => {
               </form>
             </div>
 
-            <div className="bg-white rounded-lg p-6">
+            <div className="bg-white rounded-lg">
               <div className="mb-6 space-y-4">
                 {/* Address Section */}
                 <div className="flex items-center space-x-3 text-gray-700">
-                  <IoLocationSharp className="mt-1 lg:text-2xl text-4xl text-primary" />
+                  <IoLocationSharp className="mt-1 lg:text-2xl text-3xl text-primary" />
 
                   <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out ">
                     83, Model Colony, Araghar Chowk, Dehradun,
@@ -165,7 +165,7 @@ const Contact = () => {
                   <tbody>
                     <tr className="flex items-center space-x-2">
                       <td className="align-middle">
-                        <MdEmail className="mt-1 lg:text-2xl text-2xl text-primary" />
+                        <MdEmail className="mt-1 lg:text-2xl text-xl text-primary" />
                       </td>
                       <td>
                         <div className="block">
@@ -188,7 +188,7 @@ const Contact = () => {
 
                 {/* Phone Section */}
                 <div className="flex items-center space-x-3 text-gray-700 mt-4">
-                  <IoIosCall className="mt-1 lg:text-2xl text-4xl text-primary" />
+                  <IoIosCall className="mt-1 lg:text-2xl text-xl text-primary" />
                   <Link href="tel:+917817893001">
                     <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out">
                       For Appointment: +91 7817893001
