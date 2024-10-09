@@ -11,7 +11,7 @@ const Package = ({ url }) => {
   return (
     <div className="py-6">
       <div className="bg-darkblue lg:mx-20 rounded-xl mx-3">
-        <h1 className="text-white lg:text-5xl text-3xl py-5 font-extrabold text-center">
+        <h1 className="text-white lg:text-5xl text-3xl px-2 py-5 font-extrabold text-center">
           {pack.title}
         </h1>
         <div className="lg:grid grid-cols-2">
