@@ -9,17 +9,17 @@ const Service = ({ url }) => {
       <h1 className="font-extrabold text-center text-5xl m-5 text-primary underline">
         {data.title}
       </h1>
-      <div className="grid grid-cols-2 m-10">
+      <div className="lg:grid grid-cols-2 lg:m-10 m-5">
         <div>
           <p dangerouslySetInnerHTML={{ __html: data.description }}></p>
         </div>
-        <div className="relative flex justify-center items-center mx-10">
+        <div className="relative flex justify-center items-center lg:mx-10">
           {/* Decorative elements */}
-          <div className="absolute top-0 left-0 w-32 h-32 bg-lightgreen rounded-md z-[-1]" />
+          <div className="hidden lg:block absolute top-0 left-0 w-32 h-32 bg-lightgreen rounded-md z-[-1]" />
           <div className="absolute top-0 right-0 w-16 h-16 bg-primary rounded-md z-[-1]" />
 
           {/* Image with overlap */}
-          <div className="z-10 p-4 absolute inset-0 mt-5">
+          <div className="z-10 p-4 lg:absolute inset-0 mt-5">
             <div className="bg-white shadow-lg p-2 rounded-lg">
               <Image
                 src={data.image}
@@ -39,8 +39,8 @@ const Service = ({ url }) => {
         </div>
       </div>
       {/* common */}
-      <div className="leading-relaxed text-lg mx-10 bg-primary p-2 text-white mb-10 rounded-lg">
-        <div className="border-2 border-white rounded-lg p-5">
+      <div className="leading-relaxed text-lg lg:mx-10 mx-2 bg-primary p-2 text-white mb-10 rounded-lg">
+        <div className="border-2 border-white rounded-lg lg:p-5 p-2 lg:text-md text-sm">
           <h1 className="font-bold text-2xl">Appointment Scheduling</h1> To
           schedule an appointment with our specialists, please call us at{" "}
           <Link href="tel:+917817893001" className="underline  ">

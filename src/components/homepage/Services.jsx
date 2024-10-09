@@ -69,7 +69,7 @@ export default function Services() {
                     </div>
                     <div className="p-4">
                       <Link
-                        href="/"
+                        href={`services/${item.url}`}
                         className="bg-lightgreen hover:bg-lightgreen/90 px-4 py-2 text-white text-lg rounded-lg block text-center"
                       >
                         Know More
