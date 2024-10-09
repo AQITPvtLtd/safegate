@@ -21,10 +21,10 @@ const Banner = () => {
             <h1 className="text-white text-3xl lg:text-5xl font-extrabold leading-normal">
               We Can Help You Get Better & Regain Your Health
             </h1>
-            <h3 className="text-white text-2xl lg:text-4xl font-extralight leading-normal">
+            <h3 className="text-white text-2xl lg:text-4xl font-extralight leading-normal py-3">
               Your Health is Our Priority
             </h3>
-            <p className="text-white leading-loose mb-5 lg:text-lg text-md">
+            <p className="text-white leading-relaxed mb-5 lg:text-lg text-md">
               At Safegate, we are committed to providing exceptional medical
               care tailored to your needs. Our state-of-the-art facilities and
               highly skilled professionals ensure that you receive the best
@@ -32,7 +32,7 @@ const Banner = () => {
             </p>
             <Link
               href="/contact"
-              className="bg-white text-primary p-4 font-bold text-xl rounded-tl-[30%] rounded-tr-[30%] rounded-bl-[30%] shadow-md border hover:border-gray-500 hover:shadow-white"
+              className="bg-white text-primary p-4 mt-3 font-bold text-xl rounded-tl-[30%] rounded-tr-[30%] rounded-bl-[30%] shadow-md border hover:border-gray-500 hover:shadow-white"
             >
               Contact Now
             </Link>

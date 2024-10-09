@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { items } from "@/data/services";
+import Link from "next/link";
 const Services = () => {
   return (
     <div className="pt-10 overflow-x-hidden">
@@ -19,7 +20,10 @@ const Services = () => {
       {/* Services grid section */}
       <div className="lg:grid grid-cols-2 m-5 lg:m-20 gap-10 text-black">
         {items.map((s) => (
-          <div key={s.id} className="mb-10 lg:mb-0">
+          <div
+            key={s.id}
+            className="mb-10 lg:mb-0 hover:scale-105 duration-300"
+          >
             <div className="flex items-start">
               {/* Service image */}
               <div className="flex-shrink-0">
@@ -32,10 +36,10 @@ const Services = () => {
                 />
               </div>
               {/* Service description */}
-              <div className="ml-5">
+              <Link href={`/services/${s.url}`} className="ml-5">
                 <h1 className="text-xl font-bold">{s.title}</h1>
-                <p className="text-sm">{s.description}</p>
-              </div>
+                <p className="text-sm line-clamp-3">{s.subContent}</p>
+              </Link>
             </div>
           </div>
         ))}
