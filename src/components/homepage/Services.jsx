@@ -38,7 +38,7 @@ export default function Services() {
           <h1 className="text-3xl font-extrabold text-center lg:text-left leading-normal text-primary">
             Our Services
           </h1>
-          <p className="lg:text-left text-center text-black">
+          <p className="lg:text-left text-center text-black px-3">
             Explore our wide range of services and specialties designed to cater
             to all your healthcare needs with the highest standard of
             excellence.

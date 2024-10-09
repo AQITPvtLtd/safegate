@@ -150,7 +150,6 @@ const Navbar = () => {
           <div className="lg:hidden ml-10 px-2 py-1 col-span-2">
             <div className="lg:w-[300px] w-[200px]">
               <Link
-                onClick={() => setNavbarOpen(!navbarOpen)}
                 href="/"
                 className={`header-logo block lg:ml-0 mt-3 lg:my-3`}
               >

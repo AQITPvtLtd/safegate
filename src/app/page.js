@@ -4,6 +4,7 @@ import Banner from "@/components/homepage/Banner";
 import Facilities from "@/components/homepage/Facilities";
 import Faq from "@/components/homepage/Faq";
 import HappyPatients from "@/components/homepage/HappyPatients";
+import HealthPackage from "@/components/homepage/HealthPackage";
 import Infrastructure from "@/components/homepage/Infrastructure";
 import Services from "@/components/homepage/Services";
 import Team from "@/components/homepage/Team";
@@ -15,6 +16,7 @@ const page = () => {
       <Banner />
       <About />
       <Services />
+      <HealthPackage />
       <HappyPatients />
       <Infrastructure />
       <Ambulance />
