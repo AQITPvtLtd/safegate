@@ -5,12 +5,12 @@ import Link from "next/link";
 const Service = ({ url }) => {
   const data = items.find((a) => a.url === url);
   return (
-    <div>
-      <h1 className="font-extrabold text-center text-5xl m-5 text-primary underline">
+    <div className="">
+      <h1 className="font-extrabold text-center lg:text-5xl text-3xl p-5  text-primary underline">
         {data.title}
       </h1>
       <div className="lg:grid grid-cols-2 lg:m-10 m-5">
-        <div>
+        <div className="text-black">
           <p dangerouslySetInnerHTML={{ __html: data.description }}></p>
         </div>
         <div className="relative flex justify-center items-center lg:mx-10">
@@ -39,7 +39,7 @@ const Service = ({ url }) => {
         </div>
       </div>
       {/* common */}
-      <div className="leading-relaxed text-lg lg:mx-10 mx-2 bg-primary p-2 text-white mb-10 rounded-lg">
+      <div className="leading-relaxed text-lg lg:mx-10 mx-2 bg-primary p-2 text-white pb-10 rounded-lg">
         <div className="border-2 border-white rounded-lg lg:p-5 p-2 lg:text-md text-sm">
           <h1 className="font-bold text-2xl">Appointment Scheduling</h1> To
           schedule an appointment with our specialists, please call us at{" "}

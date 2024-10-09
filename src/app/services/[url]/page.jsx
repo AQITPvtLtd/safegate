@@ -1,11 +1,13 @@
-import React from 'react'
-import Service from './Service'
+import React from "react";
+import Service from "./Service";
 
-const page = ({params}) => {
-    const url = params.url;
+const page = ({ params }) => {
+  const url = params.url;
   return (
-    <div><Service url={url}/></div>
-  )
-}
+    <div className="bg-white">
+      <Service url={url} />
+    </div>
+  );
+};
 
-export default page
+export default page;
