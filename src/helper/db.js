@@ -1,35 +1,36 @@
-import mysql from "mysql2/promise"; 
+import mysql from "mysql2";
 
-// Create a connection pool instead of a single connection
+// Create a pool with a Keep-Alive mechanism
 const pool = mysql.createPool({
   host: "localhost",
   user: "root",
   password: "",
+  // password: "TekBooster@1991",
   database: "safegate",
   waitForConnections: true,
-  connectionLimit: 10, // Set connection pool limit
-  queueLimit: 0, // Disable queue limit to avoid potential blocking
-  acquireTimeout: 10000, // Set acquire timeout to 10 seconds
-  connectTimeout: 10000, // Set connection timeout to 10 seconds
-  multipleStatements: true // Enable multiple statements per query
+  connectionLimit: 10, // Maximum number of connections in the pool
+  queueLimit: 0, // Unlimited queueing
+  connectTimeout: 10000, // Optional: 10 seconds connection timeout
 });
-
-// Keep-alive function (optional, if you want to manually ping)
-async function keepAlive() {
-  try {
-    const connection = await pool.getConnection();
-    await connection.ping();
-    console.log("Connection to MySQL server is alive.");
-    connection.release();
-  } catch (err) {
-    console.error("Error pinging MySQL server:", err);
-  } finally {
-    // Schedule the next keep-alive ping after a suitable interval (e.g., 30 seconds)
-    setTimeout(keepAlive, 30000);
-  }
+// Function to periodically ping the database to keep the connections alive
+function keepConnectionAlive() {
+  pool.getConnection((err, connection) => {
+    if (err) {
+      console.error("Error in getting connection for keep-alive:", err);
+      return;
+    }
+    // Ping the database to keep the connection alive
+    connection.ping((pingError) => {
+      if (pingError) {
+        console.error("Error in pinging the database:", pingError);
+      }
+      connection.release(); // Always release the connection back to the pool
+    });
+  });
 }
 
-// Uncomment this line if you want to manually initiate keep-alive pings
-// keepAlive();
+// Set an interval to run the keep-alive function every 15 minutes
+setInterval(keepConnectionAlive, 900000); // 900000 ms = 15 minutes
 
-export default pool;
+export default pool.promise();
+// export default connection;
