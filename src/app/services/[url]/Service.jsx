@@ -15,8 +15,8 @@ const Service = ({ url }) => {
         </div>
         <div className="relative flex justify-center items-center lg:mx-10">
           {/* Decorative elements */}
-          <div className="hidden lg:block absolute top-0 left-0 w-32 h-32 bg-lightgreen rounded-md z-[-1]" />
-          <div className="absolute top-0 right-0 w-16 h-16 bg-primary rounded-md z-[-1]" />
+          <div className="hidden lg:block absolute top-0 left-0 w-32 h-32 bg-lightgreen rounded-md z-[1]" />
+          <div className="absolute top-0 right-0 w-16 h-16 bg-primary rounded-md z-[1]" />
 
           {/* Image with overlap */}
           <div className="z-10 p-4 lg:absolute inset-0 mt-5">
