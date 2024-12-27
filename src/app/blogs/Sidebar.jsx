@@ -27,7 +27,7 @@ const Sidebar = () => {
       <div className="sm:px-6 lg:px-8 border-2 rounded-2xl h-screen">
         <ul className="h-screen">
           <div className="">
-            <p className="text-blue-600 font-semibold text-2xl py-2 ">
+            <p className="text-blue-600 font-semibold text-xl py-2 ">
               More Blogs
             </p>
           </div>
@@ -40,10 +40,10 @@ const Sidebar = () => {
                   className="flex hover:translate-x-2 transition duration-300 ease-in-out"
                 >
                   <div className="flex gap-1 items-center text-green-500 hover:text-blue-600">
-                    <div className="text-2xl">
+                    <div className="text-xl">
                       <FaArrowCircleRight />
                     </div>
-                    <h2 className="text-xl font-medium text-black">
+                    <h2 className="text-lg font-medium text-black">
                       {n.short_name}
                     </h2>
                   </div>
