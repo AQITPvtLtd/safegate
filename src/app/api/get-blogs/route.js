@@ -3,7 +3,7 @@ import pool from "@/helper/db";
 
 export async function GET() {
   try {
-    const [results] = await pool.query("SELECT * FROM blogs");
+    const [results] = await pool.query("SELECT * FROM blogs ORDER BY id DESC");
     // console.log(results);
     return NextResponse.json({
       message: "Success",

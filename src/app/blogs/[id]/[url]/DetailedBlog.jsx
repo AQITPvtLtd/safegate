@@ -4,12 +4,12 @@ import { SlCalender } from "react-icons/sl";
 import { getBlog } from "@/services/getBlogs";
 import Image from "next/image";
 import Moment from "react-moment";
-import Sidebar from "../Sidebar";
+import Sidebar from "../../Sidebar";
 
-const DetailedBlog = ({ url }) => {
+const DetailedBlog = ({ url, id }) => {
   const [blogs, setBlogs] = useState([]);
   const [error, setError] = useState(null);
-  const obj = blogs.find((item) => item.url === url);
+  const obj = blogs.find((item) => item.url == url && item.id == id);
 
   useEffect(() => {
     async function fetchBlogs() {
@@ -66,7 +66,7 @@ const DetailedBlog = ({ url }) => {
                   </span>
                 </div>
                 <h2 className="text-2xl font-bold text-gray-800 mb-3">
-                  {obj.name}
+                  {obj.title}
                 </h2>
                 <p
                   className="text-gray-700 text-sm leading-relaxed"

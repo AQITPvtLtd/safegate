@@ -36,11 +36,11 @@ const Sidebar = () => {
             <li key={n.url}>
               <div>
                 <Link
-                  href={`/blogs/${n.url}`}
+                  href={`/blogs/${n.id}/${n.url}`}
                   className="flex hover:translate-x-2 transition duration-300 ease-in-out"
                 >
-                  <div className="flex gap-1 items-center text-green-500 hover:text-blue-600">
-                    <div className="text-xl">
+                  <div className="flex gap-1 text-green-500 hover:text-blue-600">
+                    <div className="text-lg mt-1">
                       <FaArrowCircleRight />
                     </div>
                     <h2 className="text-lg font-medium text-black">

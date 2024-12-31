@@ -50,8 +50,10 @@ const Blogs = () => {
           {blogs.map((n) => (
             <li
               key={n.url}
-              className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl" style={{
-                boxShadow: 'rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset'
+              className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl"
+              style={{
+                boxShadow:
+                  "rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset",
               }}
             >
               <Image
@@ -62,7 +64,7 @@ const Blogs = () => {
                 width={1000}
               />
               <div className="p-6">
-                <h2 className="text-xl font-semibold mb-2">{n.name}</h2>
+                <h2 className="text-xl font-semibold mb-2">{n.short_name}</h2>
                 <div className="flex gap-3">
                   <SlCalender />
                   <p className="text-gray-800 text-sm mb-4">
@@ -73,7 +75,10 @@ const Blogs = () => {
                   className="text-gray-700 line-clamp-3"
                   dangerouslySetInnerHTML={{ __html: n.description }}
                 ></p>
-                <Link href={`/blogs/${n.url}`} className="flex mb-3 py-4">
+                <Link
+                  href={`/blogs/${n.id}/${n.url}`}
+                  className="flex mb-3 py-4"
+                >
                   <div className="bg-blue-700 hover:bg-green-700 p-3 text-white rounded-xl">
                     Read More
                   </div>
