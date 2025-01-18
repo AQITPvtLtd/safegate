@@ -63,7 +63,7 @@ const Blogs = () => {
                 height={100}
                 width={1000}
               />
-              <div className="p-6">
+              <div className="px-6 py-3">
                 <h2 className="text-xl font-semibold mb-2">{n.short_name}</h2>
                 <div className="flex gap-3">
                   <SlCalender />
