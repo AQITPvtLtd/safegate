@@ -3,7 +3,7 @@ import Image from "next/image";
 const Infrastructure = () => {
   return (
     <div className="mx-5 lg:mx-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 mb-5 mt-36">
+      <div className="grid grid-cols-1 md:grid-cols-2 mb-5 mt-10">
         {/* Left section: Text and Information */}
         <div className="bg-primary text-white lg:shadow-2xl shadow-primary rounded-tl-lg rounded-bl-lg md:rounded-bl-none md:rounded-tl-lg">
           <h1 className="text-4xl font-bold mb-4 text-center pt-4">
@@ -17,7 +17,7 @@ const Infrastructure = () => {
             The land area is around 2500 yards and the covered area is around
             13,000 sq feet, comprising of:
           </p>
-          <ul className="list-disc list-inside p-5">
+          <ul className="list-disc list-outside lg:ml-5 ml-3 p-5">
             <li>OPD block – Doctors chambers, Dressing rooms, Lift.</li>
             <li>Two Receptions & waiting halls</li>
             <li>

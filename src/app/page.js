@@ -1,6 +1,7 @@
 import About from "@/components/homepage/About";
 import Ambulance from "@/components/homepage/Ambulance";
 import Banner from "@/components/homepage/Banner";
+import Blog from "@/components/homepage/Blog";
 import Facilities from "@/components/homepage/Facilities";
 import Faq from "@/components/homepage/Faq";
 import HappyPatients from "@/components/homepage/HappyPatients";
@@ -18,6 +19,7 @@ const page = () => {
       <Services />
       <HealthPackage />
       <HappyPatients />
+      <Blog />
       <Infrastructure />
       <Ambulance />
       {/* <Team /> */}

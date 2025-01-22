@@ -24,13 +24,13 @@ const Faq = () => {
       data: `Yes, gynaecologists & obstetricians are trained in helping women in labour and delivering babies.  `,
       isOpen: false,
     },
-    {
-      key: 4,
-      title:
-        "How do I book an appointment with Safegate Medical Centre - Multispeciality Clinic?",
-      data: `The working timings of Safegate Medical Centre - Multispeciality Clinic are Monday:- 10:30 am - 8:00 pm, Tuesday:- 10:30 am - 8:00 pm, Wednesday:- 10:30 am - 8:00 pm, thu:- 10:30 am - 8:00 pm, Friday:- 10:30 am - 8:00 pm, Saturday:- 10:30 am - 8:00 pm, Sunday:- 10:30 am - 8:00 pm.`,
-      isOpen: false,
-    },
+    // {
+    //   key: 4,
+    //   title:
+    //     "How do I book an appointment with Safegate Medical Centre - Multispeciality Clinic?",
+    //   data: `The working timings of Safegate Medical Centre - Multispeciality Clinic are Monday:- 10:30 am - 8:00 pm, Tuesday:- 10:30 am - 8:00 pm, Wednesday:- 10:30 am - 8:00 pm, thu:- 10:30 am - 8:00 pm, Friday:- 10:30 am - 8:00 pm, Saturday:- 10:30 am - 8:00 pm, Sunday:- 10:30 am - 8:00 pm.`,
+    //   isOpen: false,
+    // },
   ]);
 
   const toggleAccordion = (accordionkey) => {
@@ -45,7 +45,7 @@ const Faq = () => {
     setAccordion(updatedAccordions);
   };
   return (
-    <div className="overflow-x-clip">
+    <div className="overflow-x-clip my-9">
       <h1 className="text-5xl font-bold mx-12">Frequently asked questions</h1>
       <div className=" ml-12 mt-1 w-full">
         <div className="grid grid-cols-4">
