@@ -25,6 +25,7 @@ const HealthPackage = () => {
               width={1000}
               height={1000}
               className="rounded-t-md"
+              alt="health-img"
             />
             <div className="p-3">
               <h1 className="font-bold text-2xl text-darkblue">{d.title}</h1>

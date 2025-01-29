@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
       <head>
         {/* Google tag (gtag.js)  */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-4MZYLFVBN1"></Script>
-        <Script>
+        <Script id="gtag-script">
           {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
