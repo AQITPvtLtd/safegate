@@ -17,6 +17,9 @@ module.exports = {
         lightgreen: "#02923d",
         darkblue: "#024486",
       },
+      boxShadow: {
+        'custom-inset': 'inset 0px 0px 10px 5px rgba(114, 114, 114, 1)',
+      },
     },
   },
   plugins: [],

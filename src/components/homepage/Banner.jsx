@@ -1,3 +1,4 @@
+import Form from "@/app/contact/Form";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -12,12 +13,12 @@ const Banner = () => {
           width={1000}
           height={1000}
           alt="main-banner"
-          className="w-full h-[860px] lg:h-[500px] object-fill"
+          className="w-full h-[600px] lg:h-[700px] object-fill"
         />
         <div className="absolute inset-0 bg-darkblue bg-opacity-90 z-10"></div>
         {/* Ensure background is under other content */}
-        <div className="absolute inset-0 z-10 lg:grid grid-cols-2">
-          <div className="py-10 px-3">
+        <div className="absolute inset-0 z-10 lg:grid grid-cols-12 mt-10 ml-4">
+          <div className="col-span-6 py-10 px-3 lg:ml-20">
             <h1 className="text-white text-3xl lg:text-5xl font-extrabold leading-normal">
               We Can Help You Get Better & Regain Your Health
             </h1>
@@ -37,17 +38,23 @@ const Banner = () => {
               Contact Now
             </Link>
           </div>
-          <div className="flex justify-center col-start-2 items-center">
-            <Image
+          <div className="col-start-8 col-span-4 items-center lg:block hidden">
+            {/* <Image
               src="/banner/banner1.png"
               width={1000}
               height={1000}
               alt="banner1"
               className="w-full h-full lg:px-20"
-            />
+            /> */}
+
+            <Form />
           </div>
         </div>
       </div>
+
+
+      <div className="px-5 mt-10 lg:hidden block">
+        <Form /></div>
     </div>
   );
 };

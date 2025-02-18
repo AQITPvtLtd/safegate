@@ -1,21 +1,41 @@
-import pool from "@/helper/db"; // Assuming `db.js` is using `mysql2/promise`
+import pool from "@/helper/db";
 import { NextResponse } from "next/server";
 import { v4 as uuid } from "uuid";
 import nodemailer from "nodemailer";
 
 export async function POST(request) {
   try {
-    const { name, email, message } = await request.json();
+    const formData = await request.formData();
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const phone = formData.get("phone");
+    const location = formData.get("location");
+    const message = formData.get("message");
+    const medicalReport = formData.get("medicalReport"); // File handling needed
+
     const unique_id = uuid();
-    let connection;
-    connection = await pool.getConnection();
-    // Use pool.query with async/await for promises
-    const [results] = await connection.query(
-      "INSERT INTO contact(id, name, email, message) VALUES (?,?,?,?)",
-      [unique_id, name, email, message]
+    let connection = await pool.getConnection();
+
+    // Extract file details
+    let fileName = null;
+    let fileBuffer = null;
+    let fileMimeType = null;
+
+    if (medicalReport && medicalReport.size > 0) {
+      fileName = medicalReport.name;
+      fileBuffer = Buffer.from(await medicalReport.arrayBuffer()); // Convert file to buffer
+      fileMimeType = medicalReport.type; // Get file MIME type
+    }
+
+    // Insert into `contact` table
+    await connection.query(
+      "INSERT INTO contact (id, date, name, email, phone, location, message, medicalReport) VALUES (?, NOW(), ?, ?, ?, ?, ?, ?)",
+      [unique_id, name, email, phone, location, message, fileName]
     );
 
-    // Send email using nodemailer
+    connection.release();
+
+    // Send email notification
     const transporter = nodemailer.createTransport({
       service: "gmail",
       host: "smtp.gmail.com",
@@ -26,59 +46,46 @@ export async function POST(request) {
       },
     });
 
-    const mailOptions = {
+    // Admin Notification Email
+    await transporter.sendMail({
       from: process.env.MY_EMAIL,
       to: process.env.MY_EMAIL,
-      subject: "New Query Received", // Add your email details here
-      html: `<html lang="en">
-      <head>
-        <meta charset="utf-8">
+      subject: "New Query Received",
+      html: `<html>
+              <body>
+                <h3>New query from ${name} (📧 ${email}, 📞 ${phone})</h3>
+                <p><strong>Location:</strong> ${location}</p>
+                <p><strong>Message:</strong> ${message}</p>
+                ${fileName ? `<p><strong>Medical Report Attached:</strong> ${fileName}</p>` : ""}
+              </body>
+            </html>`,
+      attachments: fileBuffer
+        ? [
+          {
+            filename: fileName,
+            content: fileBuffer,
+            contentType: fileMimeType,
+          },
+        ]
+        : [],
+    });
 
-        <title>Safegate Contact Form</title>
-        <meta name="description" content="Safegate Enquiry Form">
-        <meta name="author" content="SitePoint">
-      <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
-
-        <link rel="stylesheet" href="css/styles.css?v=1.0">
-
-      </head>
-
-      <body>
-        <div class="img-container" style="display: flex;justify-content: center;align-items: center;border-radius: 5px;overflow: hidden; font-family: 'helvetica', 'ui-sans';"></div>
-              <div class="container" style="margin-left: 20px;margin-right: 20px;">
-              <h3>You've got a new mail from ${name}, their email is: ✉️${email} </h3>
-              <div style="font-size: 16px;">
-              <p>Message:</p>
-              <p>${message}</p>
-              <br>
-              </div>
-              </div>
-      </body>
-      </html>`,
-    };
-
-    await transporter.sendMail(mailOptions);
+    // Auto-reply to User
     await transporter.sendMail({
       from: process.env.MY_EMAIL,
       to: email,
-      subject: "Thank You for contacting Safegate!",
+      subject: "Thank You for Contacting Us!",
       html: `<html>
               <body>
-                <h2>Hey ${name},</h2>
-                <p>Your query is noted! Our team will contact you as soon as possible.</p>
+                <h2>Dear ${name},</h2>
+                <p>Thank you for reaching out. Our team will get back to you soon.</p>
               </body>
-             </html>`,
+            </html>`,
     });
-    // Return success response
-    return NextResponse.json({
-      message: "Message Sent",
-      success: true,
-    });
+
+    return NextResponse.json({ message: "Message Sent", success: true });
   } catch (error) {
-    console.error(error);
-    return NextResponse.json({
-      message: "Failed to send query",
-      success: false,
-    });
+    console.error("Error submitting form:", error);
+    return NextResponse.json({ message: "Failed to send query", success: false });
   }
 }

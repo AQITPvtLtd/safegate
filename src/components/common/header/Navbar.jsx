@@ -55,13 +55,8 @@ const Navbar = () => {
     setNavbarOpen(false);
   };
   return (
-    <div
-      className={`overflow-x-clip header left-0 z-40 top-0 w-full items-center bg-gradient-to-r font-semibold ${
-        sticky
-          ? "fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
-          : ""
-      }`}
-    >
+    <div>
+
       <div className="lg:grid grid-cols-2 bg-white">
         <div className="lg:flex hidden justify-center">
           <div className="lg:w-[300px] w-[200px]">
@@ -145,163 +140,164 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <header className=" bg-primary text-white">
-        <div className=" lg:flex grid grid-cols-3 items-center w-full  lg:flex-grow">
-          <div className="lg:hidden ml-10 px-2 py-1 col-span-2">
-            <div className="lg:w-[300px] w-[200px]">
-              <Link
-                href="/"
-                className={`header-logo block lg:ml-0 mt-3 lg:my-3`}
-              >
-                <Image
-                  src="/logo/logo2.png"
-                  alt="logo"
-                  width={400}
-                  height={500}
-                  className="w-[80px] bg-white h-[90px]"
-                />
-              </Link>
-            </div>
-          </div>
-          <div className="flex justify-end">
-            <button
-              onClick={navbarToggleHandler}
-              id="navbarToggler"
-              aria-label="Mobile Menu"
-              className="  rounded-full px-3 py-[6px] ring-primary lg:hidden"
-            >
-              <span
-                className={`relative my-1.5 block h-0.5 w-[30px] bg-white transition-all duration-300  ${
-                  navbarOpen ? " top-[7px] rotate-45" : ""
-                }`}
-              />
-              <span
-                className={`relative my-1.5 block h-0.5 w-[30px] bg-white transition-all duration-300 ${
-                  navbarOpen ? "opacity-0" : ""
-                }`}
-              />
-              <span
-                className={`relative my-1.5 block h-0.5 w-[30px] bg-white transition-all duration-300  ${
-                  navbarOpen ? " top-[-8px] -rotate-45" : ""
-                }`}
-              />
-            </button>
-          </div>
+      <div
+        className={`overflow-x-clip header left-0 z-40 top-0 w-full items-center bg-gradient-to-r font-semibold ${sticky
+          ? "fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
+          : ""
+          }`}
+      >
 
-          <nav
-            id="navbarCollapse"
-            className={`navbar absolute right-0 z-30 rounded px-6 py-4 duration-300 dark:bg-dark lg:visible lg:static w-full lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
-              navbarOpen
-                ? `visibility ${
-                    sticky ? "top-[92%]" : "top-[10%]"
-                  } md:top-[15%] opacity-100`
+        <header className=" bg-primary text-white">
+          <div className=" lg:flex grid grid-cols-3 items-center w-full  lg:flex-grow">
+            <div className="lg:hidden ml-10 px-2 py-1 col-span-2">
+              <div className="lg:w-[300px] w-[200px]">
+                <Link
+                  href="/"
+                  className={`header-logo block lg:ml-0 mt-3 lg:my-3`}
+                >
+                  <Image
+                    src="/logo/logo2.png"
+                    alt="logo"
+                    width={400}
+                    height={500}
+                    className="w-[80px] bg-white h-[90px]"
+                  />
+                </Link>
+              </div>
+            </div>
+            <div className="flex justify-end">
+              <button
+                onClick={navbarToggleHandler}
+                id="navbarToggler"
+                aria-label="Mobile Menu"
+                className="  rounded-full px-3 py-[6px] ring-primary lg:hidden"
+              >
+                <span
+                  className={`relative my-1.5 block h-0.5 w-[30px] bg-white transition-all duration-300  ${navbarOpen ? " top-[7px] rotate-45" : ""
+                    }`}
+                />
+                <span
+                  className={`relative my-1.5 block h-0.5 w-[30px] bg-white transition-all duration-300 ${navbarOpen ? "opacity-0" : ""
+                    }`}
+                />
+                <span
+                  className={`relative my-1.5 block h-0.5 w-[30px] bg-white transition-all duration-300  ${navbarOpen ? " top-[-8px] -rotate-45" : ""
+                    }`}
+                />
+              </button>
+            </div>
+
+            <nav
+              id="navbarCollapse"
+              className={`navbar absolute right-0 z-30 rounded px-6 py-4 duration-300 dark:bg-dark lg:visible lg:static w-full lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${navbarOpen
+                ? `visibility ${sticky ? "top-[92%]" : "top-[10%]"
+                } md:top-[15%] opacity-100`
                 : "invisible top-[120%] opacity-0"
-            }`}
-          >
-            <ul className="block lg:grid grid-cols-6 gap-4 relative bg-primary">
-              {menu.map((menuItem, index) => (
-                <li
-                  onMouseEnter={() => handleSubmenu(menuItem.id)}
-                  onMouseLeave={() => {
-                    handleSubmenu(-1);
-                    handleSubSubmenu(-1);
-                  }}
-                  key={index}
-                  className={`group relative text-center ${
-                    usePathName === menuItem.path
+                }`}
+            >
+              <ul className="block lg:grid grid-cols-6 gap-4 relative bg-primary">
+                {menu.map((menuItem, index) => (
+                  <li
+                    onMouseEnter={() => handleSubmenu(menuItem.id)}
+                    onMouseLeave={() => {
+                      handleSubmenu(-1);
+                      handleSubSubmenu(-1);
+                    }}
+                    key={index}
+                    className={`group relative text-center ${usePathName === menuItem.path
                       ? "bg-lightgreen"
                       : "text-dark hover:bg-lightgreen"
-                  }`}
-                >
-                  {menuItem.path ? (
-                    <Link
-                      onClick={handleCloseNavbar}
-                      href={menuItem.path}
-                      className={`flex py-2 px-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-3 `}
-                    >
-                      <div>{menuItem.title}</div>
-                    </Link>
-                  ) : (
-                    <>
-                      <p
-                        onClick={() => {
-                          handleSubmenu(menuItem.id);
-                        }}
-                        className=" px-2 flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:bg-lightgreen lg:mr-0 lg:inline-flex lg:px-0 lg:py-3"
+                      }`}
+                  >
+                    {menuItem.path ? (
+                      <Link
+                        onClick={handleCloseNavbar}
+                        href={menuItem.path}
+                        className={`flex py-2 px-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-3 `}
                       >
-                        {menuItem.title}
-                        <span>
-                          <IoMdArrowDropdown size={20} />
-                        </span>
-                      </p>
-                      <div
-                        className={`submenu relative left-0 top-full lg:ml-0 pl-4 rounded-sm transition-[top] duration-300 lg:absolute lg:top-[102%] lg:w-[250px] lg:p-4 bg-primary lg:shadow-lg ${
-                          openIndex == menuItem.id ? "block" : "hidden"
-                        }`}
-                      >
-                        {menuItem.submenu.map((submenuItem, index) => (
-                          <div
-                            key={index}
-                            className="group text-left relative bg-primary grid"
-                          >
-                            {submenuItem.path ? (
-                              <Link
-                                onClick={handleCloseNavbar}
-                                href={submenuItem.path}
-                                key={index}
-                                className={`block rounded py-2 text-sm text-dark hover:bg-lightgreen lg:px-3`}
-                              >
-                                {submenuItem.title}
-                              </Link>
-                            ) : (
-                              <>
-                                <p
-                                  onMouseEnter={() => {
-                                    handleSubSubmenu(submenuItem.id);
-                                  }}
-                                  onClick={() => {
-                                    handleSubSubmenu(submenuItem.id);
-                                  }}
-                                  className="rounded py-2 text-sm lg:px-3 flex cursor-pointer justify-between text-dark hover:bg-lightgreen"
+                        <div>{menuItem.title}</div>
+                      </Link>
+                    ) : (
+                      <>
+                        <p
+                          onClick={() => {
+                            handleSubmenu(menuItem.id);
+                          }}
+                          className=" px-2 flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:bg-lightgreen lg:mr-0 lg:inline-flex lg:px-0 lg:py-3"
+                        >
+                          {menuItem.title}
+                          <span>
+                            <IoMdArrowDropdown size={20} />
+                          </span>
+                        </p>
+                        <div
+                          className={`submenu relative left-0 top-full lg:ml-0 pl-4 rounded-sm transition-[top] duration-300 lg:absolute lg:top-[102%] lg:w-[250px] lg:p-4 bg-primary lg:shadow-lg ${openIndex == menuItem.id ? "block" : "hidden"
+                            }`}
+                        >
+                          {menuItem.submenu.map((submenuItem, index) => (
+                            <div
+                              key={index}
+                              className="group text-left relative bg-primary grid"
+                            >
+                              {submenuItem.path ? (
+                                <Link
+                                  onClick={handleCloseNavbar}
+                                  href={submenuItem.path}
+                                  key={index}
+                                  className={`block rounded py-2 text-sm text-dark hover:bg-lightgreen lg:px-3`}
                                 >
                                   {submenuItem.title}
-                                  <span className="pl-1">
-                                    <IoMdArrowDropdown />
-                                  </span>
-                                </p>
-                                <div
-                                  className={`lg:ml-[225px] rounded-sm bg-primary lg:px-3 lg:py-2 lg:-mt-6 ml-4 transition-[top] duration-300 lg:absolute lg:w-[250px] lg:shadow-lg ${
-                                    openSubIndex === submenuItem.id
+                                </Link>
+                              ) : (
+                                <>
+                                  <p
+                                    onMouseEnter={() => {
+                                      handleSubSubmenu(submenuItem.id);
+                                    }}
+                                    onClick={() => {
+                                      handleSubSubmenu(submenuItem.id);
+                                    }}
+                                    className="rounded py-2 text-sm lg:px-3 flex cursor-pointer justify-between text-dark hover:bg-lightgreen"
+                                  >
+                                    {submenuItem.title}
+                                    <span className="pl-1">
+                                      <IoMdArrowDropdown />
+                                    </span>
+                                  </p>
+                                  <div
+                                    className={`lg:ml-[225px] rounded-sm bg-primary lg:px-3 lg:py-2 lg:-mt-6 ml-4 transition-[top] duration-300 lg:absolute lg:w-[250px] lg:shadow-lg ${openSubIndex === submenuItem.id
                                       ? "block"
                                       : "hidden"
-                                  }`}
-                                >
-                                  {submenuItem.submenu.map(
-                                    (subsubmenuItem, index) => (
-                                      <Link
-                                        onClick={handleCloseNavbar}
-                                        href={subsubmenuItem.path}
-                                        key={index}
-                                        className="bg-primary block rounded py-2.5 text-sm text-dark hover:bg-lightgreen lg:px-3"
-                                      >
-                                        {subsubmenuItem.title}
-                                      </Link>
-                                    )
-                                  )}
-                                </div>
-                              </>
-                            )}
-                          </div>
-                        ))}
-                      </div>
-                    </>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
-      </header>
+                                      }`}
+                                  >
+                                    {submenuItem.submenu.map(
+                                      (subsubmenuItem, index) => (
+                                        <Link
+                                          onClick={handleCloseNavbar}
+                                          href={subsubmenuItem.path}
+                                          key={index}
+                                          className="bg-primary block rounded py-2.5 text-sm text-dark hover:bg-lightgreen lg:px-3"
+                                        >
+                                          {subsubmenuItem.title}
+                                        </Link>
+                                      )
+                                    )}
+                                  </div>
+                                </>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      </>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </nav>
+
+          </div>
+        </header>
+      </div >
     </div>
   );
 };

@@ -1,46 +1,14 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { useState } from "react";
 import Link from "next/link";
 import { IoIosCall } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
-import { useRouter } from "next/navigation";
-import Swal from "sweetalert2";
-import { form } from "@/services/form";
+import Form from "./Form";
 
 const Contact = () => {
-  const router = useRouter();
-  const [formData, setformData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
 
-  const handleChange = (e) => {
-    setformData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const response = await form(formData);
-    console.log(response);
-    if (response.success) {
-      Swal.fire({
-        title: "Form Submitted Successfully!",
-        text: "You clicked the button!",
-        icon: "success",
-      });
-      router.push("/");
-    } else {
-      Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "Something went wrong!",
-      });
-    }
-  };
 
   return (
     <div className="">
@@ -78,74 +46,8 @@ const Contact = () => {
 
             {/* Form Section */}
             <div className="bg-white rounded-lg shadow-lg p-6 col-span-1">
-              <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
-                Contact Us
-              </h2>
-              <p className="leading-relaxed mb-5 text-gray-600 ">
-                We would love to hear from you! Whether you have a question
-                about our services, need assistance, or just want to say hello,
-                feel free to reach out to us.
-              </p>
-
-              <form onSubmit={handleSubmit}>
-                {/* Name Input */}
-                <div className="relative mb-4">
-                  <label
-                    htmlFor="name"
-                    className=" leading-7 text-sm text-gray-600"
-                  >
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    className="w-full bg-white  rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                    value={formData.name}
-                    onChange={handleChange}
-                  />
-                </div>
-
-                {/* Email Input */}
-                <div className="relative mb-4">
-                  <label
-                    htmlFor="email"
-                    className="leading-7  text-sm text-gray-600"
-                  >
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                    value={formData.email}
-                    onChange={handleChange}
-                  />
-                </div>
-
-                {/* Message Input */}
-                <div className="relative mb-4">
-                  <label
-                    htmlFor="message"
-                    className="leading-7  text-sm text-gray-600"
-                  >
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                    value={formData.message}
-                    onChange={handleChange}
-                  ></textarea>
-                </div>
-
-                {/* Submit Button */}
-                <button className="text-white bg-lightgreen border-0 py-2 px-6 focus:outline-none hover:bg-lightgreen/90 rounded text-lg">
-                  Submit
-                </button>
-              </form>
+            
+              <Form />
             </div>
 
             <div className="bg-white rounded-lg">
