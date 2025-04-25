@@ -4,6 +4,47 @@ import Image from "next/image";
 const About = () => {
   return (
     <div className=" mx-5 lg:mx-10 py-10">
+      <div className="lg:grid grid-cols-2">
+        <div className="p-10">
+          <h1 className="text-black text-4xl lg:text-5xl font-extrabold leading-normal">
+            About Us
+          </h1>
+          <div className="grid grid-cols-2 w-1/2">
+            <div className="border-2 border-primary mr-10"></div>
+            <div className="border border-lightgreen -ml-10 mr-20"></div>
+          </div>
+          <p className="leading-loose mt-8 text-lg text-black">
+            Welcome to Safegate Medical Center, where your health and well-being
+            are our top priorities. Established with a vision to provide
+            comprehensive, patient-centered care, we combine advanced technology
+            with compassionate service. Our dedicated team of medical
+            professionals is here to support you every step of the way.
+          </p>
+          {/* <div className="flex mt-5">
+            <Link
+              href="/who-are-we/about"
+              className="bg-primary hover:bg-darkblue px-4 py-2 text-white text-lg mr-3"
+            >
+              Know More
+            </Link>
+            <Link
+              className="bg-lightgreen hover:bg-lightgreen/90 px-4 py-2 text-white text-lg"
+              href="/contact"
+            >
+              Contact Us
+            </Link>
+          </div> */}
+        </div>
+        <div className="lg:p-10 px-10">
+          <Image
+            src="/about/about.png"
+            className="w-full h-full"
+            width={1000}
+            height={1000}
+            alt="about banner"
+          />
+        </div>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 mb-5">
         {/* First Section */}
         <div className="bg-primary text-white lg:shadow-2xl shadow-primary rounded-tl-lg rounded-bl-lg md:rounded-bl-none md:rounded-tl-lg">

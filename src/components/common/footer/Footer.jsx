@@ -7,6 +7,9 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaPinterestP } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
+import { IoMdCall } from "react-icons/io";
 
 const Footer = () => {
   return (
@@ -91,7 +94,9 @@ const Footer = () => {
         </div>
         <p className="text-white col-span-3 lg:mt-14">
           <div className="font-bold">Email</div>
-          <div>
+          <div className="flex gap-1 items-center">
+            <MdEmail />
+
             <Link
               href="mailto:info@safegatemedicalcenter.com"
               className="text-white"
@@ -99,7 +104,8 @@ const Footer = () => {
               info@safegatemedicalcenter.com
             </Link>
           </div>
-          <div>
+          <div className="flex gap-1 items-center">
+            <MdEmail />
             <Link
               href="mailto:officialsafegatemedicalcenter@gmail.com"
               className="text-white"
@@ -108,17 +114,24 @@ const Footer = () => {
             </Link>
           </div>
           <div className="font-bold mt-4">Address</div>
-          <div>
-            83, Model Colony, Araghar Chowk, Dehradun, Uttarakhand-248001
+          <div className="flex gap-1">
+            <FaLocationDot className="mt-1" />
+            <Link href="https://maps.app.goo.gl/4aTcAvZcgfgFR7d1A">
+              83, Model Colony, Araghar Chowk, Dehradun, Uttarakhand-248001
+            </Link>
           </div>
           <div className="font-bold mt-4">Phone</div>
-          <Link href="tel:+91 7817893001">+91 7817893001</Link>
+          <div>
+            <Link href="tel:+91 7817893001" className="flex gap-1 items-center">
+              <IoMdCall /> +91 7817893001</Link>
+          </div>
         </p>
         {/* Right Section (Google Map) */}
         <div className="lg:col-span-4 col-span-12 mt-8 lg:mt-0">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110222.97707448812!2d77.96662705968441!3d30.30920238396642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929bc37c6319f%3A0xe9f79bf0327e8125!2sSafegate%20Medical%20Centre!5e0!3m2!1sen!2sin!4v1728014754644!5m2!1sen!2sin"
             width="100%"
+            className="rounded-md"
             height="350px"
             style={{ border: 0 }}
             allowFullScreen=""
