@@ -43,34 +43,34 @@ const Footer = () => {
               href="https://www.facebook.com/profile.php?id=61564959001123"
               target="__blank"
             >
-              <FaFacebookF className="text-4xl bg-primary text-white rounded-md p-2" />
+              <FaFacebookF className="text-4xl bg-primary text-white rounded-md p-2 hover:bg-lightgreen" />
             </Link>
             <Link
               href="https://www.instagram.com/safegatemedicalcenter/?hl=en"
               target="__blank"
             >
-              <FaInstagram className="text-4xl bg-instagram text-white rounded-md p-2" />
+              <FaInstagram className="text-4xl bg-instagram text-white rounded-md p-2 hover:bg-lightgreen" />
             </Link>
             <Link
               href="https://www.linkedin.com/company/safegate-medical-centre/?viewAsMember=true"
               target="__blank"
             >
-              <FaLinkedinIn className="text-4xl bg-linkedin text-white rounded-md p-2" />
+              <FaLinkedinIn className="text-4xl bg-linkedin text-white rounded-md p-2 hover:bg-lightgreen" />
             </Link>
             <Link
               href="https://www.youtube.com/channel/UCeMjY3fzbAqFQxrCcX4wTFg"
               target="__blank"
             >
-              <FaYoutube className="text-4xl bg-youtube text-white rounded-md p-2" />
+              <FaYoutube className="text-4xl bg-youtube text-white rounded-md p-2 hover:bg-lightgreen" />
             </Link>
             <Link href="https://x.com/Safegatemedical" target="__blank">
-              <FaXTwitter className="text-4xl bg-youtube text-white rounded-md p-2" />
+              <FaXTwitter className="text-4xl bg-youtube text-white rounded-md p-2 hover:bg-lightgreen" />
             </Link>
             <Link
               href="https://in.pinterest.com/officialsafegatemedicalcenter/"
               target="__blank"
             >
-              <FaPinterestP className="text-4xl bg-youtube text-white rounded-md p-2" />
+              <FaPinterestP className="text-4xl bg-youtube text-white rounded-md p-2 hover:bg-lightgreen" />
             </Link>
           </div>
         </div>
