@@ -26,7 +26,7 @@ const Contact = () => {
         </h1>
       </div>
 
-      <section className="">
+      <section>
         <div className="container px-5 py-12 mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             {/* Google Map Section */}
@@ -45,51 +45,43 @@ const Contact = () => {
             </div>
 
             {/* Form Section */}
-            <div className="bg-white rounded-lg shadow-lg p-6 col-span-1">
-            
+            <div className="bg-white rounded-lg shadow-lg lg:p-6 col-span-1">
               <Form />
             </div>
 
             <div className="bg-white rounded-lg">
-              <div className="mb-6 space-y-4">
+              <div className="space-y-2">
                 {/* Address Section */}
-                <div className="flex items-center space-x-3 text-gray-700">
-                  <IoLocationSharp className="mt-1 lg:text-2xl text-3xl text-primary" />
 
+                <Link href="https://maps.app.goo.gl/4aTcAvZcgfgFR7d1A" className="flex space-x-3 text-gray-700">
+                  <IoLocationSharp className="mt-1 lg:text-2xl text-3xl text-primary" />
                   <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out ">
                     83, Model Colony, Araghar Chowk, Dehradun,
                     Uttarakhand-248001
                   </p>
-                </div>
+                </Link>
 
                 {/* Email Section */}
-                <table className="text-gray-700">
-                  <tbody>
-                    <tr className="flex items-center space-x-2">
-                      <td className="align-middle">
-                        <MdEmail className="mt-1 lg:text-2xl text-xl text-primary" />
-                      </td>
-                      <td>
-                        <div className="block">
-                          <Link href="mailto:officialsafegatemedicalcenter@gmail.com">
-                            <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out">
-                              officialsafegatemedicalcenter@gmail.com
-                            </p>
-                          </Link>
+                <div className="flex space-x-3 items-center text-gray-700">
+                  <MdEmail className="lg:text-2xl text-xl text-primary" />
+                  <Link href="mailto:officialsafegatemedicalcenter@gmail.com">
+                    <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out">
+                      officialsafegatemedicalcenter@gmail.com
+                    </p>
+                  </Link>
+                </div>
 
-                          <Link href="mailto:info@safegatemedicalcenter.com">
-                            <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out">
-                              info@safegatemedicalcenter.com
-                            </p>
-                          </Link>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div className="flex space-x-3 items-center text-gray-700">
+                  <MdEmail className="lg:text-2xl text-xl text-primary" />
+                  <Link href="mailto:info@safegatemedicalcenter.com">
+                    <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out">
+                      info@safegatemedicalcenter.com
+                    </p>
+                  </Link>
+                </div>
 
                 {/* Phone Section */}
-                <div className="flex items-center space-x-3 text-gray-700 mt-4">
+                <div className="flex items-center space-x-3 text-gray-700">
                   <IoIosCall className="mt-1 lg:text-2xl text-xl text-primary" />
                   <Link href="tel:+917817893001">
                     <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out">

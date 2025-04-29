@@ -89,7 +89,7 @@ const Form = () => {
     };
 
     return (
-        <div className='bg-gray-100 rounded-lg p-6 border-4 '>
+        <div className='bg-gray-100 rounded-lg p-6 border-4'>
             <h2 className="text-gray-900 text-xl font-semibold mb-1 title-font">
                 Submit Your Query
             </h2>
@@ -138,10 +138,9 @@ const Form = () => {
                         <button className="text-white bg-lightgreen border-0 py-2 px-6 focus:outline-none hover:bg-lightgreen/90 rounded text-lg">Submit</button>
                     )}
                 </div>
-
             </form >
         </div >
     );
 };
-    
+
 export default Form;

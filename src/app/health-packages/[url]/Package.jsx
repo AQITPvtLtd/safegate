@@ -14,7 +14,7 @@ const Package = ({ url }) => {
         <h1 className="text-white lg:text-5xl text-3xl px-2 py-5 font-extrabold text-center">
           {pack.title}
         </h1>
-        <div className="lg:grid grid-cols-2">
+        <div className="lg:grid grid-cols-2 flex flex-col-reverse">
           <div>
             <div className="text-white text-2xl mx-10 font-bold lg:flex justify-evenly">
               <div className="">{pack.content.length} Tests Included</div>
@@ -25,10 +25,10 @@ const Package = ({ url }) => {
                 <li key={index}>{c}</li>
               ))}
             </ul>
-            <div className="ml-4 flex">
+            <div className="ml-4 flex pb-5">
               <Link
                 href="tel:+91 7817893001"
-                className=" text-white rounded-md bg-lightgreen  p-2 flex"
+                className=" text-white rounded-md bg-lightgreen p-2 flex"
               >
                 <p className="">Call for Booking</p>{" "}
                 <MdKeyboardDoubleArrowRight className="mt-1" size={20} />
