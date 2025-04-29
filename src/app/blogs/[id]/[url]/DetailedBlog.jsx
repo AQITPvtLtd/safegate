@@ -28,7 +28,7 @@ const DetailedBlog = ({ url, id }) => {
   }, [url]); // url dependency to refetch when it changes
 
   return (
-    <div>
+    <div className="bg-white">
       {/* Header Section */}
       <div className="relative mb-5">
         <Image

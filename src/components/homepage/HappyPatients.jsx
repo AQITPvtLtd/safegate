@@ -32,7 +32,7 @@ const HappyPatients = () => {
       <h3 className="text-center text-primary font-semibold text-lg">
         Happy Patients
       </h3>
-      <h1 className="text-center text-3xl font-bold text-black">
+      <h1 className="text-center lg:text-3xl text-2xl font-bold text-black">
         Real Stories, Real Results
       </h1>
       <div className="flex justify-center mt-1 ">

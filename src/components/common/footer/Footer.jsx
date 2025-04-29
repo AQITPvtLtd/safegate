@@ -96,10 +96,9 @@ const Footer = () => {
           <div className="font-bold">Email</div>
           <div className="flex gap-1 items-center">
             <MdEmail />
-
             <Link
               href="mailto:info@safegatemedicalcenter.com"
-              className="text-white"
+              className="text-white text-[14px]"
             >
               info@safegatemedicalcenter.com
             </Link>
@@ -108,7 +107,7 @@ const Footer = () => {
             <MdEmail />
             <Link
               href="mailto:officialsafegatemedicalcenter@gmail.com"
-              className="text-white"
+              className="text-white text-[14px]"
             >
               officialsafegatemedicalcenter@gmail.com
             </Link>
@@ -116,13 +115,13 @@ const Footer = () => {
           <div className="font-bold mt-4">Address</div>
           <div className="flex gap-1">
             <FaLocationDot className="mt-1" />
-            <Link href="https://maps.app.goo.gl/4aTcAvZcgfgFR7d1A">
+            <Link href="https://maps.app.goo.gl/4aTcAvZcgfgFR7d1A" className="text-[14px]">
               83, Model Colony, Araghar Chowk, Dehradun, Uttarakhand-248001
             </Link>
           </div>
           <div className="font-bold mt-4">Phone</div>
           <div>
-            <Link href="tel:+91 7817893001" className="flex gap-1 items-center">
+            <Link href="tel:+91 7817893001" className="flex gap-1 items-center text-[14px]">
               <IoMdCall /> +91 7817893001</Link>
           </div>
         </p>

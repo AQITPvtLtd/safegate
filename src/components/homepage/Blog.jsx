@@ -63,10 +63,10 @@ const Blog = () => {
                   width={1000}
                 />
                 <div className="px-6 py-3">
-                  <h2 className="text-xl font-semibold mb-2">{n.short_name}</h2>
+                  <h2 className="text-xl font-semibold mb-2 text-gray-800">{n.short_name}</h2>
                   <div className="flex gap-3">
-                    <SlCalender />
-                    <p className="text-gray-800 text-sm mb-4">
+                    <SlCalender className="text-gray-800" />
+                    <p className="text-gray-800 text-sm mb-2">
                       <Moment format="MMMM DD, YYYY">{n.date}</Moment>
                     </p>
                   </div>
@@ -76,7 +76,7 @@ const Blog = () => {
                   ></p>
                   <Link
                     href={`/blogs/${n.id}/${n.url}`}
-                    className="flex mb-3 py-4"
+                    className="flex mb-3 pt-4"
                   >
                     <div className="bg-blue-700 hover:bg-green-700 p-3 text-white rounded-xl">
                       Read More
@@ -87,11 +87,14 @@ const Blog = () => {
             ))}
           </ul>
         )}
-        <Link href="/blogs" className="grid grid-cols-12">
-          <div className="col-start-6 col-span-2 text-center bg-blue-700 hover:bg-green-700 py-2 text-white rounded-xl mt-5">
-            Know More Blogs
-          </div>
-        </Link>
+        <div className="flex justify-center">
+          <Link href="/blogs">
+            <div className="px-4 w-fit flex justify-center text-center bg-blue-700 hover:bg-green-700 py-2 text-white rounded-xl mt-5">
+              Know More Blogs
+            </div>
+          </Link>
+        </div>
+
       </div>
     </div>
   );

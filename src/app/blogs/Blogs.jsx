@@ -64,9 +64,9 @@ const Blogs = () => {
                 width={1000}
               />
               <div className="px-6 py-3">
-                <h2 className="text-xl font-semibold mb-2">{n.short_name}</h2>
+                <h2 className="text-xl font-semibold mb-2 text-gray-800">{n.short_name}</h2>
                 <div className="flex gap-3">
-                  <SlCalender />
+                  <SlCalender className="text-gray-800" />
                   <p className="text-gray-800 text-sm mb-4">
                     <Moment format="MMMM DD, YYYY">{n.date}</Moment>
                   </p>
@@ -77,7 +77,7 @@ const Blogs = () => {
                 ></p>
                 <Link
                   href={`/blogs/${n.id}/${n.url}`}
-                  className="flex mb-3 py-4"
+                  className="flex py-4"
                 >
                   <div className="bg-blue-700 hover:bg-green-700 p-3 text-white rounded-xl">
                     Read More
