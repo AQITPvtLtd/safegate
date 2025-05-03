@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 03, 2025 at 11:41 AM
+-- Generation Time: May 03, 2025 at 12:09 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -73,6 +73,15 @@ CREATE TABLE `contact` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`s.no`, `date`, `id`, `name`, `phone`, `email`, `location`, `message`, `medicalReport`) VALUES
+(7, '2025-04-21', '48e41690-4f2a-48cb-8668-703883c7849f', 'Ashish Rawat', '08445605618', 'rawat589291@gmail.com', 'Dehradun ', 'Hindi', NULL),
+(8, '2025-04-21', '90d2af11-e713-4161-8f98-857136b59292', 'Mahak Khan', '6397441983', 'mahakrehmanrehman@gmail.com', 'Kasganj', '25 sep September', '1000000290.jpg'),
+(9, '2025-04-25', 'c3a415db-4de2-4a4c-8fbb-4a2036d2e2ee', 'Virendra prasad nautiyal ', '6396506727', 'virendraprasadnautiyal7@gmail.com', 'Dehradun ', 'No', NULL);
+
+--
 -- Indexes for dumped tables
 --
 
@@ -96,7 +105,7 @@ ALTER TABLE `contact`
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `s.no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `s.no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
