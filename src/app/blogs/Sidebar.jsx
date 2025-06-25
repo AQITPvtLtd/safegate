@@ -24,13 +24,13 @@ const Sidebar = () => {
 
   return (
     <div>
-      <div className="sm:px-6 lg:px-8 border-2 rounded-2xl h-fit">
+      <div className="sm:px-3 lg:px-4 border-2 rounded-2xl h-fit">
         <ul className="h-fit">
-          <div className="">
-            <p className="text-blue-600 font-semibold text-xl py-2 ">
-              More Blogs
-            </p>
-          </div>
+
+          <p className="text-blue-600 font-semibold text-lg py-2 ">
+            More Blogs:
+          </p>
+
 
           {blogs.map((n) => (
             <li key={n.url}>
@@ -43,8 +43,8 @@ const Sidebar = () => {
                     <div className="text-base mt-1">
                       <FaArrowCircleRight />
                     </div>
-                    <h2 className="text-base font-normal text-black">
-                      {n.short_name}
+                    <h2 className="text-sm font-normal text-black">
+                      {n.title}
                     </h2>
                   </div>
                 </Link>

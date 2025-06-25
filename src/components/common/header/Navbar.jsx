@@ -145,6 +145,7 @@ const Navbar = () => {
           ? "fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
           : ""
           }`}
+        style={{ boxShadow: '0px 25px 20px -20px rgba(0,0,0,0.45)' }}
       >
 
         <header className=" bg-primary text-white">
@@ -170,7 +171,7 @@ const Navbar = () => {
                 onClick={navbarToggleHandler}
                 id="navbarToggler"
                 aria-label="Mobile Menu"
-                className="  rounded-full px-3 py-[6px] ring-primary lg:hidden"
+                className="rounded-full px-3 py-[6px] ring-primary lg:hidden"
               >
                 <span
                   className={`relative my-1.5 block h-0.5 w-[30px] bg-white transition-all duration-300  ${navbarOpen ? " top-[7px] rotate-45" : ""
@@ -189,13 +190,13 @@ const Navbar = () => {
 
             <nav
               id="navbarCollapse"
-              className={`navbar absolute right-0 z-30 rounded px-6 py-4 duration-300 dark:bg-dark lg:visible lg:static w-full lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${navbarOpen
+              className={`navbar absolute right-0 z-30 rounded px-6 py-2 duration-300 dark:bg-dark lg:visible lg:static w-full lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${navbarOpen
                 ? `visibility ${sticky ? "top-[92%]" : "top-[10%]"
                 } md:top-[15%] opacity-100`
                 : "invisible top-[120%] opacity-0"
                 }`}
             >
-              <ul className="block lg:grid grid-cols-6 gap-4 relative bg-primary">
+              <ul className="block lg:grid grid-cols-7 relative bg-primary">
                 {menu.map((menuItem, index) => (
                   <li
                     onMouseEnter={() => handleSubmenu(menuItem.id)}
@@ -204,18 +205,15 @@ const Navbar = () => {
                       handleSubSubmenu(-1);
                     }}
                     key={index}
-                    className={`group relative text-center ${usePathName === menuItem.path
-                      ? "bg-lightgreen"
-                      : "text-dark hover:bg-lightgreen"
-                      }`}
+                    className={`group relative text-center py-3`}
                   >
                     {menuItem.path ? (
                       <Link
                         onClick={handleCloseNavbar}
                         href={menuItem.path}
-                        className={`flex py-2 px-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-3 `}
+                        className={`flex py-2 px-3 text-base text-dark rounded-lg hover:bg-lightgreen lg:mr-0 lg:inline-flex lg:px-3 lg:py-3 `}
                       >
-                        <div>{menuItem.title}</div>
+                        <div className="px-3">{menuItem.title}</div>
                       </Link>
                     ) : (
                       <>
@@ -223,12 +221,15 @@ const Navbar = () => {
                           onClick={() => {
                             handleSubmenu(menuItem.id);
                           }}
-                          className=" px-2 flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:bg-lightgreen lg:mr-0 lg:inline-flex lg:px-0 lg:py-3"
+                          className="flex cursor-pointer items-center justify-between py-2 rounded-lg text-base text-dark group-hover:bg-lightgreen lg:mr-0 lg:inline-flex lg:px-0 lg:py-3"
                         >
-                          {menuItem.title}
-                          <span>
-                            <IoMdArrowDropdown size={20} />
-                          </span>
+                          <div className="px-5 flex gap-0.5">
+                            {menuItem.title}
+
+                            <span>
+                              <IoMdArrowDropdown size={20} className="mt-0.5" />
+                            </span>
+                          </div>
                         </p>
                         <div
                           className={`submenu relative left-0 top-full lg:ml-0 pl-4 rounded-sm transition-[top] duration-300 lg:absolute lg:top-[102%] lg:w-[250px] lg:p-4 bg-primary lg:shadow-lg ${openIndex == menuItem.id ? "block" : "hidden"
@@ -294,7 +295,6 @@ const Navbar = () => {
                 ))}
               </ul>
             </nav>
-
           </div>
         </header>
       </div >

@@ -46,11 +46,11 @@ const Blogs = () => {
       {error ? (
         <p className="text-red-500 text-center mt-6">{error}</p>
       ) : (
-        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-5 py-3">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-5 gap-5 py-3">
           {blogs.map((n) => (
-            <li
+            <div
               key={n.url}
-              className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl"
+              className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-lg"
               style={{
                 boxShadow:
                   "rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset",
@@ -59,12 +59,12 @@ const Blogs = () => {
               <Image
                 src={`/blogs/${n.image}`}
                 alt={n.heading}
-                className="w-full h-64 object-cover"
+                className="w-full h-[220px] object-fill"
                 height={100}
                 width={1000}
               />
-              <div className="px-6 py-3">
-                <h2 className="text-xl font-semibold mb-2 text-gray-800">{n.short_name}</h2>
+              <div className="px-2 py-3">
+                <h2 className="text-lg font-semibold mb-2 text-gray-800">{n.title}</h2>
                 <div className="flex gap-3">
                   <SlCalender className="text-gray-800" />
                   <p className="text-gray-800 text-sm mb-4">
@@ -84,7 +84,7 @@ const Blogs = () => {
                   </div>
                 </Link>
               </div>
-            </li>
+            </div>
           ))}
         </ul>
       )}

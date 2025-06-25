@@ -12,13 +12,13 @@ const menuData = [
     newTab: false,
   },
   {
-    id: 4,
+    id: 3,
     title: "Services",
     path: "/services",
     newTab: false,
   },
   {
-    id: 5,
+    id: 4,
     title: "Health Packages",
     submenu: [
       {
@@ -49,29 +49,41 @@ const menuData = [
     newTab: false,
   },
   {
+    id: 5,
+    title: "Gallery",
+    path: "/gallery",
+    newTab: false,
+  },
+  {
     id: 6,
-    title: "Contact",
-    path: "/contact",
+    title: "Blogs",
+    path: "/blogs",
     newTab: false,
   },
   {
     id: 7,
-    title: "More",
+    title: "Contact",
+    path: "/contact",
     newTab: false,
-    submenu: [
-      {
-        id: 61,
-        title: "Gallery",
-        path: "/gallery",
-        newTab: false,
-      },
-      {
-        id: 62,
-        title: "Blogs",
-        path: "/blogs",
-        newTab: false,
-      },
-    ],
   },
+  // {
+  //   id: 7,
+  //   title: "More",
+  //   newTab: false,
+  //   submenu: [
+  //     {
+  //       id: 61,
+  //       title: "",
+  //       path: "/",
+  //       newTab: false,
+  //     },
+  //     {
+  //       id: 62,
+  //       title: "",
+  //       path: "/",
+  //       newTab: false,
+  //     },
+  //   ],
+  // },
 ];
 export default menuData;
