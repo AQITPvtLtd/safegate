@@ -149,15 +149,13 @@ const Footer = () => {
           alt="footerimg"
         />
 
-        <div className="cursor-pointer py-1">
-          <Link
-            href="https://tekbooster.com/"
-            className="flex justify-center text-center font-semibold items-center text-black"
-            target="__blank"
-          >
-            Design & Develope By Tek Booster (Digital Marketing Company)
-          </Link>
-        </div>
+        <Link
+          href="https://tekbooster.com/"
+          className="flex justify-center text-center font-semibold items-center text-black cursor-pointer py-1"
+          target="__blank"
+        >
+          Design & Develope By Tek Booster (Digital Marketing Company)
+        </Link>
       </div>
     </div>
   );
