@@ -58,7 +58,7 @@ const Blog = () => {
                 <Image
                   src={`/blogs/${n.image}`}
                   alt={n.heading}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-64 object-fill"
                   height={100}
                   width={1000}
                 />
