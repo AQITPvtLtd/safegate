@@ -4,12 +4,12 @@ import { SlCalender } from "react-icons/sl";
 import { getBlog } from "@/services/getBlogs";
 import Image from "next/image";
 import Moment from "react-moment";
-import Sidebar from "../../Sidebar";
+import Sidebar from "../Sidebar";
 
 const DetailedBlog = ({ url, id }) => {
   const [blogs, setBlogs] = useState([]);
   const [error, setError] = useState(null);
-  const obj = blogs.find((item) => item.url == url && item.id == id);
+  const obj = blogs.find((item) => item.url == url);
 
   useEffect(() => {
     async function fetchBlogs() {
@@ -69,7 +69,7 @@ const DetailedBlog = ({ url, id }) => {
                   {obj.title}
                 </h2>
                 <p
-                  className="text-gray-700 text-sm leading-relaxed"
+                  className="text-gray-700 text-sm leading-relaxed lg:text-justify"
                   dangerouslySetInnerHTML={{ __html: obj.description }}
                 ></p>
               </div>

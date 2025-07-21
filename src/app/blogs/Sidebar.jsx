@@ -36,7 +36,7 @@ const Sidebar = () => {
             <li key={n.url}>
               <div>
                 <Link
-                  href={`/blogs/${n.id}/${n.url}`}
+                  href={`/blogs/${n.url}`}
                   className="flex hover:translate-x-2 transition duration-300 ease-in-out"
                 >
                   <div className="flex gap-1 text-green-500 hover:text-blue-600">

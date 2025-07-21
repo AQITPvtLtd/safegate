@@ -77,7 +77,7 @@ const Blogs = () => {
                 ></p>
 
                 <div className="pt-2">
-                  <Link href={`/blogs/${n.id}/${n.url}`}>
+                  <Link href={`/blogs/${n.url}`}>
                     <span className="inline-block text-sm px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-green-700 transition-all">
                       Read More
                     </span>
