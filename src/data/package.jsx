@@ -18,6 +18,11 @@ export const data = [
     ],
     image: "full.png",
     price: "1999",
+    meta_title: "Stay Ahead of Illness | Health Checkups in Dehradun",
+    meta_desc: "Book your complete health checkup at Safegate Medical Centre in Dehradun—smart testing, fast results, and zero guesswork.",
+    keyword: ["full body health check in dehradun", "safegate checkup packages", "health screening tests", "onpreventive care dehradun",
+      "wellness tests", "diagnostic lab dehradun", "health risk detection", "complete body test", "fast health reports", "smart medical checkup"],
+
   },
   {
     id: 2,
@@ -26,6 +31,10 @@ export const data = [
     content: ["HBA1C", "BSF", "PP", "Urine Routine", "KFT"],
     image: "diabetic.png",
     price: "999",
+    meta_title: "Manage Diabetes Smartly | Diabetic Tests in Dehradun",
+    meta_desc: "Safegate Medical Centre in Dehradun offers complete diabetic profiles—monitor sugar, track risks, and take control of your health.",
+    keyword: ["diabetic profile test in dehradun", "sugar level test", "diabetes checkup dehradun", "safegate diabetic care",
+      "glucose test", "hba1c test dehradun", "diabetes monitoring", "fasting blood sugar test", "diabetic care plans", "health tests for diabetes"],
   },
   {
     id: 3,
@@ -34,6 +43,10 @@ export const data = [
     content: ["CBC", "ESR", "Uric Acid", "RA Factor", "CRP Quantitative"],
     image: "artheritis.png",
     price: "1199",
+    meta_title: "Joint Pain? | Arthritis Profile Testing in Dehradun",
+    meta_desc: "Safegate Medical Centre in Dehradun offers arthritis profile tests to detect joint issues early and manage pain before it slows you down.",
+    keyword: ["arthritis profile test in dehradun", "joint pain testing", "safegate arthritis care", "rheumatic test dehradun",
+      "inflammation checkup", "bone health test", "autoimmunity screening", "arthritis diagnosis", "early joint detection", "chronic pain test"],
   },
   {
     id: 4,
@@ -42,5 +55,9 @@ export const data = [
     content: ["Lipid Profile", "CPK MB", "Troponin-1 Quantitative"],
     image: "cardiac.png",
     price: "1799",
+    meta_title: "Heart Health First | Cardiac Profile Test in Dehradun",
+    meta_desc: "Check your heart status with Safegate’s cardiac profile test in Dehradun—early detection, better control, and peace of mind.",
+    keyword: ["cardiac profile test in dehradun", "heart checkup dehradun", "safegate heart tests", "cholesterol testing",
+      "ecg test dehradun", "heart risk screening", "cardiac diagnostics", "heart health monitoring", "lipid profile test", "preventive heart care"],
   },
 ];

@@ -2,7 +2,6 @@ import React from "react";
 import { data } from "@/data/package";
 import Image from "next/image";
 import Link from "next/link";
-import { GiCheckMark } from "react-icons/gi";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const Package = ({ url }) => {

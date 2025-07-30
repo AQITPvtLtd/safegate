@@ -21,6 +21,10 @@ export const items = [
 <h3 style="line-height: 1.5;"><span style="font-size: 26px;"><strong>Intensive Care Unit (ICU)</strong></span></h3>
 <p><br></p>
 <p style="line-height: 1.5;"><span style="font-size: 19px;">Our state-of-the-art <strong>Intensive Care Unit (ICU)</strong> is designed for patients who need critical care and continuous monitoring. With cutting-edge medical technology, life support systems, and a dedicated team of experienced intensivists, nurses, and specialists, we provide advanced care for patients with life-threatening conditions. Our ICU is equipped to handle emergencies with immediate medical intervention to ensure optimal recovery.</span></p>`,
+    meta_title: "IPD, OPD & ICU | Round-the-Clock Care in Dehradun",
+    meta_desc: "Safegate Medical Centre in Dehradun offers 24/7 IPD, OPD, and ICU services for continuous, expert-led patient care when it matters most.",
+    keyword: ["ipd opd icu services in dehradun", "emergency care dehradun", "inpatient services", "outpatient department",
+      "intensive care unit", "safegate 24/7 care", "hospital facilities", "critical care unit", "specialist doctors dehradun", "advanced hospital care"],
   },
   {
     id: 2,
@@ -38,6 +42,10 @@ export const items = [
     <li style="font-size: 19px; line-height: 2;"><strong>State-of-the-Art Facilities:</strong> Our medical center is equipped with advanced diagnostic tools and technologies for effective treatment.</li>
     <li style="font-size: 19px; line-height: 2;"><strong>Collaborative Approach:</strong> We work closely with specialists and healthcare professionals to ensure comprehensive care.</li>
 </ul>`,
+    meta_title: "Expert Internal Medicine | Adult Care in Dehradun",
+    meta_desc: "Safegate Medical Centre in Dehradun offers internal medicine care for chronic illness, infections, and everyday health concerns—personalized and precise.",
+    keyword: ["internal medicine specialist in dehradun", "adult health care", "safegate internal medicine", "chronic disease treatment",
+      "infection management", "general physician dehradun", "internal diagnostics", "diabetes and bp care", "internal health expert", "multisystem illness care"],
   },
   {
     id: 3,
@@ -55,6 +63,11 @@ export const items = [
     <li style="font-size: 19px; line-height: 2;"><strong>Patient-Centered Approach:</strong> We prioritize patient comfort and involve you in every step of your treatment plan, ensuring you understand your condition and options.</li>
     <li style="font-size: 19px; line-height: 2;"><strong>Comprehensive Team:</strong> Our cardiology team collaborates with primary care physicians and other specialists to provide integrated care.</li>
 </ul>`,
+    meta_title: "Advanced Cardiology Care | Trusted Heart Experts Dehradun",
+    meta_desc: "Safegate Medical Centre in Dehradun offers expert cardiology services—from diagnosis to treatment—for complete heart health and peace of mind.",
+    keyword: ["cardiology services in dehradun", "heart doctor dehradun", "safegate cardiology", "ecg test",
+      "echo cardiogram", "chest pain diagnosis", "heart care experts", "cardiologist in dehradun",
+      "heart health checkup", "cardiac treatment"],
   },
   {
     id: 4,
@@ -72,6 +85,11 @@ export const items = [
     <li style="font-size: 19px; line-height: 2;"><strong>Advanced Technology: </strong> We use the latest diagnostic and therapeutic technologies to provide precise evaluations and effective treatments.</li>
     <li style="font-size: 19px; line-height: 2;"><strong>Collaborative Care:</strong> Our team works closely with primary care physicians and other specialists to deliver comprehensive, coordinated care.</li>
 </ul>`,
+    meta_title: "Digestive Health Experts | Gastro Care in Dehradun",
+    meta_desc: "Safegate Medical Centre in Dehradun offers expert gastroenterology care for stomach, liver, and digestive issues—accurate, effective, and patient-focused.",
+    keyword: ["gastroenterology clinic in dehradun", "stomach pain specialist", "liver care dehradun", " gut health clinic",
+      "digestive issues treatment", "endoscopy test", "acidity and ulcers", "cardiologist in dehradun",
+      "gastrointestinal doctor", "liver and pancreas care"],
   },
   {
     id: 5,
@@ -89,6 +107,11 @@ export const items = [
     <li style="font-size: 19px; line-height: 2;"><strong>Advanced Technology: </strong>We utilize the latest diagnostic tools and surgical techniques to ensure the best possible outcomes for our patients.</li>
     <li style="font-size: 19px; line-height: 2;"><strong>Collaborative Care: </strong>Our orthopaedics team works closely with physiotherapists, pain management specialists, and other healthcare providers to ensure comprehensive care.</li>
 </ul>`,
+    meta_title: "Bone & Joint Experts | Orthopaedic Care in Dehradun",
+    meta_desc: "Safegate Medical Centre in Dehradun offers advanced orthopaedic care for fractures, arthritis, and joint pain—get moving again with confidence.",
+    keyword: ["orthopaedic specialist in dehradun", "bone and joint care", "safegate orthopaedics", "fracture treatment",
+      "arthritis care", "joint replacement", "musculoskeletal expert", "sports injury clinic",
+      "back pain treatment", "orthopaedic surgery dehradun"],
   },
   {
     id: 6,
@@ -106,6 +129,11 @@ export const items = [
     <li style="font-size: 19px; line-height: 2;"><strong>State-of-the-Art Facilities: </strong>Our medical center is equipped with the latest technology to provide comprehensive diagnostics and treatments.</li>
     <li style="font-size: 19px; line-height: 2;"><strong>Supportive Environment: </strong>We strive to create a welcoming and supportive atmosphere where patients feel comfortable discussing their health concerns.</li>
 </ul>`,
+    meta_title: "Women's Health Experts | Gynaecology Care in Dehradun",
+    meta_desc: "Safegate Medical Centre in Dehradun offers expert care in obstetrics and gynaecology—supporting women’s health at every stage of life.",
+    keyword: ["gynaecology clinic in dehradun", "obstetrics care", "women’s health dehradun", "safegate female doctor",
+      "pregnancy care", "menstrual health", "prenatal services", "gynaecologist dehradun",
+      "fertility consultation", "women’s wellness centre"],
   },
   {
     id: 7,
@@ -123,6 +151,11 @@ export const items = [
     <li style="font-size: 19px; line-height: 2;"><strong>State-of-the-Art Facilities: </strong>Our surgical facilities are equipped with the latest technology to ensure the highest standards of safety and care.</li>
     <li style="font-size: 19px; line-height: 2;"><strong>Comprehensive Support: </strong>From the initial consultation to post-operative care, we provide continuous support to help you achieve your desired results.</li>
 </ul>`,
+    meta_title: "Reconstruct & Enhance | Plastic Surgery in Dehradun",
+    meta_desc: "Safegate Medical Centre in Dehradun offers expert plastic and reconstructive surgery for both cosmetic enhancements and medical needs.",
+    keyword: ["plastic surgery clinic in dehradun", "cosmetic surgery dehradun", "reconstructive procedures", "safegate plastic surgeon",
+      "facial surgery", "scar revision", "aesthetic treatments", "body contouring",
+      "burn reconstruction", "expert plastic care"],
   },
   {
     id: 8,
@@ -140,6 +173,11 @@ export const items = [
     <li style="font-size: 19px; line-height: 2;"><strong>State-of-the-Art Facilities: </strong>Our medical center is equipped with advanced diagnostic and treatment technologies to ensure effective care.</li>
     <li style="font-size: 19px; line-height: 2;"><strong>Collaborative Approach: </strong>Our nephrology team works closely with primary care physicians and other specialists to ensure coordinated care for our patients.</li>
 </ul>`,
+    meta_title: "Kidney Care You Can Trust | Nephrology in Dehradun",
+    meta_desc: "Safegate Medical Centre in Dehradun offers expert nephrology care for kidney diseases, dialysis support, and long-term renal health.",
+    keyword: ["nephrology specialist in dehradun", "kidney care clinic", "safegate nephrologist", "dialysis services dehradun",
+      "kidney disease treatment", "renal health expert", "urinary problems care", "chronic kidney care",
+      "kidney checkup", "advanced nephrology care"],
   },
   {
     id: 9,
@@ -157,6 +195,11 @@ export const items = [
     <li style="font-size: 19px; line-height: 2;"><strong>State-of-the-Art Facilities: </strong>Our dialysis unit is equipped with advanced technology and equipment to ensure safe and effective treatments.</li>
     <li style="font-size: 19px; line-height: 2;"><strong>Holistic Approach: </strong>We collaborate with other healthcare providers to address all aspects of a patient’s health, including psychological and nutritional needs.</li>
 </ul>`,
+    meta_title: "Safe & Reliable Dialysis | Kidney Support in Dehradun",
+    meta_desc: "Safegate Medical Centre in Dehradun provides advanced dialysis services with expert monitoring, comfort, and round-the-clock care.",
+    keyword: ["dialysis centre in dehradun", "kidney dialysis dehradun", "safegate dialysis unit", "expert dialysis staff",
+      "hemodialysis clinic", "chronic kidney care", "nephrology dialysis", "chronic kidney care",
+      "regular dialysis sessions", "best dialysis centre"],
   },
   {
     id: 10,
@@ -174,6 +217,11 @@ export const items = [
     <li style="font-size: 19px; line-height: 2;"><strong>Collaborative Approach: </strong>Our pathologists work closely with clinicians to interpret results and provide valuable insights that guide treatment decisions.</li>
     <li style="font-size: 19px; line-height: 2;"><strong>Quality Assurance: </strong>We adhere to strict quality control measures to ensure the highest standards of diagnostic accuracy and patient safety.</li>
 </ul>`,
+    meta_title: "Accurate Diagnostics | Pathology Lab in Dehradun",
+    meta_desc: "Safegate Medical Centre in Dehradun offers reliable pathology services with fast reports and advanced testing for accurate health insights.",
+    keyword: ["pathology lab in dehradun", "diagnostic tests dehradun", "safegate pathology", "blood tests",
+      "lab reports", "health screening", "urine analysis", "advanced diagnostics",
+      "medical lab dehradun", "accurate test results"],
   },
   {
     id: 11,
@@ -191,6 +239,11 @@ export const items = [
     <li style="font-size: 19px; line-height: 2;"><strong>Comprehensive Care: </strong>We work collaboratively with specialists and other healthcare providers to address all aspects of your child's health.</li>
     <li style="font-size: 19px; line-height: 2;"><strong>Family Education and Support: </strong>We provide resources and guidance to help families navigate health concerns and promote healthy lifestyles.</li>
 </ul>`,
+    meta_title: "Gentle Care for Kids | Paediatricians in Dehradun",
+    meta_desc: "Safegate Medical Centre in Dehradun offers trusted paediatric care for infants, children, and teens—healthcare that grows with your child.",
+    keyword: ["paediatrician in dehradun", "child specialist dehradun", "safegate kids clinic", "infant care",
+      "children’s hospital dehradun", "baby checkups", "child vaccination", "adolescent health",
+      "newborn care", "child health monitoring"],
   },
   {
     id: 12,
@@ -208,6 +261,11 @@ export const items = [
     <li style="font-size: 19px; line-height: 2;"><strong>State-of-the-Art Facilities: </strong>Our physiotherapy department is equipped with the latest technology and equipment to ensure effective treatment and rehabilitation.</li>
     <li style="font-size: 19px; line-height: 2;"><strong>Holistic Approach: </strong>We emphasize education and self-management strategies to empower patients in their recovery journey.</li>
 </ul>`,
+    meta_title: "Move Better, Heal Faster | Physiotherapy in Dehradun",
+    meta_desc: "Safegate Medical Centre in Dehradun offers expert physiotherapy for pain relief, mobility recovery, and post-injury rehab tailored to you.",
+    keyword: ["physiotherapy clinic in dehradun", "pain relief therapy", "safegate physiotherapy", "rehab services",
+      "mobility recovery", "post surgery rehab", "sports injury therapy", "back pain treatment",
+      "physical therapy dehradun", "expert physiotherapist"],
   },
   {
     id: 13,
@@ -225,6 +283,11 @@ export const items = [
     <li style="font-size: 19px; line-height: 2;"><strong>Innovative Techniques: </strong>We utilize the latest advancements in occupational therapy, incorporating technology and modern therapeutic approaches to enhance recovery.</li>
     <li style="font-size: 19px; line-height: 2;"><strong>Holistic Approach: </strong>Our therapy encompasses physical, emotional, and social aspects of health, ensuring comprehensive support for our patients.</li>
 </ul>`,
+    meta_title: "Advanced OT Facility | Safe Surgeries in Dehradun",
+    meta_desc: "Safegate Medical Centre in Dehradun offers a modern OT setup with advanced equipment for safe, precise, and efficient surgeries.",
+    keyword: ["modern operation theatre in dehradun", "pain relief therapy", "safegate surgery unit", "surgical care dehradun",
+      "sterile ot facility", "high-tech operating room", "surgical safety standards", "expert surgeons",
+      "operation room equipment", "hospital ot services"],
   },
   {
     id: 14,
@@ -242,5 +305,10 @@ export const items = [
     <li style="font-size: 19px; line-height: 2;"><strong>Innovative Techniques: </strong>Our surgical department is equipped with the latest technology and equipment to ensure safe and effective procedures.</li>
     <li style="font-size: 19px; line-height: 2;"><strong>Collaborative Approach: </strong>We work closely with other specialists to provide coordinated care that addresses all aspects of your health.</li>
 </ul>`,
+    meta_title: "Trusted Surgical Care | General Surgery in Dehradun",
+    meta_desc: "Safegate Medical Centre in Dehradun offers expert general surgery with experienced surgeons, advanced OT, and post-op support you can count on.",
+    keyword: ["general surgery in dehradun", "safegate surgical team", "minor and major surgeries", "appendix surgery",
+      "hernia treatment", "laparoscopic surgery", "expert surgeons", "post operative care",
+      "surgical hospital dehradun", "trusted surgical centre"],
   },
 ];

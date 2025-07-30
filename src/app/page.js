@@ -1,3 +1,22 @@
+export const metadata = {
+  title: "Safegate Medical Centre | Trusted Healthcare in Dehradun",
+  description:
+    "Safegate Medical Centre in Dehradun offers reliable, patient-first medical care with advanced facilities and compassionate professionals.",
+  keywords: [
+    "medical centre in dehradun",
+    "safegate hospital",
+    "dehradun healthcare",
+    "patient care services",
+    "multi speciality clinic",
+    "best doctors dehradun",
+    "hospital in dehradun",
+    "trusted medical care",
+    "health centre dehradun",
+    "emergency medical help",
+  ],
+};
+
+
 import About from "@/components/homepage/About";
 import Ambulance from "@/components/homepage/Ambulance";
 import Banner from "@/components/homepage/Banner";
