@@ -5,6 +5,7 @@ import { getBlog } from "@/services/getBlogs";
 import Image from "next/image";
 import Moment from "react-moment";
 import Sidebar from "../Sidebar";
+import Head from "next/head";
 
 const DetailedBlog = ({ url, id }) => {
   const [blogs, setBlogs] = useState([]);
@@ -27,16 +28,35 @@ const DetailedBlog = ({ url, id }) => {
     fetchBlogs();
   }, [url]);
 
-
+  // ✅ Update browser tab title dynamically
   useEffect(() => {
     if (obj) {
       document.title = obj.meta_title || obj.title;
     }
   }, [obj]);
 
+  if (!obj) {
+    return <p className="text-center text-red-500">Blog not found!</p>;
+  }
+
   return (
     <div className="bg-white">
-
+      {/* SEO Meta Tags */}
+      <Head>
+        <title>{obj.meta_title || obj.title}</title>
+        <meta
+          name="description"
+          content={
+            obj.meta_disc ||
+            obj.small_desc ||
+            ""
+          }
+        />
+        <meta
+          name="keywords"
+          content={obj.meta_keyword || ""}
+        />
+      </Head>
       {/* Header Section */}
       <div className="relative mb-5">
         <Image
