@@ -22,7 +22,6 @@ export const data = [
     meta_desc: "Book your complete health checkup at Safegate Medical Centre in Dehradun—smart testing, fast results, and zero guesswork.",
     keyword: ["full body health check in dehradun", "safegate checkup packages", "health screening tests", "onpreventive care dehradun",
       "wellness tests", "diagnostic lab dehradun", "health risk detection", "complete body test", "fast health reports", "smart medical checkup"],
-
   },
   {
     id: 2,
