@@ -4,6 +4,7 @@ import Navbar from "@/components/common/header/Navbar";
 import Footer from "@/components/common/footer/Footer";
 import Whatsapp from "@/components/common/Whatsapp/Whatsapp";
 import Script from "next/script";
+import SocialLinks from "@/components/SocialLinks";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Whatsapp />
+        <SocialLinks />
         <Footer />
       </body>
     </html>
