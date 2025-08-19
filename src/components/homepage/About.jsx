@@ -4,7 +4,7 @@ import Link from "next/link";
 const About = () => {
   return (
     <div className="bg-white">
-      <div className="lg:grid grid-cols-2 items-center flex flex-col-reverse">
+      <div className="lg:grid grid-cols-2 items-center flex flex-col-reverse pr-10">
         <div className="lg:p-10 px-3">
           <h1 className="text-black text-4xl lg:text-5xl font-extrabold leading-normal lg:text-start text-center">
             About Us

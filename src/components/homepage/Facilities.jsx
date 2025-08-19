@@ -4,7 +4,7 @@ import React from "react";
 
 const Facilities = () => {
   return (
-    <div className="bg-primary">
+    <div className="bg-primary md:pr-12 pr-0">
       <div className="lg:grid grid-cols-6 gap-3 mx-5 p-4">
         <div className="col-span-5">
           <h1 className="text-white text-4xl mt-3 font-extrabold font-serif">

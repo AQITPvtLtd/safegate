@@ -46,7 +46,7 @@ export default function Services() {
         </div>
         <div className="relative col-start-5 col-span-8">
           <div className="absolute top-0 left-0 w-full h-1/2 bg-primary z-[-1]" />
-          <div className="relative px-10">
+          <div className="relative px-10 md:pr-[65px] pr-0">
             <Slider {...settings}>
               {items.map((item) => (
                 <div key={item.id} className="px-2">

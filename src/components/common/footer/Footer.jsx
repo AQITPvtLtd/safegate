@@ -14,13 +14,15 @@ import { IoMdCall } from "react-icons/io";
 const Footer = () => {
   return (
     <div className="bg-white">
-      <div className="relative pt-5">
-        <div className="absolute inset-0"></div>
-
-        <div className="absolute lg:grid lg:grid-cols-12 px-5 pt-5 lg:py-5 lg:px-10 gap-6 overflow-x-hidden">
+      {/* Background image applied here */}
+      <div
+        className="relative pt-5 bg-cover bg-no-repeat bg-center"
+        style={{ backgroundImage: "url('/footer/footer.png')" }}
+      >
+        <div className="lg:grid lg:grid-cols-12 px-5 pt-5 lg:py-10 lg:px-10 gap-6">
           {/* Left Section (Logo + Description) */}
           <div className="lg:col-span-3 col-span-12 mb-8 lg:mb-0">
-            <div className=" p-1 flex justify-center">
+            <div className="p-1 flex justify-center">
               <Link href="/" className="header-logo block lg:ml-0 ml-2 my-3">
                 <Image
                   src="/logo/logo2.png"
@@ -31,15 +33,15 @@ const Footer = () => {
                 />
               </Link>
             </div>
-            <p className="py-2 text-white">
+            <p className="py-2 text-white text-sm leading-relaxed">
               At Safegate Medical Centre with a focus on advanced medical
-              technology and a team of experienced healthcare professionals, the
-              clinic offers a wide range of specialized treatments and diagnostic
-              services.
+              technology and a team of experienced healthcare professionals,
+              the clinic offers a wide range of specialized treatments and
+              diagnostic services.
             </p>
 
             {/* Social Media Links */}
-            <div className="flex gap-2 py-2 leading-loose">
+            <div className="flex gap-2 py-2 flex-wrap">
               <Link
                 href="https://www.facebook.com/profile.php?id=61564959001123"
                 target="__blank"
@@ -79,7 +81,7 @@ const Footer = () => {
           {/* Middle Section (Quick Links) */}
           <div className="lg:flex justify-center lg:col-start-4 lg:col-span-2 col-span-12 leading-8 text-white mb-4 lg:mb-0 lg:mt-14">
             <div>
-              <h1 className="font-bold ">Quick Links</h1>
+              <h1 className="font-bold mb-2">Quick Links</h1>
               <Link href="/">Home</Link>
               <br />
               <Link href="/who-are-we/about">About us</Link>
@@ -93,13 +95,15 @@ const Footer = () => {
               <Link href="/contact">Contact Us</Link>
             </div>
           </div>
-          <p className="text-white col-span-3 lg:mt-14">
+
+          {/* Contact Section */}
+          <div className="text-white col-span-3 lg:mt-14 space-y-2 text-sm">
             <div className="font-bold">Email</div>
             <div className="flex gap-1 items-center">
               <MdEmail />
               <Link
                 href="mailto:info@safegatemedicalcenter.com"
-                className="text-white text-[14px]"
+                className="text-white"
               >
                 info@safegatemedicalcenter.com
               </Link>
@@ -108,7 +112,7 @@ const Footer = () => {
               <MdEmail />
               <Link
                 href="mailto:officialsafegatemedicalcenter@gmail.com"
-                className="text-white text-[14px]"
+                className="text-white"
               >
                 officialsafegatemedicalcenter@gmail.com
               </Link>
@@ -116,23 +120,31 @@ const Footer = () => {
             <div className="font-bold mt-4">Address</div>
             <div className="flex gap-1">
               <FaLocationDot className="mt-1" />
-              <Link href="https://maps.app.goo.gl/4aTcAvZcgfgFR7d1A" className="text-[14px]">
+              <Link
+                href="https://maps.app.goo.gl/4aTcAvZcgfgFR7d1A"
+                className="text-white"
+              >
                 83, Model Colony, Araghar Chowk, Dehradun, Uttarakhand-248001
               </Link>
             </div>
             <div className="font-bold mt-4">Phone</div>
             <div>
-              <Link href="tel:+91 7817893001" className="flex gap-1 items-center text-[14px]">
-                <IoMdCall /> +91 7817893001</Link>
+              <Link
+                href="tel:+91 7817893001"
+                className="flex gap-1 items-center text-white"
+              >
+                <IoMdCall /> +91 7817893001
+              </Link>
             </div>
-          </p>
+          </div>
+
           {/* Right Section (Google Map) */}
-          <div className="lg:col-span-4 col-span-12 mt-8 lg:mt-0">
+          <div className="lg:col-span-4 col-span-12 mt-8 lg:mt-0 md:pr-12 pr-0">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110222.97707448812!2d77.96662705968441!3d30.30920238396642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929bc37c6319f%3A0xe9f79bf0327e8125!2sSafegate%20Medical%20Centre!5e0!3m2!1sen!2sin!4v1728014754644!5m2!1sen!2sin"
               width="100%"
               className="rounded-md"
-              height="350px"
+              height="350"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
@@ -140,21 +152,13 @@ const Footer = () => {
             />
           </div>
         </div>
-
-        <Image
-          src="/footer/footer.png"
-          width={1000}
-          height={1000}
-          className="lg:h-[460px] h-[1280px] w-full"
-          alt="footerimg"
-        />
-
-
       </div>
+
+      {/* Bottom Text */}
       <Link
         href="https://tekbooster.com/"
-        className="flex justify-center text-center font-semibold items-center text-black cursor-pointer py-1"
-      target="__blank"
+        className="flex justify-center text-center font-semibold items-center text-black cursor-pointer py-2"
+        target="__blank"
       >
         Design & Develope By Tek Booster (Digital Marketing Company)
       </Link>

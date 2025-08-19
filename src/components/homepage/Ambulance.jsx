@@ -3,7 +3,7 @@ import React from "react";
 
 const Ambulance = () => {
   return (
-    <div>
+    <div className="md:pr-12 pr-0">
       <Image
         src="/ambulance.png"
         width={10000}

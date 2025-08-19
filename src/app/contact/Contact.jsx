@@ -27,7 +27,7 @@ const Contact = () => {
       </div>
 
       <section>
-        <div className="container px-5 py-12 mx-auto">
+        <div className="container px-5 py-12 mx-auto md:pr-[95px] pr-0">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             {/* Google Map Section */}
             <div className="bg-gray-300 rounded-lg overflow-hidden p-10 relative col-span-1 lg:block hidden">

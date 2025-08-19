@@ -33,7 +33,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 mb-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 mb-5 ">
         {/* First Section */}
         <div className="bg-primary text-white lg:shadow-2xl shadow-primary rounded-tl-lg rounded-bl-lg md:rounded-bl-none md:rounded-tl-lg">
           <h1 className="text-4xl font-bold mb-4 text-center pt-4">
@@ -59,7 +59,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:pr-12 pr-0">
         {/* Second Section */}
         <div className="relative rounded-tl-lg rounded-bl-lg md:rounded-bl-none md:rounded-tl-lg">
           <Image

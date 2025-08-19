@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { FaInstagram, FaFacebookF, FaLinkedinIn, FaYoutube, FaPinterest } from 'react-icons/fa';
+import { FaInstagram, FaFacebookF, FaLinkedinIn, FaYoutube, FaPinterest, FaWhatsapp } from 'react-icons/fa';
 import { FaSquareXTwitter } from "react-icons/fa6";
 const SocialLinks = () => {
     return (
@@ -9,7 +9,7 @@ const SocialLinks = () => {
                 {/* facebook */}
                 <div className="group text-white relative w-max cursor-pointer transition-transform duration-500 bg-[#08943c] hover:bg-[#06692B] rounded-full p-3 hover:scale-125">
                     <Link
-                        href="https://www.facebook.com/profile.php?id=100066588493905"
+                        href="https://www.facebook.com/profile.php?id=61564959001123"
                         role="button"
                         target="_blank"
                     >
@@ -19,7 +19,7 @@ const SocialLinks = () => {
                 {/* Instagram */}
                 <div className="group text-white relative w-max cursor-pointer transition-transform duration-500 bg-[#08943c] hover:bg-[#06692B] rounded-full p-3 hover:scale-125">
                     <Link
-                        href="https://www.instagram.com/drbhupendrabharti/?hl=en"
+                        href="https://www.instagram.com/safegatemedicalcenter/?hl=en"
                         role="button"
                         target="_blank"
                     >
@@ -29,7 +29,7 @@ const SocialLinks = () => {
                 {/* LinkedIn */}
                 <div className="group text-white relative w-max cursor-pointer transition-transform duration-500 bg-[#08943c] hover:bg-[#06692B] rounded-full p-3 hover:scale-125">
                     <Link
-                        href="https://www.linkedin.com/company/dr-bhupendra-bharti/"
+                        href="https://www.linkedin.com/company/safegate-medical-centre/?viewAsMember=true"
                         role="button"
                         target="_blank"
                     >
@@ -40,7 +40,7 @@ const SocialLinks = () => {
                 {/* <!-- Twitter --> */}
                 <div className="group text-white relative w-max cursor-pointer transition-transform duration-500 bg-[#08943c] hover:bg-[#06692B] rounded-full p-3 hover:scale-125">
                     <Link
-                        href="https://www.youtube.com/@shreshtha.spine_1"
+                        href="https://x.com/Safegatemedical"
                         role="button"
                         target="_blank"
                     >
@@ -51,7 +51,7 @@ const SocialLinks = () => {
                 {/* <!-- Youtube --> */}
                 <div className="group text-white relative w-max cursor-pointer transition-transform duration-500 bg-[#08943c] hover:bg-[#06692B] rounded-full p-3 hover:scale-125">
                     <Link
-                        href="https://www.youtube.com/@shreshtha.spine_1"
+                        href="https://www.youtube.com/channel/UCeMjY3fzbAqFQxrCcX4wTFg"
                         role="button"
                         target="_blank"
                     >
@@ -62,7 +62,7 @@ const SocialLinks = () => {
                 {/* <!-- Pinterest --> */}
                 <div className="group text-white relative w-max cursor-pointer transition-transform duration-500 bg-[#08943c] hover:bg-[#06692B] rounded-full p-3 hover:scale-125">
                     <Link
-                        href="https://www.youtube.com/@shreshtha.spine_1"
+                        href="https://in.pinterest.com/officialsafegatemedicalcenter/"
                         role="button"
                         target="_blank"
                     >
@@ -70,6 +70,16 @@ const SocialLinks = () => {
                     </Link>
                 </div>
 
+                {/* <!-- Whatsapp --> */}
+                <div className="group text-white relative w-max cursor-pointer transition-transform duration-500 bg-[#08943c] hover:bg-[#06692B] rounded-full p-3 hover:scale-125">
+                    <Link
+                        href="https://wa.link/ml77cj"
+                        role="button"
+                        target="_blank"
+                    >
+                        <FaWhatsapp />
+                    </Link>
+                </div>
             </div>
         </div>
     )

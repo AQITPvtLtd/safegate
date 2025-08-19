@@ -14,7 +14,7 @@ const HealthPackage = () => {
           <div className="border border-lightgreen"></div>
         </div>
       </div>
-      <div className="grid lg:grid-cols-4 gap-5 mx-5">
+      <div className="grid lg:grid-cols-4 gap-5 mx-5 md:pr-[70px] pr-0">
         {data.map((d) => (
           <div
             key={d.id}
