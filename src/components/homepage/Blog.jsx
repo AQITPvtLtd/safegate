@@ -45,7 +45,7 @@ const Blog = () => {
         {error ? (
           <p className="text-red-500 text-center mt-6">{error}</p>
         ) : (
-          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-5 py-3 md:pr-[95px] pr-0">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-5 py-3 md:pr-[95px] pr-5">
             {blogs.slice(0, 3).map((n) => (
               <li
                 key={n.url}

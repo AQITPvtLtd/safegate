@@ -48,7 +48,7 @@ const Blogs = () => {
       {error ? (
         <p className="text-red-500 text-center mt-6">{error}</p>
       ) : (
-        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-4 md:px-10 gap-6 py-8 md:pr-[95px] pr-0">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-4 md:px-10 gap-6 py-8 md:pr-[95px] pr-5">
           {blogs.map((n) => (
             <div
               key={n.url}

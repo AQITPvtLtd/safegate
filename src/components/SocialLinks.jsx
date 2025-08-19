@@ -5,7 +5,6 @@ import {
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
-  FaEnvelope,
   FaYoutube,
   FaPinterestP,
   FaWhatsapp,
