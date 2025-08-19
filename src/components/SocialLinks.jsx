@@ -21,9 +21,9 @@ export default function SocialLinks() {
       {/* Sidebar */}
       <div
         className={`fixed top-1/2 right-0 transform -translate-y-1/2
-        flex flex-col gap-4 justify-center items-center p-4 bg-gray-200 
-        z-40 rounded-l-xl transition-transform duration-500
-        ${isOpen ? "translate-x-0" : "translate-x-[120%]"}`}
+  flex flex-col gap-4 justify-center items-center p-4 bg-gray-200 
+  z-[9999] rounded-l-xl transition-transform duration-500
+  ${isOpen ? "translate-x-0" : "translate-x-[120%]"}`}
       >
         {/* Social Icons */}
         <Link href="https://www.facebook.com/profile.php?id=61564959001123" target="_blank" rel="noopener noreferrer"
@@ -71,10 +71,11 @@ export default function SocialLinks() {
         <button
           onClick={() => setIsOpen(true)}
           className="fixed top-1/2 right-0 transform -translate-y-1/2 
-          bg-green-600 text-white p-3 rounded-l-xl shadow-lg z-50"
+  bg-green-600 text-white p-3 rounded-l-xl shadow-lg z-[9999]"
         >
           <FaBars />
         </button>
+
       )}
     </>
   );

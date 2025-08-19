@@ -190,13 +190,13 @@ const Navbar = () => {
 
             <nav
               id="navbarCollapse"
-              className={`navbar absolute right-0 z-30 rounded px-6 py-2 duration-300 dark:bg-dark lg:visible lg:static w-full lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${navbarOpen
+              className={`navbar absolute right-0 z-30 rounded py-2 duration-300 dark:bg-dark lg:visible lg:static w-full lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${navbarOpen
                 ? `visibility ${sticky ? "top-[92%]" : "top-[10%]"
                 } md:top-[15%] opacity-100`
                 : "invisible top-[120%] opacity-0"
                 }`}
             >
-              <ul className="block lg:grid grid-cols-7 relative bg-primary px-16">
+              <ul className="block lg:grid grid-cols-7 relative bg-primary px-7">
                 {menu.map((menuItem, index) => (
                   <li
                     onMouseEnter={() => handleSubmenu(menuItem.id)}
