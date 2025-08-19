@@ -196,7 +196,7 @@ const Navbar = () => {
                 : "invisible top-[120%] opacity-0"
                 }`}
             >
-              <ul className="block lg:grid grid-cols-7 relative bg-primary">
+              <ul className="block lg:grid grid-cols-7 relative bg-primary px-16">
                 {menu.map((menuItem, index) => (
                   <li
                     onMouseEnter={() => handleSubmenu(menuItem.id)}

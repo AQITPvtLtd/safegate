@@ -29,6 +29,10 @@
 body{
   background-color: #ffffff;
 }
+html, body {
+  overflow-x: hidden; /* Prevent horizontal screen cut */
+}
+
 
 @layer utilities {
   .text-balance {

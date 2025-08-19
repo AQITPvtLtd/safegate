@@ -1,88 +1,82 @@
-import React from 'react'
+"use client";
+import { React, useState } from "react";
 import Link from 'next/link'
-import { FaInstagram, FaFacebookF, FaLinkedinIn, FaYoutube, FaPinterest, FaWhatsapp } from 'react-icons/fa';
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaEnvelope,
+  FaYoutube,
+  FaPinterestP,
+  FaWhatsapp,
+  FaTimes,
+  FaBars,
+} from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
-const SocialLinks = () => {
-    return (
-        <div>
-            <div className="hidden sm:flex gap-4 fixed top-0 mt-[200px] right-0 flex-col justify-center items-center p-4 bg-gray-200 z-40 rounded-l-xl">
-                {/* facebook */}
-                <div className="group text-white relative w-max cursor-pointer transition-transform duration-500 bg-[#08943c] hover:bg-[#06692B] rounded-full p-3 hover:scale-125">
-                    <Link
-                        href="https://www.facebook.com/profile.php?id=61564959001123"
-                        role="button"
-                        target="_blank"
-                    >
-                        <FaFacebookF />
-                    </Link>
-                </div>
-                {/* Instagram */}
-                <div className="group text-white relative w-max cursor-pointer transition-transform duration-500 bg-[#08943c] hover:bg-[#06692B] rounded-full p-3 hover:scale-125">
-                    <Link
-                        href="https://www.instagram.com/safegatemedicalcenter/?hl=en"
-                        role="button"
-                        target="_blank"
-                    >
-                        <FaInstagram />
-                    </Link>
-                </div>
-                {/* LinkedIn */}
-                <div className="group text-white relative w-max cursor-pointer transition-transform duration-500 bg-[#08943c] hover:bg-[#06692B] rounded-full p-3 hover:scale-125">
-                    <Link
-                        href="https://www.linkedin.com/company/safegate-medical-centre/?viewAsMember=true"
-                        role="button"
-                        target="_blank"
-                    >
-                        <FaLinkedinIn />
-                    </Link>
-                </div>
 
-                {/* <!-- Twitter --> */}
-                <div className="group text-white relative w-max cursor-pointer transition-transform duration-500 bg-[#08943c] hover:bg-[#06692B] rounded-full p-3 hover:scale-125">
-                    <Link
-                        href="https://x.com/Safegatemedical"
-                        role="button"
-                        target="_blank"
-                    >
-                        <FaSquareXTwitter />
-                    </Link>
-                </div>
+export default function SocialLinks() {
+  const [isOpen, setIsOpen] = useState(false);
 
-                {/* <!-- Youtube --> */}
-                <div className="group text-white relative w-max cursor-pointer transition-transform duration-500 bg-[#08943c] hover:bg-[#06692B] rounded-full p-3 hover:scale-125">
-                    <Link
-                        href="https://www.youtube.com/channel/UCeMjY3fzbAqFQxrCcX4wTFg"
-                        role="button"
-                        target="_blank"
-                    >
-                        <FaYoutube />
-                    </Link>
-                </div>
+  return (
+    <>
+      {/* Sidebar */}
+      <div
+        className={`fixed top-1/2 right-0 transform -translate-y-1/2
+        flex flex-col gap-4 justify-center items-center p-4 bg-gray-200 
+        z-40 rounded-l-xl transition-transform duration-500
+        ${isOpen ? "translate-x-0" : "translate-x-[120%]"}`}
+      >
+        {/* Social Icons */}
+        <Link href="https://www.facebook.com/profile.php?id=61564959001123" target="_blank" rel="noopener noreferrer"
+          className="text-white p-3 rounded-full transition-transform duration-500 bg-[#08943c] hover:bg-[#06692B] hover:scale-125">
+          <FaFacebookF />
+        </Link>
+        <Link href="https://www.instagram.com/safegatemedicalcenter/?hl=en" target="_blank" rel="noopener noreferrer"
+          className="text-white p-3 rounded-full transition-transform duration-500 bg-[#08943c] hover:bg-[#06692B] hover:scale-125">
+          <FaInstagram />
+        </Link>
+        <Link href="https://www.linkedin.com/company/safegate-medical-centre/?viewAsMember=true" target="_blank" rel="noopener noreferrer"
+          className="text-white p-3 rounded-full transition-transform duration-500 bg-[#08943c] hover:bg-[#06692B] hover:scale-125">
+          <FaLinkedinIn />
+        </Link>
+        <Link href="https://x.com/Safegatemedical" target="_blank" rel="noopener noreferrer"
+          className="text-white p-3 rounded-full transition-transform duration-500 bg-[#08943c] hover:bg-[#06692B] hover:scale-125">
+          <FaSquareXTwitter />
+        </Link>
+        <Link href="https://www.youtube.com/channel/UCeMjY3fzbAqFQxrCcX4wTFg" target="_blank" rel="noopener noreferrer"
+          className="text-white p-3 rounded-full transition-transform duration-500 bg-[#08943c] hover:bg-[#06692B] hover:scale-125">
+          <FaYoutube />
+        </Link>
+        <Link href="https://in.pinterest.com/officialsafegatemedicalcenter/" target="_blank" rel="noopener noreferrer"
+          className="text-white p-3 rounded-full transition-transform duration-500 bg-[#08943c] hover:bg-[#06692B] hover:scale-125">
+          <FaPinterestP />
+        </Link>
+        <Link href="https://wa.link/ml77cj" target="_blank" rel="noopener noreferrer"
+          className="text-white p-3 rounded-full transition-transform duration-500 bg-[#08943c] hover:bg-[#06692B] hover:scale-125">
+          <FaWhatsapp />
+        </Link>
 
-                {/* <!-- Pinterest --> */}
-                <div className="group text-white relative w-max cursor-pointer transition-transform duration-500 bg-[#08943c] hover:bg-[#06692B] rounded-full p-3 hover:scale-125">
-                    <Link
-                        href="https://in.pinterest.com/officialsafegatemedicalcenter/"
-                        role="button"
-                        target="_blank"
-                    >
-                        <FaPinterest />
-                    </Link>
-                </div>
+        {/* Toggle Button (jab sidebar open ho) */}
+        {isOpen && (
+          <button
+            onClick={() => setIsOpen(false)}
+            className="mt-4 bg-red-600 text-white p-3 rounded-full shadow-lg"
+          >
+            <FaTimes />
+          </button>
+        )}
+      </div>
 
-                {/* <!-- Whatsapp --> */}
-                <div className="group text-white relative w-max cursor-pointer transition-transform duration-500 bg-[#08943c] hover:bg-[#06692B] rounded-full p-3 hover:scale-125">
-                    <Link
-                        href="https://wa.link/ml77cj"
-                        role="button"
-                        target="_blank"
-                    >
-                        <FaWhatsapp />
-                    </Link>
-                </div>
-            </div>
-        </div>
-    )
+      {/* Toggle Button (jab sidebar band ho) */}
+      {!isOpen && (
+        <button
+          onClick={() => setIsOpen(true)}
+          className="fixed top-1/2 right-0 transform -translate-y-1/2 
+          bg-green-600 text-white p-3 rounded-l-xl shadow-lg z-50"
+        >
+          <FaBars />
+        </button>
+      )}
+    </>
+  );
 }
-
-export default SocialLinks
