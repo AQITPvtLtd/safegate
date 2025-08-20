@@ -53,8 +53,8 @@ const DetailedBlog = ({ url, id }) => {
       </div>
 
       {/* Blog Content and Sidebar */}
-      <div className="lg:grid grid-cols-12 p-5 gap-8">
-        <div className="col-start-1 col-span-9">
+      <div className="lg:grid grid-cols-12 justify-center p-5 gap-8">
+        <div className="col-start-1 col-span-8">
           {error ? (
             <p className="text-red-500">Error: {error}</p>
           ) : obj ? (
