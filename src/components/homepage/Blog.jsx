@@ -41,7 +41,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div className="">
+      <div>
         {error ? (
           <p className="text-red-500 text-center mt-6">{error}</p>
         ) : (

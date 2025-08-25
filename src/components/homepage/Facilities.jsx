@@ -10,21 +10,7 @@ const Facilities = () => {
           <h1 className="text-white text-4xl mt-3 font-extrabold font-serif">
             Round the Clock Facilities
           </h1>
-          {/* <div className="grid lg:grid-cols-4 grid-cols-2 gap-x-5 lg:p-10 pl-0 pt-5">
-            <div className="border border-white shadow-md shadow-white lg:lg:flex mb-5">
-              <Image
-                src="/facilities/emergency.png"
-                width={100}
-                height={100}
-                className="p-2"
-                alt="sample-image"
-              />
-              <div className="flex items-center">
-                <h1 className="p-2 text-white">Emergency Services</h1>
-              </div>
-            </div>
-          </div> */}
-
+          
           <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-5 lg:p-10 pl-0 pt-5">
             {facilitiesitems.map((facility) => (
               <div

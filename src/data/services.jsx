@@ -39,7 +39,7 @@ export const items = [
 <ul>
     <li style="font-size: 19px; line-height: 2;"><strong>Experienced Physicians:</strong> Our team consists of board-certified internists with extensive experience in various medical conditions.</li>
     <li style="font-size: 19px; line-height: 2;"><strong>Personalized Care:</strong> We focus on individualized care plans that cater to your specific health needs and goals.</li>
-    <li style="font-size: 19px; line-height: 2;"><strong>State-of-the-Art Facilities:</strong> Our medical center is equipped with advanced diagnostic tools and technologies for effective treatment.</li>
+    <li style="font-size: 19px; line-height: 2;"><strong>State-of-the-Art Facilities:</strong> Our medical centre is equipped with advanced diagnostic tools and technologies for effective treatment.</li>
     <li style="font-size: 19px; line-height: 2;"><strong>Collaborative Approach:</strong> We work closely with specialists and healthcare professionals to ensure comprehensive care.</li>
 </ul>`,
     meta_title: "Expert Internal Medicine | Adult Care in Dehradun",
@@ -126,7 +126,7 @@ export const items = [
 <ul>
     <li style="font-size: 19px; line-height: 2;"><strong>Experienced Providers: </strong>Our board-certified OB/GYN specialists have extensive training in both obstetrics and gynecology, ensuring you receive the best care possible.</li>
     <li style="font-size: 19px; line-height: 2;"><strong>Personalized Approach: </strong>We focus on your unique needs and preferences, providing individualized care plans that empower you to make informed decisions about your health.</li>
-    <li style="font-size: 19px; line-height: 2;"><strong>State-of-the-Art Facilities: </strong>Our medical center is equipped with the latest technology to provide comprehensive diagnostics and treatments.</li>
+    <li style="font-size: 19px; line-height: 2;"><strong>State-of-the-Art Facilities: </strong>Our medical centre is equipped with the latest technology to provide comprehensive diagnostics and treatments.</li>
     <li style="font-size: 19px; line-height: 2;"><strong>Supportive Environment: </strong>We strive to create a welcoming and supportive atmosphere where patients feel comfortable discussing their health concerns.</li>
 </ul>`,
     meta_title: "Women's Health Experts | Gynaecology Care in Dehradun",
@@ -170,7 +170,7 @@ export const items = [
 <ul>
     <li style="font-size: 19px; line-height: 2;"><strong>Expert Nephrologists: </strong>Our board-certified nephrologists have extensive training and experience in treating a wide range of kidney-related conditions.</li>
     <li style="font-size: 19px; line-height: 2;"><strong>Comprehensive Care: </strong>We provide personalized treatment plans tailored to meet each patient’s specific needs and health goals.</li>
-    <li style="font-size: 19px; line-height: 2;"><strong>State-of-the-Art Facilities: </strong>Our medical center is equipped with advanced diagnostic and treatment technologies to ensure effective care.</li>
+    <li style="font-size: 19px; line-height: 2;"><strong>State-of-the-Art Facilities: </strong>Our medical centre is equipped with advanced diagnostic and treatment technologies to ensure effective care.</li>
     <li style="font-size: 19px; line-height: 2;"><strong>Collaborative Approach: </strong>Our nephrology team works closely with primary care physicians and other specialists to ensure coordinated care for our patients.</li>
 </ul>`,
     meta_title: "Kidney Care You Can Trust | Nephrology in Dehradun",

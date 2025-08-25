@@ -14,7 +14,7 @@ const About = () => {
             <div className="border border-lightgreen -ml-10 mr-20"></div>
           </div>
           <p className="lg:leading-loose leading-relaxed lg:mt-8 lg:text-start text-center text-lg text-black">
-            Welcome to Safegate Medical Center, where your health and well-being
+            Welcome to Safegate Medical centre, where your health and well-being
             are our top priorities. Established with a vision to provide
             comprehensive, patient-centered care, we combine advanced technology
             with compassionate service. Our dedicated team of medical

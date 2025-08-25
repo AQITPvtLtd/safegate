@@ -14,7 +14,7 @@ const About = () => {
               <div className="border border-lightgreen -ml-10 mr-20"></div>
             </div>
             <p className="lg:leading-loose leading-relaxed lg:mt-8 lg:text-start text-center text-lg text-black">
-              Welcome to Safegate Medical Center, where your health and well-being
+              Welcome to Safegate Medical Centre, where your health and well-being
               are our top priorities. Established with a vision to provide
               comprehensive, patient-centered care, we combine advanced technology
               with compassionate service. Our dedicated team of medical
@@ -40,7 +40,7 @@ const About = () => {
             Our Mission
           </h1>
           <p className="text-lg p-5">
-            At Safegate Multispeciality Medical Center, our mission is to
+            At Safegate Multispeciality Medical Centre, our mission is to
             provide comprehensive, high-quality healthcare services with
             compassion, integrity, and respect. We are committed to improving
             the health and well-being of our community by offering personalized
@@ -75,7 +75,7 @@ const About = () => {
             Our Vision
           </h1>
           <p className="text-lg p-5">
-            Our vision is to be a leading multispeciality medical center
+            Our vision is to be a leading multispeciality medical centre
             recognized for excellence in patient care, innovative treatments,
             and a holistic approach to health. We strive to create a healthcare
             environment where every patient feels valued, supported, and
