@@ -21,6 +21,7 @@ import About from "@/components/homepage/About";
 import Ambulance from "@/components/homepage/Ambulance";
 import Banner from "@/components/homepage/Banner";
 import Blog from "@/components/homepage/Blog";
+import Contact from "@/components/homepage/Contact";
 import Facilities from "@/components/homepage/Facilities";
 import Faq from "@/components/homepage/Faq";
 import HappyPatients from "@/components/homepage/HappyPatients";
@@ -44,6 +45,7 @@ const page = () => {
       {/* <Team /> */}
       {/* <Faq /> */}
       <Facilities />
+      <Contact />
     </div>
   );
 };

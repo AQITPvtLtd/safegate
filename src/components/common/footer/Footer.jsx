@@ -133,7 +133,7 @@ const Footer = () => {
                 href="tel:+91 7817893001"
                 className="flex gap-1 items-center text-white"
               >
-                <IoMdCall /> +91 7817893001
+                <IoMdCall /> +91 78178 93001
               </Link>
             </div>
           </div>

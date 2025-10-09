@@ -77,54 +77,62 @@ const Navbar = () => {
         <div className="lg:block hidden lg:pt-4">
           <div className="max-w-lg lg:mx-auto pt-4 mx-2">
             <div className="flex items-center justify-center space-x-10">
-              <div className="flex space-x-4">
-                <div className="text-white text-xl">
-                  <Link
-                    href="https://www.facebook.com/profile.php?id=61564959001123"
-                    target="__blank"
-                  >
-                    <FaFacebookF className="px-1 bg-lightgreen" />
-                  </Link>
-                </div>
-                <div className="text-white text-xl">
-                  <Link
-                    href="https://www.instagram.com/safegatemedicalcenter/?hl=en"
-                    target="__blank"
-                  >
-                    <FaInstagram className="px-1 bg-lightgreen" />
-                  </Link>
-                </div>
-                <div className="text-white text-xl">
-                  <Link
-                    href="https://www.linkedin.com/company/safegate-medical-centre/?viewAsMember=true"
-                    target="__blank"
-                  >
-                    <FaLinkedinIn className="px-1 bg-lightgreen" />
-                  </Link>
-                </div>
-                <div className="text-white text-xl">
-                  <Link href="https://x.com/Safegatemedical" target="__blank">
-                    <FaXTwitter className="px-1 bg-lightgreen" />
-                  </Link>
-                </div>
-                <div className="text-white text-xl">
-                  <Link
-                    href="https://www.youtube.com/channel/UCeMjY3fzbAqFQxrCcX4wTFg"
-                    target="__blank"
-                  >
-                    <FaYoutube className="px-1 bg-lightgreen" />
-                  </Link>
-                </div>
+              <div className="flex space-x-3">
+                {/* Facebook */}
+                <Link
+                  href="https://www.facebook.com/profile.php?id=61564959001123"
+                  target="__blank"
+                  className="text-[#1877F2] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"
+                >
+                  <FaFacebookF />
+                </Link>
 
-                <div className="text-white text-xl">
-                  <Link
-                    href="https://in.pinterest.com/officialsafegatemedicalcenter/"
-                    target="__blank"
-                  >
-                    <FaPinterestP className="px-1 bg-lightgreen" />
-                  </Link>
-                </div>
+                {/* Instagram */}
+                <Link
+                  href="https://www.instagram.com/safegatemedicalcenter/?hl=en"
+                  target="__blank"
+                  className="text-[#E4405F] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"
+                >
+                  <FaInstagram />
+                </Link>
+
+                {/* LinkedIn */}
+                <Link
+                  href="https://www.linkedin.com/company/safegate-medical-centre/?viewAsMember=true"
+                  target="__blank"
+                  className="text-[#0077B5] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"
+                >
+                  <FaLinkedinIn />
+                </Link>
+
+                {/* X (Twitter) */}
+                <Link
+                  href="https://x.com/Safegatemedical"
+                  target="__blank"
+                  className="text-[#000000] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"
+                >
+                  <FaXTwitter />
+                </Link>
+
+                {/* YouTube */}
+                <Link
+                  href="https://www.youtube.com/channel/UCeMjY3fzbAqFQxrCcX4wTFg"
+                  target="__blank"
+                  className="text-[#FF0000] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"
+                >
+                  <FaYoutube />
+                </Link>
+
+                {/* Pinterest */}
+                <Link
+                  href="https://in.pinterest.com/officialsafegatemedicalcenter/"
+                  target="__blank"
+                  className="text-[#E60023] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"
+                >
+                  <FaPinterestP />
+                </Link>
               </div>
+    
 
               <div className="text-gray-400">|</div>
               <div className="flex items-center">
@@ -132,7 +140,7 @@ const Navbar = () => {
                 <div className="text-gray-500 text-sm">
                   <h4>For Support</h4>
                   <Link href="tel:+917817893001">
-                    <p className="text-lightgreen">+91 7817893001</p>
+                    <p className="text-lightgreen">+91 78178 93001</p>
                   </Link>
                 </div>
               </div>
