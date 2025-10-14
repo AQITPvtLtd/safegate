@@ -35,7 +35,7 @@ export default function Services() {
     <div className="lg:mr-10 bg-white">
       <div className="lg:grid grid-cols-12 relative">
         <div className="col-span-4 lg:py-24 py-10 lg:px-10">
-          <h1 className="text-4xl font-extrabold text-center lg:text-left leading-normal text-primary">
+          <h1 className="text-4xl font-extrabold text-center lg:text-left leading-normal text-primary font-serif">
             Our Services
           </h1>
           <p className="lg:text-left text-center text-black">
@@ -63,7 +63,7 @@ export default function Services() {
                       </div>
                     </div>
                     <div className="p-4">
-                      <h2 className="text-xl font-bold text-black">
+                      <h2 className="text-xl font-bold text-black font-serif">
                         {item.title}
                       </h2>
                     </div>

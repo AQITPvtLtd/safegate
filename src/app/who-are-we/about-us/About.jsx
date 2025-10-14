@@ -6,7 +6,7 @@ const About = () => {
       <div className="bg-white">
         <div className="lg:grid grid-cols-2 items-center flex flex-col-reverse">
           <div className="lg:p-10 px-3">
-            <h1 className="text-black text-4xl lg:text-5xl font-extrabold leading-normal lg:text-start text-center">
+            <h1 className="text-black text-4xl lg:text-5xl font-extrabold leading-normal lg:text-start text-center font-serif">
               About Us
             </h1>
             <div className="lg:grid grid-cols-2 w-1/2 md:block hidden">
@@ -36,7 +36,7 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 mb-5 ">
         {/* First Section */}
         <div className="bg-primary text-white lg:shadow-2xl shadow-primary rounded-tl-lg rounded-bl-lg md:rounded-bl-none md:rounded-tl-lg">
-          <h1 className="text-4xl font-bold mb-4 text-center pt-4">
+          <h1 className="text-4xl font-bold mb-4 text-center pt-4 font-serif">
             Our Mission
           </h1>
           <p className="text-lg p-5">
@@ -71,7 +71,7 @@ const About = () => {
           />
         </div>
         <div className="bg-lightgreen text-white lg:shadow-2xl shadow-lightgreen rounded-tr-lg rounded-br-lg md:rounded-br-none md:rounded-tr-lg">
-          <h1 className="text-4xl font-bold mb-4 text-center pt-4">
+          <h1 className="text-4xl font-bold mb-4 text-center pt-4 font-serif">
             Our Vision
           </h1>
           <p className="text-lg p-5">
@@ -89,7 +89,7 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 mb-5 lg:mt-10 mt-6">
         {/* Left section: Text and Information */}
         <div className="bg-primary text-white lg:shadow-2xl shadow-primary rounded-tl-lg rounded-bl-lg md:rounded-bl-none md:rounded-tl-lg">
-          <h1 className="text-4xl font-bold mb-4 text-center pt-4">
+          <h1 className="text-4xl font-bold mb-4 text-center pt-4 font-serif">
             Infrastructure
           </h1>
           <p className="text-lg px-5 pb-5">

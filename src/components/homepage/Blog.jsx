@@ -28,11 +28,11 @@ const Blog = () => {
   return (
     <div>
       <div className="mt-14 my-10 overflow-x-clip ">
-        <h3 className="text-center text-primary font-semibold text-lg">
+        <h3 className="text-center text-primary font-semibold text-lg font-serif">
           Our Blogs
         </h3>
-        <h1 className="text-center text-3xl font-bold text-black">
-          Check Out Our Latest Blogs
+        <h1 className="text-center text-3xl font-bold text-black font-serif">
+          Check Our Latest Blogs
         </h1>
         <div className="flex justify-center mt-1 ">
           <div className="grid grid-cols-4 w-1/2">
@@ -63,7 +63,7 @@ const Blog = () => {
                   width={1000}
                 />
                 <div className="px-6 py-3">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-800">{n.title}</h2>
+                  <h2 className="text-xl font-semibold mb-2 text-gray-800 font-serif">{n.title}</h2>
                   <div className="flex gap-3">
                     <SlCalender className="text-gray-800" />
                     <p className="text-gray-800 text-sm mb-2">
@@ -75,7 +75,7 @@ const Blog = () => {
                     dangerouslySetInnerHTML={{ __html: n.description }}
                   ></p>
                   <Link
-                    href={`/blogs/${n.id}/${n.url}`}
+                    href={`/blogs/${n.url}`}
                     className="flex mb-3 pt-4"
                   >
                     <div className="bg-blue-700 hover:bg-green-700 p-3 text-white rounded-xl">
@@ -94,7 +94,6 @@ const Blog = () => {
             </div>
           </Link>
         </div>
-
       </div>
     </div>
   );

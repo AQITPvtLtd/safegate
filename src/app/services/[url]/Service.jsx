@@ -6,7 +6,7 @@ const Service = ({ url }) => {
   const data = items.find((a) => a.url === url);
   return (
     <div className="">
-      <h1 className="font-extrabold text-center lg:text-5xl text-3xl p-5  text-primary underline">
+      <h1 className="font-extrabold text-center font-serif lg:text-5xl text-3xl p-5  text-primary underline">
         {data.title}
       </h1>
       <div className="lg:grid grid-cols-2 lg:m-10 m-5">
@@ -30,16 +30,11 @@ const Service = ({ url }) => {
               />
             </div>
           </div>
-          {/* <div className="z-20 bottom-12 left-12 w-32 h-32 border-2 border-dashed border-primary" /> */}
-
-          {/* Overlapping Effect */}
-          {/* <div className="absolute top-0 left-0 transform -translate-x-4 -translate-y-6">
-            <div className="w-24 h-24 bg-lightgreen border border-lightgreen rounded-md" />
-          </div> */}
         </div>
       </div>
+      
       {/* common */}
-      <div className="leading-relaxed text-lg lg:mx-10 mx-2 bg-primary p-2 text-white pb-10 rounded-lg">
+      <div className="leading-relaxed text-lg lg:mx-10 mx-2 bg-primary p-2 text-white rounded-lg mb-10">
         <div className="border-2 border-white rounded-lg lg:p-5 p-2 lg:text-md text-sm">
           <h1 className="font-bold text-2xl">Appointment Scheduling</h1> To
           schedule an appointment with our specialists, please call us at{" "}

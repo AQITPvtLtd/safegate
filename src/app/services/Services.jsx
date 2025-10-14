@@ -1,48 +1,59 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { items } from "@/data/services";
 import Link from "next/link";
+
 const Services = () => {
   return (
     <div className="pt-10 overflow-x-hidden">
-      {/* Banner image */}
-      <div className="w-full">
-        <Image
-          src="/services/services1.png"
-          layout="responsive"
-          width={1000}
-          height={300}
-          className="w-full object-cover"
-          alt="services banner"
-        />
+      {/* ===== Banner Section ===== */}
+      <div className="relative w-full">
+        
+        <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+          <h1 className="text-black text-3xl font-bold tracking-wide font-serif">
+            Our Services
+          </h1>
+        </div>
       </div>
 
-      {/* Services grid section */}
-      <div className="lg:grid grid-cols-2 m-5 lg:m-20 gap-10 text-black">
-        {items.map((s) => (
-          <div
-            key={s.id}
-            className="mb-10 lg:mb-0 hover:scale-105 duration-300"
-          >
-            <div className="flex items-start">
-              {/* Service image */}
-              <div className="flex-shrink-0">
+      {/* ===== Services Section ===== */}
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          {items.map((s) => (
+            <div
+              key={s.id}
+              className="group relative bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500"
+            >
+              {/* Service Image */}
+              <div className="relative w-full h-56 overflow-hidden">
                 <Image
                   src={s.image}
-                  width={100}
-                  height={120}
-                  className="bg-primary rounded-lg p-1 object-cover"
-                  alt="service"
+                  alt={s.title}
+                  fill
+                  className="object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              {/* Service description */}
-              <Link href={`/services/${s.url}`} className="ml-5">
-                <h1 className="text-xl font-bold">{s.title}</h1>
-                <p className="text-sm line-clamp-3">{s.subContent}</p>
-              </Link>
+
+              {/* Content Box */}
+              <div className="p-6">
+                <h2 className="text-xl font-bold text-black mb-3 font-serif group-hover:text-primary transition-colors duration-300">
+                  {s.title}
+                </h2>
+                <p className="text-sm text-gray-700 line-clamp-3 mb-5">
+                  {s.subContent}
+                </p>
+
+                <Link
+                  href={`/services/${s.url}`}
+                  className="inline-block px-5 py-2 text-white bg-primary rounded-full text-sm font-semibold hover:bg-opacity-90 transition-all duration-300"
+                >
+                  Read More
+                </Link>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

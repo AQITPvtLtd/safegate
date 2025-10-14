@@ -62,7 +62,7 @@ const Blogs = () => {
                 width={400}
               />
               <div className="px-4 py-3 space-y-2">
-                <h2 className="text-base md:text-lg font-semibold text-gray-800 line-clamp-2">
+                <h2 className="text-base md:text-lg font-semibold text-gray-800 line-clamp-2 font-serif">
                   {n.title}
                 </h2>
 

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
+import { FcGoogle } from "react-icons/fc";
 
 export default function SocialLinks() {
   const [isOpen, setIsOpen] = useState(false);
@@ -109,7 +110,16 @@ export default function SocialLinks() {
             </span>
           </Link>
         </div>
-        
+        <div className="group relative w-max transition-transform duration-500 hover:scale-125">
+          <Link
+            href="https://maps.app.goo.gl/56nJikPeg8KzyzqV7"
+            role="button"
+            target="_blank"
+          >
+            <FcGoogle size={28} />
+          </Link>
+        </div>
+
         {/* Toggle Button (sirf mobile par dikhna chahiye) */}
         <button
           onClick={() => setIsOpen(false)}

@@ -8,7 +8,7 @@ const menuData = [
   {
     id: 2,
     title: "About Us",
-    path: "/who-are-we/about",
+    path: "/who-are-we/about-us",
     newTab: false,
   },
   {
@@ -62,8 +62,8 @@ const menuData = [
   },
   {
     id: 7,
-    title: "Contact",
-    path: "/contact",
+    title: "Contact Us",
+    path: "/contact-us",
     newTab: false,
   },
   // {

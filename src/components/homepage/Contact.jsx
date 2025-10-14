@@ -1,4 +1,4 @@
-import Form from '@/app/contact/Form'
+import Form from '@/app/contact-us/Form'
 import React from 'react'
 
 const Contact = () => {

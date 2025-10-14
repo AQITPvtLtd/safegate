@@ -73,7 +73,7 @@ const DetailedBlog = ({ url, id }) => {
                     <Moment format="MMMM DD, YYYY">{obj.date}</Moment>
                   </span>
                 </div>
-                <h2 className="text-2xl font-bold text-gray-800 mb-3">
+                <h2 className="text-2xl font-bold text-gray-800 mb-3 font-serif">
                   {obj.title}
                 </h2>
                 <p

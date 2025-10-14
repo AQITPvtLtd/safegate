@@ -1,167 +1,203 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaPinterestP } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+  FaPinterestP,
+} from "react-icons/fa";
+import { FaXTwitter, FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import { FaLocationDot } from "react-icons/fa6";
 import { IoMdCall } from "react-icons/io";
+import { FcGoogle } from "react-icons/fc";
 
 const Footer = () => {
   return (
     <div className="bg-white">
-      {/* Background image applied here */}
+      {/* Background image */}
       <div
-        className="relative pt-5 bg-cover bg-no-repeat bg-center"
+        className="relative bg-cover bg-no-repeat bg-center py-10 px-6 lg:px-12"
         style={{ backgroundImage: "url('/footer/footer.png')" }}
       >
-        <div className="lg:grid lg:grid-cols-12 px-5 pt-5 lg:py-10 lg:px-10 gap-6">
-          {/* Left Section (Logo + Description) */}
-          <div className="lg:col-span-3 col-span-12 mb-8 lg:mb-0">
-            <div className="p-1 flex justify-center">
-              <Link href="/" className="header-logo block lg:ml-0 ml-2 my-3">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-white">
+          {/* Left Section (Logo + Description + Social) */}
+          <div>
+            <div className="flex justify-start mb-4">
+              <Link href="/" className="block">
                 <Image
                   src="/logo/logo2.png"
                   alt="logo"
-                  width={1000}
-                  height={1000}
+                  width={150}
+                  height={150}
                   className="w-[150px] h-[150px] bg-white"
                 />
               </Link>
             </div>
-            <p className="py-2 text-white text-sm leading-relaxed">
+
+            <p className="text-sm leading-relaxed">
               At Safegate Medical Centre with a focus on advanced medical
               technology and a team of experienced healthcare professionals,
               the clinic offers a wide range of specialized treatments and
               diagnostic services.
             </p>
 
-            {/* Social Media Links */}
-            <div className="flex gap-2 py-2 flex-wrap">
+            {/* Social Media Icons */}
+            <div className="flex flex-wrap gap-3 mt-4">
               <Link
                 href="https://www.facebook.com/profile.php?id=61564959001123"
                 target="__blank"
+                className="text-[#1877F2] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"
               >
-                <FaFacebookF className="text-4xl bg-primary text-white rounded-md p-2 hover:bg-lightgreen" />
+                <FaFacebookF />
               </Link>
               <Link
                 href="https://www.instagram.com/safegatemedicalcenter/?hl=en"
                 target="__blank"
+                className="text-[#E4405F] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"
               >
-                <FaInstagram className="text-4xl bg-instagram text-white rounded-md p-2 hover:bg-lightgreen" />
+                <FaInstagram />
               </Link>
               <Link
                 href="https://www.linkedin.com/company/safegate-medical-centre/?viewAsMember=true"
                 target="__blank"
+                className="text-[#0077B5] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"
               >
-                <FaLinkedinIn className="text-4xl bg-linkedin text-white rounded-md p-2 hover:bg-lightgreen" />
+                <FaLinkedinIn />
+              </Link>
+              <Link
+                href="https://x.com/Safegatemedical"
+                target="__blank"
+                className="text-black text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"
+              >
+                <FaXTwitter />
               </Link>
               <Link
                 href="https://www.youtube.com/channel/UCeMjY3fzbAqFQxrCcX4wTFg"
                 target="__blank"
+                className="text-[#FF0000] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"
               >
-                <FaYoutube className="text-4xl bg-youtube text-white rounded-md p-2 hover:bg-lightgreen" />
-              </Link>
-              <Link href="https://x.com/Safegatemedical" target="__blank">
-                <FaXTwitter className="text-4xl bg-youtube text-white rounded-md p-2 hover:bg-lightgreen" />
+                <FaYoutube />
               </Link>
               <Link
                 href="https://in.pinterest.com/officialsafegatemedicalcenter/"
                 target="__blank"
+                className="text-[#E60023] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"
               >
-                <FaPinterestP className="text-4xl bg-youtube text-white rounded-md p-2 hover:bg-lightgreen" />
+                <FaPinterestP />
+              </Link>
+              <Link
+                href="https://maps.app.goo.gl/56nJikPeg8KzyzqV7"
+                target="__blank"
+                className="text-[#E60023] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"
+              >
+                <FcGoogle />
               </Link>
             </div>
           </div>
 
           {/* Middle Section (Quick Links) */}
-          <div className="lg:flex justify-center lg:col-start-4 lg:col-span-2 col-span-12 leading-8 text-white mb-4 lg:mb-0 lg:mt-14">
-            <div>
-              <h1 className="font-bold mb-2">Quick Links</h1>
-              <Link href="/">Home</Link>
-              <br />
-              <Link href="/who-are-we/about">About us</Link>
-              <br />
-              <Link href="/services">Services</Link>
-              <br />
-              <Link href="/gallery">Gallery</Link>
-              <br />
-              <Link href="/blogs">Blogs</Link>
-              <br />
-              <Link href="/contact">Contact Us</Link>
-            </div>
+          <div className="lg:pl-12">
+            <h2 className="font-bold text-lg mb-3 font-serif">Quick Links</h2>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link href="/" className="hover:underline">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/who-are-we/about-us" className="hover:underline">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="hover:underline">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link href="/gallery" className="hover:underline">
+                  Gallery
+                </Link>
+              </li>
+              <li>
+                <Link href="/blogs" className="hover:underline">
+                  Blogs
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact-us" className="hover:underline">
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
           </div>
 
-          {/* Contact Section */}
-          <div className="text-white col-span-3 lg:mt-14 space-y-2 text-sm">
-            <div className="font-bold">Email</div>
-            <div className="flex gap-1 items-center">
-              <MdEmail />
-              <Link
-                href="mailto:info@safegatemedicalcenter.com"
-                className="text-white"
-              >
-                info@safegatemedicalcenter.com
-              </Link>
-            </div>
-            <div className="flex gap-1 items-center">
-              <MdEmail />
-              <Link
-                href="mailto:officialsafegatemedicalcenter@gmail.com"
-                className="text-white"
-              >
-                officialsafegatemedicalcenter@gmail.com
-              </Link>
-            </div>
-            <div className="font-bold mt-4">Address</div>
-            <div className="flex gap-1">
-              <FaLocationDot className="mt-1" />
-              <Link
-                href="https://maps.app.goo.gl/4aTcAvZcgfgFR7d1A"
-                className="text-white"
-              >
-                83, Model Colony, Araghar Chowk, Dehradun, Uttarakhand-248001
-              </Link>
-            </div>
-            <div className="font-bold mt-4">Phone</div>
-            <div>
-              <Link
-                href="tel:+91 7817893001"
-                className="flex gap-1 items-center text-white"
-              >
-                <IoMdCall /> +91 78178 93001
-              </Link>
-            </div>
-          </div>
+          {/* Right Section (Contact Info) */}
+          <div>
+            <h2 className="font-bold text-lg mb-3 font-serif">Contact Us</h2>
 
-          {/* Right Section (Google Map) */}
-          <div className="lg:col-span-4 col-span-12 mt-8 lg:mt-0 md:pr-12 pr-0">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110222.97707448812!2d77.96662705968441!3d30.30920238396642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929bc37c6319f%3A0xe9f79bf0327e8125!2sSafegate%20Medical%20Centre!5e0!3m2!1sen!2sin!4v1728014754644!5m2!1sen!2sin"
-              width="100%"
-              className="rounded-md"
-              height="350"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+            <div className="space-y-3 text-sm">
+              <div>
+                <div className="font-semibold">Email</div>
+                <div className="flex items-center gap-2 mt-1">
+                  <MdEmail />
+                  <Link
+                    href="mailto:info@safegatemedicalcenter.com"
+                    className="hover:underline"
+                  >
+                    info@safegatemedicalcenter.com
+                  </Link>
+                </div>
+                <div className="flex items-center gap-2 mt-1">
+                  <MdEmail />
+                  <Link
+                    href="mailto:officialsafegatemedicalcenter@gmail.com"
+                    className="hover:underline"
+                  >
+                    officialsafegatemedicalcenter@gmail.com
+                  </Link>
+                </div>
+              </div>
+
+              <div>
+                <div className="font-semibold mt-3">Address</div>
+                <div className="flex items-start gap-2 mt-1">
+                  <FaLocationDot className="mt-1" />
+                  <Link
+                    href="https://maps.app.goo.gl/4aTcAvZcgfgFR7d1A"
+                    className="hover:underline"
+                  >
+                    83, Model Colony, Araghar Chowk, Dehradun, Uttarakhand-248001
+                  </Link>
+                </div>
+              </div>
+
+              <div>
+                <div className="font-semibold mt-3">Phone</div>
+                <Link
+                  href="tel:+917817893001"
+                  className="flex items-center gap-2 mt-1 hover:underline"
+                >
+                  <IoMdCall /> +91 78178 93001
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Bottom Text */}
-      <Link
-        href="https://tekbooster.com/"
-        className="flex justify-center text-center font-semibold items-center text-black cursor-pointer py-2"
-        target="__blank"
-      >
-        Design & Develope By Tek Booster (Digital Marketing Company)
-      </Link>
+      {/* Bottom Bar */}
+      <div className="bg-white py-3">
+        <Link
+          href="https://tekbooster.com/"
+          target="__blank"
+          className="flex justify-center font-serif text-center font-semibold text-black text-sm hover:underline"
+        >
+          Design & Developed By Tek Booster (Digital Marketing Company)
+        </Link>
+      </div>
     </div>
   );
 };

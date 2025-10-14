@@ -6,7 +6,7 @@ const About = () => {
     <div className="bg-white">
       <div className="lg:grid grid-cols-2 items-center flex flex-col-reverse pr-10">
         <div className="lg:p-10 px-3">
-          <h1 className="text-black text-4xl lg:text-5xl font-extrabold leading-normal lg:text-start text-center">
+          <h1 className="text-black text-4xl lg:text-5xl font-extrabold leading-normal lg:text-start text-center font-serif">
             About Us
           </h1>
           <div className="lg:grid grid-cols-2 w-1/2 md:block hidden">
@@ -22,14 +22,14 @@ const About = () => {
           </p>
           <div className="flex mt-5 items-center">
             <Link
-              href="/who-are-we/about"
+              href="/who-are-we/about-us"
               className="bg-primary hover:bg-darkblue px-4 py-2 text-white text-lg mr-3 rounded-lg"
             >
               Know More
             </Link>
             <Link
               className="bg-lightgreen hover:bg-lightgreen/90 px-4 py-2 text-white text-lg rounded-lg"
-              href="/contact"
+              href="/contact-us"
             >
               Contact Us
             </Link>

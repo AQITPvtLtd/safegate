@@ -6,7 +6,7 @@ const Infrastructure = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 mb-5 mt-10">
         {/* Left section: Text and Information */}
         <div className="bg-primary text-white lg:shadow-2xl shadow-primary rounded-tl-lg rounded-bl-lg md:rounded-bl-none md:rounded-tl-lg">
-          <h1 className="text-4xl font-bold mb-4 text-center pt-4">
+          <h1 className="text-4xl font-bold mb-4 text-center pt-4 font-serif">
             Infrastructure
           </h1>
 

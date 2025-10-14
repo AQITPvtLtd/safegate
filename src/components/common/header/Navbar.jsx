@@ -13,6 +13,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
 import { FaPinterestP } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { FcGoogle } from "react-icons/fc";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -57,93 +58,80 @@ const Navbar = () => {
   return (
     <div>
 
-      <div className="lg:grid grid-cols-2 bg-white">
-        <div className="lg:flex hidden justify-center">
-          <div className="lg:w-[300px] w-[200px]">
-            <Link
-              href="/"
-              className={`header-logo block lg:ml-0 ml-2 mt-3 lg:my-3`}
-            >
+      <div className="bg-white items-center py-2 lg:px-10">
+        {/* Large screen layout */}
+        <div className="hidden lg:grid grid-cols-12 items-center">
+          {/* Left Section - Logo */}
+          <div className="col-span-6 flex justify-start items-center">
+            <Link href="/" className="block ml-4">
               <Image
                 src="/logo/logo2.png"
                 alt="logo"
-                width={400}
-                height={500}
-                className="lg:w-[90px] lg:h-[100px]"
+                width={90}
+                height={100}
+                className="lg:w-[90px] lg:h-[100px] w-[70px] h-[80px]"
               />
             </Link>
           </div>
+
+          {/* Right Section - Social Icons + Contact */}
+          <div className="col-span-6 flex justify-end items-center gap-6 pr-6">
+            {/* Social Icons */}
+            <div className="flex space-x-3">
+              <Link href="https://www.facebook.com/profile.php?id=61564959001123" target="__blank" className="text-[#1877F2] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"><FaFacebookF /></Link>
+              <Link href="https://www.instagram.com/safegatemedicalcenter/?hl=en" target="__blank" className="text-[#E4405F] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"><FaInstagram /></Link>
+              <Link href="https://www.linkedin.com/company/safegate-medical-centre/?viewAsMember=true" target="__blank" className="text-[#0077B5] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"><FaLinkedinIn /></Link>
+              <Link href="https://x.com/Safegatemedical" target="__blank" className="text-[#000000] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"><FaXTwitter /></Link>
+              <Link href="https://www.youtube.com/channel/UCeMjY3fzbAqFQxrCcX4wTFg" target="__blank" className="text-[#FF0000] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"><FaYoutube /></Link>
+              <Link href="https://in.pinterest.com/officialsafegatemedicalcenter/" target="__blank" className="text-[#E60023] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"><FaPinterestP /></Link>
+              <Link href="https://maps.app.goo.gl/56nJikPeg8KzyzqV7" target="__blank" className="text-[#34A853] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"><FcGoogle /></Link>
+            </div>
+
+            <div className="text-gray-400">|</div>
+
+            {/* Contact */}
+            <div className="flex items-center gap-2">
+              <RiCustomerServiceFill className="text-lightgreen text-3xl" />
+              <div className="text-gray-500 text-sm">
+                <h4>For Support</h4>
+                <Link href="tel:+917817893001">
+                  <p className="text-lightgreen font-medium">+91 78178 93001</p>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="lg:block hidden lg:pt-4">
-          <div className="max-w-lg lg:mx-auto pt-4 mx-2">
-            <div className="flex items-center justify-center space-x-10">
-              <div className="flex space-x-3">
-                {/* Facebook */}
-                <Link
-                  href="https://www.facebook.com/profile.php?id=61564959001123"
-                  target="__blank"
-                  className="text-[#1877F2] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"
-                >
-                  <FaFacebookF />
-                </Link>
 
-                {/* Instagram */}
-                <Link
-                  href="https://www.instagram.com/safegatemedicalcenter/?hl=en"
-                  target="__blank"
-                  className="text-[#E4405F] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"
-                >
-                  <FaInstagram />
-                </Link>
+        {/* Small screen layout */}
+        <div className="lg:hidden flex flex-col items-center gap-2">
+          {/* Logo + Icons */}
+          <div className="flex flex-col items-center gap-2">
+            <Image
+              src="/logo/logo2.png"
+              alt="logo"
+              width={70}
+              height={80}
+              className="w-[70px] h-[80px]"
+            />
+            <div className="flex flex-wrap justify-center gap-3">
+              <Link href="https://www.facebook.com/profile.php?id=61564959001123" target="__blank" className="text-[#1877F2] text-xl bg-white rounded-full p-2 shadow-md"><FaFacebookF /></Link>
+              <Link href="https://www.instagram.com/safegatemedicalcenter/?hl=en" target="__blank" className="text-[#E4405F] text-xl bg-white rounded-full p-2 shadow-md"><FaInstagram /></Link>
+              <Link href="https://www.linkedin.com/company/safegate-medical-centre/?viewAsMember=true" target="__blank" className="text-[#0077B5] text-xl bg-white rounded-full p-2 shadow-md"><FaLinkedinIn /></Link>
+              <Link href="https://x.com/Safegatemedical" target="__blank" className="text-[#000000] text-xl bg-white rounded-full p-2 shadow-md"><FaXTwitter /></Link>
+              <Link href="https://www.youtube.com/channel/UCeMjY3fzbAqFQxrCcX4wTFg" target="__blank" className="text-[#FF0000] text-xl bg-white rounded-full p-2 shadow-md"><FaYoutube /></Link>
+              <Link href="https://in.pinterest.com/officialsafegatemedicalcenter/" target="__blank" className="text-[#E60023] text-xl bg-white rounded-full p-2 shadow-md"><FaPinterestP /></Link>
+              <Link href="https://maps.app.goo.gl/56nJikPeg8KzyzqV7" target="__blank" className="text-[#34A853] text-xl bg-white rounded-full p-2 shadow-md"><FcGoogle /></Link>
+            </div>
+          </div>
 
-                {/* LinkedIn */}
-                <Link
-                  href="https://www.linkedin.com/company/safegate-medical-centre/?viewAsMember=true"
-                  target="__blank"
-                  className="text-[#0077B5] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"
-                >
-                  <FaLinkedinIn />
-                </Link>
-
-                {/* X (Twitter) */}
-                <Link
-                  href="https://x.com/Safegatemedical"
-                  target="__blank"
-                  className="text-[#000000] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"
-                >
-                  <FaXTwitter />
-                </Link>
-
-                {/* YouTube */}
-                <Link
-                  href="https://www.youtube.com/channel/UCeMjY3fzbAqFQxrCcX4wTFg"
-                  target="__blank"
-                  className="text-[#FF0000] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"
-                >
-                  <FaYoutube />
-                </Link>
-
-                {/* Pinterest */}
-                <Link
-                  href="https://in.pinterest.com/officialsafegatemedicalcenter/"
-                  target="__blank"
-                  className="text-[#E60023] text-xl bg-white rounded-full p-2 hover:scale-110 transition-transform duration-300 shadow-md"
-                >
-                  <FaPinterestP />
-                </Link>
-              </div>
-    
-
-              <div className="text-gray-400">|</div>
-              <div className="flex items-center">
-                <RiCustomerServiceFill className="text-lightgreen text-4xl" />
-                <div className="text-gray-500 text-sm">
-                  <h4>For Support</h4>
-                  <Link href="tel:+917817893001">
-                    <p className="text-lightgreen">+91 78178 93001</p>
-                  </Link>
-                </div>
-              </div>
+          {/* Contact Section (Centered) */}
+          <div className="flex items-center justify-center gap-2 mt-2">
+            <RiCustomerServiceFill className="text-lightgreen text-3xl" />
+            <div className="text-gray-500 text-sm text-center">
+              <h4>For Support</h4>
+              <Link href="tel:+917817893001">
+                <p className="text-lightgreen font-medium">+91 78178 93001</p>
+              </Link>
             </div>
           </div>
         </div>
@@ -219,9 +207,9 @@ const Navbar = () => {
                       <Link
                         onClick={handleCloseNavbar}
                         href={menuItem.path}
-                        className={`flex py-2 px-3 text-base text-dark rounded-lg hover:bg-lightgreen lg:mr-0 lg:inline-flex lg:px-3 lg:py-3 `}
+                        className={`flex py-2 px-3 text-lg text-dark rounded-lg hover:bg-lightgreen lg:mr-0 lg:inline-flex lg:px-3 lg:py-3 `}
                       >
-                        <div className="px-3">{menuItem.title}</div>
+                        <div className="px-3 font-serif">{menuItem.title}</div>
                       </Link>
                     ) : (
                       <>
@@ -231,7 +219,7 @@ const Navbar = () => {
                           }}
                           className="flex cursor-pointer items-center justify-between py-2 rounded-lg text-base text-dark group-hover:bg-lightgreen lg:mr-0 lg:inline-flex lg:px-0 lg:py-3"
                         >
-                          <div className="px-5 flex gap-0.5">
+                          <div className="px-5 flex gap-0.5 font-serif">
                             {menuItem.title}
 
                             <span>
@@ -253,7 +241,7 @@ const Navbar = () => {
                                   onClick={handleCloseNavbar}
                                   href={submenuItem.path}
                                   key={index}
-                                  className={`block rounded py-2 text-sm text-dark hover:bg-lightgreen lg:px-3`}
+                                  className={`block rounded py-2 text-sm font-serif text-dark hover:bg-lightgreen lg:px-3`}
                                 >
                                   {submenuItem.title}
                                 </Link>

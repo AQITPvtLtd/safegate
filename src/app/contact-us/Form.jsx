@@ -90,7 +90,7 @@ const Form = () => {
 
     return (
         <div className='bg-gray-100 rounded-lg p-6 border-4'>
-            <h2 className="text-gray-900 text-xl font-semibold mb-1 title-font">
+            <h2 className="text-gray-900 text-xl font-semibold mb-1 title-font font-serif">
                 Submit Your Query
             </h2>
             <form onSubmit={handleSubmit}>

@@ -29,10 +29,10 @@ const HappyPatients = () => {
 
   return (
     <div className="mt-14 my-10 overflow-x-clip ">
-      <h3 className="text-center text-primary font-semibold text-lg">
+      <h3 className="text-center text-primary font-semibold text-lg font-serif">
         Happy Patients
       </h3>
-      <h1 className="text-center lg:text-3xl text-2xl font-bold text-black">
+      <h1 className="text-center lg:text-3xl text-2xl font-bold text-black font-serif">
         Real Stories, Real Results
       </h1>
       <div className="flex justify-center mt-1 ">

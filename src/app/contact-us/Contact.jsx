@@ -8,8 +8,6 @@ import { IoLocationSharp } from "react-icons/io5";
 import Form from "./Form";
 
 const Contact = () => {
-
-
   return (
     <div className="">
       <div className="relative">

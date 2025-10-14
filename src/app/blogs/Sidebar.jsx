@@ -27,10 +27,9 @@ const Sidebar = () => {
       <div className="sm:px-3 lg:px-4 border-2 rounded-2xl h-fit">
         <ul className="h-fit">
 
-          <p className="text-blue-600 font-semibold text-lg py-2 ">
+          <p className="text-blue-600 font-semibold text-lg py-2 font-serif">
             More Blogs:
           </p>
-
 
           {blogs.map((n) => (
             <li key={n.url}>
