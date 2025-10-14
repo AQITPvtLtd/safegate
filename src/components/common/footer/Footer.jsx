@@ -195,7 +195,7 @@ const Footer = () => {
           target="__blank"
           className="flex justify-center font-serif text-center font-semibold text-black text-sm hover:underline"
         >
-          Design & Developed By Tek Booster (Digital Marketing Company)
+          Design & Developed By Tek Booster <br className="lg:hidden block" /> (Digital Marketing Company)
         </Link>
       </div>
     </div>
