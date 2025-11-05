@@ -51,7 +51,7 @@ const Contact = () => {
               <div className="space-y-2">
                 {/* Address Section */}
 
-                <Link href="https://maps.app.goo.gl/4aTcAvZcgfgFR7d1A" className="flex space-x-3 text-gray-700">
+                <Link href="https://maps.app.goo.gl/4aTcAvZcgfgFR7d1A" target="_blank" className="flex space-x-3 text-gray-700">
                   <IoLocationSharp className="mt-1 lg:text-2xl text-3xl text-primary" />
                   <p className="text-base font-medium hover:text-primary transition-colors duration-200 ease-in-out ">
                     83, Model Colony, Araghar Chowk, Dehradun,

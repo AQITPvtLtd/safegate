@@ -167,7 +167,7 @@ const Footer = () => {
                   <FaLocationDot className="mt-1" />
                   <Link
                     href="https://maps.app.goo.gl/4aTcAvZcgfgFR7d1A"
-                    className="hover:underline"
+                    className="hover:underline" target="_blank"
                   >
                     83, Model Colony, Araghar Chowk, Dehradun, Uttarakhand-248001
                   </Link>
