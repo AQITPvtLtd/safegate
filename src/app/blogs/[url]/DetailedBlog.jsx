@@ -61,7 +61,7 @@ const DetailedBlog = ({ url, id }) => {
             <div key={obj.url} className="bg-white overflow-hidden mb-6">
               <Image
                 src={`/blogs/${obj.image}`}
-                alt={obj.heading || "Blog Image"}
+                alt={obj.img_alt_tag || "Blog Image"}
                 className="object-cover"
                 height={1000}
                 width={1000}

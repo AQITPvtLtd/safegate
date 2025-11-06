@@ -56,7 +56,7 @@ const Blogs = () => {
             >
               <Image
                 src={`/blogs/${n.image}`}
-                alt={n.heading}
+                alt={n.img_alt_tag}
                 className="w-full h-[220px] object-fill"
                 height={180}
                 width={400}
