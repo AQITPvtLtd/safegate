@@ -140,6 +140,16 @@ const Footer = () => {
 
             <div className="space-y-3 text-sm">
               <div>
+                <div className="font-semibold mt-3">Phone</div>
+                <Link
+                  href="tel:+917817893001"
+                  className="flex items-center gap-2 mt-1 hover:underline"
+                >
+                  <IoMdCall /> +91 78178 93001
+                </Link>
+              </div>
+
+              <div>
                 <div className="font-semibold">Email</div>
                 <div className="flex items-center gap-2 mt-1">
                   <MdEmail />
@@ -172,16 +182,6 @@ const Footer = () => {
                     83, Model Colony, Araghar Chowk, Dehradun, Uttarakhand-248001
                   </Link>
                 </div>
-              </div>
-
-              <div>
-                <div className="font-semibold mt-3">Phone</div>
-                <Link
-                  href="tel:+917817893001"
-                  className="flex items-center gap-2 mt-1 hover:underline"
-                >
-                  <IoMdCall /> +91 78178 93001
-                </Link>
               </div>
             </div>
           </div>
